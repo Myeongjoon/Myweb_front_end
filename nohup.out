@@ -1,0 +1,95 @@
+[Error: /home/kimmj8409/todomvc-mongodb/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+[Error: /home/kimmj8409/todomvc-mongodb/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3
+[Error: /home/kimmj8409/todomvc-mongodb/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3
+[Error: /home/kimmj8409/todomvc-mongodb/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3
+[0mGET / [32m200 [0m11.281 ms - 2760[0m
+[0mGET /learn.json [33m404 [0m1.532 ms - 23[0m
+[0mGET /api/todos [32m200 [0m11.066 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.998 ms - 24[0m
+[0mPOST /api/todos [32m200 [0m37.014 ms - 77[0m
+[0mPOST /api/todos [32m200 [0m4.308 ms - 153[0m
+[0mPOST /api/todos [32m200 [0m3.273 ms - 229[0m
+[0mPOST /api/todos [32m200 [0m3.944 ms - 305[0m
+[0mPOST /api/todos [32m200 [0m3.251 ms - 381[0m
+[0mPOST /api/todos [32m200 [0m3.402 ms - 457[0m
+[0mPOST /api/todos [32m200 [0m4.894 ms - 533[0m
+[0mPOST /api/todos [32m200 [0m6.843 ms - 609[0m
+[0mGET / [32m200 [0m2.059 ms - 2760[0m
+[0mGET /learn.json [33m404 [0m0.690 ms - 23[0m
+[0mGET /api/todos [32m200 [0m3.820 ms - 609[0m
+[0mGET / [32m200 [0m1.081 ms - 2760[0m
+[0mGET /learn.json [33m404 [0m0.480 ms - 23[0m
+[0mGET /api/todos [36m304 [0m3.059 ms - -[0m
+[0mGET / [32m200 [0m1.261 ms - 2760[0m
+[0mGET /learn.json [33m404 [0m0.524 ms - 23[0m
+[0mGET /api/todos [36m304 [0m2.428 ms - -[0m
+[0mGET / [32m200 [0m1.072 ms - 2760[0m
+[0mGET /learn.json [33m404 [0m0.731 ms - 23[0m
+[0mGET /api/todos [36m304 [0m2.672 ms - -[0m
+[0mGET / [32m200 [0m2.754 ms - 2760[0m
+[0mGET / [32m200 [0m3.932 ms - 2760[0m
+[0mGET /manager/html [33m404 [0m2.102 ms - 25[0m
+[0mGET http://www.google.com/reader/about/ [33m404 [0m0.810 ms - 47[0m
+[0mGET / [32m200 [0m7.228 ms - 2760[0m
+[0mGET /manager/html [33m404 [0m0.885 ms - 25[0m
+[0mGET http://www.qunar.com/ [32m200 [0m1.577 ms - 2760[0m
+[0mHEAD / [32m200 [0m1.001 ms - 2760[0m
+[0mGET / [32m200 [0m2.423 ms - 2760[0m
+[0mGET / [32m200 [0m1.363 ms - 2760[0m
+[0mGET /docs/funcspecs/3.jsp [33m404 [0m3.010 ms - 33[0m
+[0mGET / [32m200 [0m2.139 ms - 2760[0m
+[0mGET /learn.json [33m404 [0m3.332 ms - 23[0m
+[0mGET /api/todos [32m200 [0m7.115 ms - 609[0m
+[0mPOST /api/todos [32m200 [0m7.936 ms - 687[0m
+[0mDELETE /api/todos/571c5af39c6a132927f9d79b [32m200 [0m6.154 ms - 609[0m
+[0mGET /manager/html [33m404 [0m0.581 ms - 25[0m

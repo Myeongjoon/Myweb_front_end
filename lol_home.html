@@ -135,25 +135,33 @@ function getMyleagueEntry(summonerID) {
             },
             success: function (json) {
 
-                summoner_tier = (json[summonerID])[0].tier;
-				summoner_division = ((json[summonerID])[0]).entries[0].division;
-				summoner_leaguePoints = ((json[summonerID])[0]).entries[0].leaguePoints;
-				summoner_wins = ((json[summonerID])[0]).entries[0].wins;
-				summoner_losses = ((json[summonerID])[0]).entries[0].losses;
-				//summoner_division = summoner_entry.division;
-                document.getElementById("summoner_tier").innerHTML = "티어 : " +summoner_tier+" "+summoner_division;
-				document.getElementById("summoner_leaguePoints").innerHTML = summoner_leaguePoints+" 포인트 / "+summoner_wins+"승 "+summoner_losses+"패 / 승률 : "+Math.ceil(100*parseInt(summoner_wins)/(parseInt(summoner_wins)+parseInt(summoner_losses)))+"%";
-                
-				//document.getElementById("sID").innerHTML = summonerID;
-				if(summoner_tier=="BRONZE"&&summoner_division=="I"){//브1
-					document.getElementById("tierimage").src="media/bronze_1.png";
-				}else if(summoner_tier=="PLATINUM"&&summoner_division=="V"){//플5
-					document.getElementById("tierimage").src="media/platinum_5.png";
-				}else if(summoner_tier=="DIAMOND"&&summoner_division=="IV"){//다4
-					document.getElementById("tierimage").src="media/diamond_4.png";
-				}else if(summoner_tier=="CHALLENGER"&&summoner_division=="I"){//챌1
-					document.getElementById("tierimage").src="media/challenger_1.png";
+				if((json[summonerID])[0].tier!=NULL){
+					summoner_tier = (json[summonerID])[0].tier;
+					summoner_division = ((json[summonerID])[0]).entries[0].division;
+					summoner_leaguePoints = ((json[summonerID])[0]).entries[0].leaguePoints;
+					summoner_wins = ((json[summonerID])[0]).entries[0].wins;
+					summoner_losses = ((json[summonerID])[0]).entries[0].losses;
+					//summoner_division = summoner_entry.division;
+					document.getElementById("summoner_tier").innerHTML = "티어 : " +summoner_tier+" "+summoner_division;
+					document.getElementById("summoner_leaguePoints").innerHTML = summoner_leaguePoints+" 포인트 / "+summoner_wins+"승 "+summoner_losses+"패 / 승률 : "+Math.ceil(100*parseInt(summoner_wins)/(parseInt(summoner_wins)+parseInt(summoner_losses)))+"%";
+					
+					//document.getElementById("sID").innerHTML = summonerID;
+					if(summoner_tier=="BRONZE"&&summoner_division=="I"){//브1
+						document.getElementById("tierimage").src="media/bronze_1.png";
+					}else if(summoner_tier=="PLATINUM"&&summoner_division=="V"){//플5
+						document.getElementById("tierimage").src="media/platinum_5.png";
+					}else if(summoner_tier=="DIAMOND"&&summoner_division=="IV"){//다4
+						document.getElementById("tierimage").src="media/diamond_4.png";
+					}else if(summoner_tier=="CHALLENGER"&&summoner_division=="I"){//챌1
+						document.getElementById("tierimage").src="media/challenger_1.png";
+					}
+				}else{
+					document.getElementById("tierimage").src="media/Unranked.png";
+					document.getElementById("summoner_tier").innerHTML = "티어 : Unranked";
+					document.getElementById("summoner_leaguePoints").innerHTML = "0 포인트"";
+					
 				}
+                
 				
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {

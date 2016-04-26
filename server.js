@@ -232,6 +232,10 @@
 	app.get('/media/bronze_1.png', function(req, res) {
 		res.sendfile('media/bronze_1.png'); //go to lol_home.htmls
 	});
+	
+	app.get('/media/Unranked.png', function(req, res) {
+		res.sendfile('media/Unranked.png'); //go to lol_home.htmls
+	});
 
 	// listen (start app with node server.js) ======================================
 	app.listen(8080, argv.fe_ip);

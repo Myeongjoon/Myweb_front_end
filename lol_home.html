@@ -134,8 +134,7 @@ function getMyleagueEntry(summonerID) {
 
             },
             success: function (json) {
-
-				if((json[summonerID])[0].tier!=NULL){
+					
 					summoner_tier = (json[summonerID])[0].tier;
 					summoner_division = ((json[summonerID])[0]).entries[0].division;
 					summoner_leaguePoints = ((json[summonerID])[0]).entries[0].leaguePoints;
@@ -155,17 +154,11 @@ function getMyleagueEntry(summonerID) {
 					}else if(summoner_tier=="CHALLENGER"&&summoner_division=="I"){//챌1
 						document.getElementById("tierimage").src="media/challenger_1.png";
 					}
-				}else{
-					document.getElementById("tierimage").src="media/Unranked.png";
-					document.getElementById("summoner_tier").innerHTML = "티어 : Unranked";
-					document.getElementById("summoner_leaguePoints").innerHTML = "0 포인트"";
-					
-				}
-                
-				
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
-                alert("error getMyleagueEntry");
+                document.getElementById("tierimage").src="media/Unranked.png";
+				document.getElementById("summoner_tier").innerHTML = "티어 : Unranked";
+				document.getElementById("summoner_leaguePoints").innerHTML = "0 포인트"";
             }
         });
     } else {}

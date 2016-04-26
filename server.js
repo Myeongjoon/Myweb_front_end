@@ -130,24 +130,28 @@
 		res.sendfile('media/challenger_1.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/diamond_5', function(req, res) {
-		res.sendfile('media/diamond_5'); //go to lol_home.htmls
+	app.get('/media/master_1.png', function(req, res) {
+		res.sendfile('media/master_1.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/diamond_4', function(req, res) {
-		res.sendfile('media/diamond_4'); //go to lol_home.htmls
+	app.get('/media/diamond_5.png', function(req, res) {
+		res.sendfile('media/diamond_5.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/diamond_3', function(req, res) {
-		res.sendfile('media/diamond_3'); //go to lol_home.htmls
+	app.get('/media/diamond_4.png', function(req, res) {
+		res.sendfile('media/diamond_4.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/platinum_5.png', function(req, res) {
-		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	app.get('/media/diamond_3.png', function(req, res) {
+		res.sendfile('media/diamond_3.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/platinum_5.png', function(req, res) {
-		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	app.get('/media/diamond_2.png', function(req, res) {
+		res.sendfile('media/diamond_2.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/diamond_1.png', function(req, res) {
+		res.sendfile('media/diamond_1.png'); //go to lol_home.htmls
 	});
 	
 	app.get('/media/platinum_5.png', function(req, res) {
@@ -162,72 +166,71 @@
 		res.sendfile('media/platinum_3.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/platinum_5.png', function(req, res) {
-		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	app.get('/media/platinum_2.png', function(req, res) {
+		res.sendfile('media/platinum_2.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/platinum_5.png', function(req, res) {
-		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	app.get('/media/platinum_1.png', function(req, res) {
+		res.sendfile('media/platinum_1.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/platinum_5.png', function(req, res) {
-		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	app.get('/media/gold_5.png', function(req, res) {
+		res.sendfile('media/gold_5.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/platinum_5.png', function(req, res) {
-		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	app.get('/media/gold_4.png', function(req, res) {
+		res.sendfile('media/gold_4.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/platinum_5.png', function(req, res) {
-		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	app.get('/media/gold_3.png', function(req, res) {
+		res.sendfile('media/gold_3.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/platinum_5.png', function(req, res) {
-		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	app.get('/media/gold_2.png', function(req, res) {
+		res.sendfile('media/gold_2.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/platinum_5.png', function(req, res) {
-		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	app.get('/media/gold_1.png', function(req, res) {
+		res.sendfile('media/gold_1.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/platinum_5.png', function(req, res) {
-		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	app.get('/media/silver_5.png', function(req, res) {
+		res.sendfile('media/silver_5.png'); //go to lol_home.htmls
+	});
+	app.get('/media/silver_4.png', function(req, res) {
+		res.sendfile('media/silver_4.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/platinum_5.png', function(req, res) {
-		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	app.get('/media/silver_3.png', function(req, res) {
+		res.sendfile('media/silver_3.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/platinum_5.png', function(req, res) {
-		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	app.get('/media/silver_2.png', function(req, res) {
+		res.sendfile('media/silver_2.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/platinum_5.png', function(req, res) {
-		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	app.get('/media/silver_1.png', function(req, res) {
+		res.sendfile('media/silver_1.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/platinum_5.png', function(req, res) {
-		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	app.get('/media/bronze_5.png', function(req, res) {
+		res.sendfile('media/bronze_5.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/platinum_5.png', function(req, res) {
-		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	app.get('/media/bronze_4.png', function(req, res) {
+		res.sendfile('media/bronze_4.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/platinum_5.png', function(req, res) {
-		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	app.get('/media/bronze_3.png', function(req, res) {
+		res.sendfile('media/bronze_3.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/platinum_5.png', function(req, res) {
-		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	app.get('/media/bronze_2.png', function(req, res) {
+		res.sendfile('media/bronze_2.png'); //go to lol_home.htmls
 	});
 	
-	app.get('/media/platinum_5.png', function(req, res) {
-		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
-	});
-	
-	app.get('/media/bronze_1', function(req, res) {
-		res.sendfile('media/bronze_1'); //go to lol_home.htmls
+	app.get('/media/bronze_1.png', function(req, res) {
+		res.sendfile('media/bronze_1.png'); //go to lol_home.htmls
 	});
 
 	// listen (start app with node server.js) ======================================

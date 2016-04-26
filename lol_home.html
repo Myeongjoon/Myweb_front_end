@@ -5,6 +5,7 @@
 		<title>Myeongjoon's Web</title>
 		<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
 		<link rel="stylesheet" href="bower_components/todomvc-common/style.css">
+		<link rel="stylesheet" href="bower_components/todomvc-common/lol_home.css">
 		<style>[ng-cloak] { display: none; }</style>
 		<script src="bower_components/todomvc-common/base.js"></script>
 		<script src="bower_components/angular/angular.js"></script>
@@ -13,18 +14,23 @@
 		<script src="js/controllers/todoCtrl.js"></script>
 		<script src="js/directives/todoFocus.js"></script>
 		<script src="js/directives/todoEscape.js"></script>
+		<script src="custom_js/lol_home.js"></script>
 	</head>
 	<body ng-controller="todoCtrl" id="todomvc-index.html">
 		<section id="todoapp">
 			<header id="header">
 				<h1>롤 전적 검색</h1>
-				<form id="todo-form" ng-submit="addTodo()">
-					<input id="new-todo" placeholder="아이디를 입력하시오." ng-model="newTodo" autofocus>
+				<form id="todo-form" ng-submit="summonerLookUp()">
+					<input id="userName" placeholder="아이디를 입력하시오." ng-model="newTodo" autofocus>
 				</form>
 			</header>
 			<section id="main" ng-show="todos.length" ng-cloak>
 				<input id="toggle-all" type="checkbox" ng-model="allChecked" ng-click="markAll(allChecked)">
 				<label for="toggle-all">Mark all as complete</label>
+				<ul id="lol_information">
+					<li id="summoner_Name">
+					</li>
+				</ul>
 				<ul id="todo-list">
 					<li ng-repeat="todo in todos | filter:statusFilter track by $index" 
 					    ng-class="{completed: todo.completed, editing: todo == editedTodo}">

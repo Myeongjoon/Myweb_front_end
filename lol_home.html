@@ -39,15 +39,16 @@ function summonerLookUp() {
                 SUMMONER_NAME_NOSPACES = SUMMONER_NAME_NOSPACES.toLowerCase().trim();
 
                 summonerLevel = json[SUMMONER_NAME_NOSPACES].summonerLevel;
-                summonerID = json[SUMMONER_NAME_NOSPACES].id;
+                summoner_ID = json[SUMMONER_NAME_NOSPACES].id;
 
                 document.getElementById("summoner_level").innerHTML = "레벨 : " +summonerLevel;
                 //document.getElementById("sID").innerHTML = summonerID;
                 
                 sumName = json[SUMMONER_NAME_NOSPACES].name;
+				getMyleagueEntry(summoner_ID);
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
-                alert("error getting Summoner data!");
+                alert("error summonerLookUp()");
             }
         });
     } else {}
@@ -56,6 +57,42 @@ function summonerLookUp() {
 function Name() {
     alert(sumName);
 }
+
+function getMyleagueEntry(summonerID) {
+
+    var API_KEY = "2c8415cb-53b2-488d-85f2-b1b9d97be2b2";
+
+    if (summonerID !== "") {
+
+        $.ajax({
+            url: 'https://kr.api.pvp.net/api/lol/kr/v2.5/league/by-summoner/' + summonerID + '/entry?api_key=2c8415cb-53b2-488d-85f2-b1b9d97be2b2',
+            type: 'GET',
+            dataType: 'json',
+            data: {
+
+            },
+            success: function (json) {
+
+                summoner_tier = (json[summonerID])[0].tier;
+				summoner_division = ((json[summonerID])[0]).entries[0].division;
+				//summoner_division = summoner_entry.division;
+                document.getElementById("summoner_tier").innerHTML = "티어 : " +summoner_tier+" "+summoner_division;
+                //document.getElementById("sID").innerHTML = summonerID;
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("error getMyleagueEntry");
+            }
+        });
+    } else {}
+}
+
+
+
+
+
+
+
+
 
 //]]> 
 
@@ -86,7 +123,9 @@ function Name() {
 				</form>
 			</header>
 			<ul id="lol_information">
-					<li id="summoner_level">레벨 : 
+					<li id="summoner_level">레벨
+					</li>
+					<li id="summoner_tier">티어
 					</li>
 			</ul>
 			<footer id="footer" ng-show="todos.length" ng-cloak>

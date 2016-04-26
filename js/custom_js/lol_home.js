@@ -14,7 +14,7 @@ function summonerLookUp() {
     if (SUMMONER_NAME !== "") {
 
         $.ajax({
-			url: 'https://kr.api.pvp.net/api/lol/kr/v1.4/summoner/by-name/gcho?api_key=2c8415cb-53b2-488d-85f2-b1b9d97be2b2',
+			url: 'https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/hello?api_key=2c8415cb-53b2-488d-85f2-b1b9d97be2b2',
             type: 'GET',
             dataType: 'json',
             data: {
@@ -34,7 +34,7 @@ function summonerLookUp() {
                 //sumName = json[SUMMONER_NAME_NOSPACES].name;
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
-                alert("error getting Summoner data!");
+                alert(XMLHttpRequest.API_KEY);
             }
         });
     } else {}

@@ -125,6 +125,110 @@
 	app.get('/lol_home', function(req, res) {
 		res.sendfile('lol_home.html'); //go to lol_home.htmls
 	});
+	
+	app.get('/media/challenger_1.png', function(req, res) {
+		res.sendfile('media/challenger_1.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/diamond_5', function(req, res) {
+		res.sendfile('media/diamond_5'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/diamond_4', function(req, res) {
+		res.sendfile('media/diamond_4'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/diamond_3', function(req, res) {
+		res.sendfile('media/diamond_3'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_4.png', function(req, res) {
+		res.sendfile('media/platinum_4.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_3.png', function(req, res) {
+		res.sendfile('media/platinum_3.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/platinum_5.png', function(req, res) {
+		res.sendfile('media/platinum_5.png'); //go to lol_home.htmls
+	});
+	
+	app.get('/media/bronze_1', function(req, res) {
+		res.sendfile('media/bronze_1'); //go to lol_home.htmls
+	});
 
 	// listen (start app with node server.js) ======================================
 	app.listen(8080, argv.fe_ip);

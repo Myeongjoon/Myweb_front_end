@@ -272,13 +272,6 @@ function getMyleagueEntry(summonerID) {
 					<img id = "tierimage" src="media/challenger_1.png" class="Image">
 				</div>
 			</div>
-			<footer id="footer" ng-show="todos.length" ng-cloak>
-				<span id="todo-count"><strong>{{remainingCount}}</strong>
-					<ng-pluralize count="remainingCount" when="{ one: 'item left', other: 'items left' }"></ng-pluralize>
-				</span>
-				<button id="clear-completed" ng-click="clearCompletedTodos()" 
-					ng-show="completedCount">Clear completed ({{completedCount}})</button>
-			</footer>
 		</section>
 		<footer id="info">
 			<ul class="social">

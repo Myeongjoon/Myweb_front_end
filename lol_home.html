@@ -29,6 +29,44 @@
 			text-decoration: none;
 			text-align: center;
 		}
+		
+		.SummonerContent {
+			display: inline-block !important;
+			width: 300px;
+			font-size: 12px;
+			vertical-align: top;
+		}
+		
+		.SummonerRatingMedium {
+			display: table;
+			width: 100%;
+			color: #879292;
+		}
+		
+		
+		
+		.Medal>.Image {
+			width: 120px;
+			height: 120px;
+			margin: -5px 0 -10px 0;
+		}
+		
+		.SummonerRatingMedium>.Medal {
+			display: table-cell;
+			vertical-align: middle;
+			width: 135px;
+			height: 116px;
+			text-align: center;
+		}
+		
+		.SummonerRatingMedium>.TierRankInfo {
+			display: table-cell;
+			vertical-align: middle;
+			font-size: 12px;
+			line-height: 1.5;
+			text-align: left;
+			width: 500px;
+		}
 			
 		</style>
 		<script src="bower_components/todomvc-common/base.js"></script>
@@ -104,8 +142,19 @@ function getMyleagueEntry(summonerID) {
 				summoner_losses = ((json[summonerID])[0]).entries[0].losses;
 				//summoner_division = summoner_entry.division;
                 document.getElementById("summoner_tier").innerHTML = "티어 : " +summoner_tier+" "+summoner_division;
-				document.getElementById("summoner_leaguePoints").innerHTML = summoner_leaguePoints+" 포인트 / "+summoner_wins+"승 "+summoner_losses+"패";
-                //document.getElementById("sID").innerHTML = summonerID;
+				document.getElementById("summoner_leaguePoints").innerHTML = summoner_leaguePoints+" 포인트 / "+summoner_wins+"승 "+summoner_losses+"패 / 승률 : "+Math.ceil(100*parseInt(summoner_wins)/(parseInt(summoner_wins)+parseInt(summoner_losses)))+"%";
+                
+				//document.getElementById("sID").innerHTML = summonerID;
+				if(summoner_tier=="BRONZE"&&summoner_division=="I"){//브1
+					document.getElementById("tierimage").src="media/bronze_1.png";
+				}else if(summoner_tier=="PLATINUM"&&summoner_division=="V"){//플5
+					document.getElementById("tierimage").src="media/platinum_5.png";
+				}else if(summoner_tier=="DIAMOND"&&summoner_division=="IV"){//다4
+					document.getElementById("tierimage").src="media/diamond_4.png";
+				}else if(summoner_tier=="CHALLENGER"&&summoner_division=="I"){//챌1
+					document.getElementById("tierimage").src="media/challenger_1.png";
+				}
+				
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 alert("error getMyleagueEntry");
@@ -173,14 +222,21 @@ function getMyleagueEntry(summonerID) {
 					<a href="/summoner/mastery/userName=%EC%88%98%EB%8A%A55%EB%93%B1%EA%B8%89">특성</a>
 				</dd>
 			</dl>
-			<ul id="lol_information">
-					<li id="summoner_level">레벨
-					</li>
-					<li id="summoner_tier">티어
-					</li>
-					<li id="summoner_leaguePoints">점수
-					</li>
-			</ul>
+			<div class="SummonerRatingMedium SummonerContent">
+				<div class="TierRankInfo">
+					<ul id="lol_information">
+							<li id="summoner_level">레벨
+							</li>
+							<li id="summoner_tier">티어
+							</li>
+							<li id="summoner_leaguePoints">점수
+							</li>
+					</ul>
+				</div>
+				<div class="Medal">
+					<img id = "tierimage" src="media/challenger_1.png" class="Image">
+				</div>
+			</div>
 			<footer id="footer" ng-show="todos.length" ng-cloak>
 				<span id="todo-count"><strong>{{remainingCount}}</strong>
 					<ng-pluralize count="remainingCount" when="{ one: 'item left', other: 'items left' }"></ng-pluralize>

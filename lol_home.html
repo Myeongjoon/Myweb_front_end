@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
 		<link rel="stylesheet" href="bower_components/todomvc-common/style.css">
 		<link rel="stylesheet" href="bower_components/todomvc-common/lol_home.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<style>[ng-cloak] { display: none; }
 			.MenuList>.Item {
     		display: inline-block;
@@ -31,7 +32,7 @@
 		}
 		
 		.SummonerContent {
-			display: inline-block !important;
+			display: inline-block;
 			width: 300px;
 			font-size: 12px;
 			vertical-align: top;
@@ -196,10 +197,23 @@ function getMyleagueEntry(summonerID) {
             }
         });
     } else {}
-}
+};
 
 
+$(function () {
 
+    $(".tab_content").hide();
+    $(".tab_content:first").show();
+	$("#initial_tab").addClass("active").css("color", "darkred");
+    $("dl a").click(function () {
+        $("dl a").removeClass("active").css("color", "#333");
+        //$(this).addClass("active").css({"color": "darkred","font-weight": "bolder"});
+        $(this).addClass("active").css("color", "darkred");
+        $(".tab_content").hide()
+        var activeTab = $(this).attr("rel");
+        $("#" + activeTab).fadeIn()
+    });
+});
 
 
 
@@ -239,25 +253,25 @@ function getMyleagueEntry(summonerID) {
     margin-left: 15px;
 ">
 				<dd class="Item tabHeader active" data-tab-show-class="summonerLayout-summary">
-					<a href="/summoner/userName=%EC%88%98%EB%8A%A55%EB%93%B1%EA%B8%89">종합</a>
+					<a id="initial_tab" href=""rel="tab1">종합</a>
 				</dd>
 				<dd class="Item tabHeader" data-tab-show-class="summonerLayout-champions">
-					<a href="/summoner/champions/userName=%EC%88%98%EB%8A%A55%EB%93%B1%EA%B8%89">챔피언</a>
+					<a href=""rel="tab2">챔피언</a>
 				</dd>
 									<dd class="Item tabHeader" data-tab-show-class="summonerLayout-league">
-						<a href="/summoner/league/userName=%EC%88%98%EB%8A%A55%EB%93%B1%EA%B8%89">리그</a>
+						<a href=""rel="tab3">리그</a>
 					</dd>
 								<dd class="Item tabHeader" data-tab-show-class="summonerLayout-matches">
-					<a href="/summoner/matches/userName=%EC%88%98%EB%8A%A55%EB%93%B1%EA%B8%89">최근게임</a>
+					<a href=""rel="tab4">최근게임</a>
 				</dd>
 				<dd class="Item tabHeader" data-tab-show-class="summonerLayout-rune">
-					<a href="/summoner/rune/userName=%EC%88%98%EB%8A%A55%EB%93%B1%EA%B8%89">룬</a>
+					<a href=""rel="tab5">룬</a>
 				</dd>
 				<dd class="Item tabHeader" data-tab-show-class="summonerLayout-mastery">
-					<a href="/summoner/mastery/userName=%EC%88%98%EB%8A%A55%EB%93%B1%EA%B8%89">특성</a>
+					<a href=""rel="tab6">특성</a>
 				</dd>
 			</dl>
-			<div class="SummonerRatingMedium SummonerContent">
+			<div id="tab1" class="SummonerRatingMedium SummonerContent tab_content">
 				<div class="TierRankInfo">
 					<ul id="lol_information">
 							<li id="summoner_level">레벨
@@ -271,6 +285,21 @@ function getMyleagueEntry(summonerID) {
 				<div class="Medal">
 					<img id = "tierimage" src="media/challenger_1.png" class="Image">
 				</div>
+			</div>
+			<div id="tab2" class="SummonerRatingMedium SummonerContent tab_content">
+				
+			</div>
+			<div id="tab3" class="SummonerRatingMedium SummonerContent tab_content">
+				
+			</div>
+			<div id="tab4" class="SummonerRatingMedium SummonerContent tab_content">
+				
+			</div>
+			<div id="tab5" class="SummonerRatingMedium SummonerContent tab_content">
+				
+			</div>
+			<div id="tab6" class="SummonerRatingMedium SummonerContent tab_content">
+				
 			</div>
 		</section>
 		<footer id="info">

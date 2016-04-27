@@ -282,7 +282,7 @@ function getChampion(champions){
 								complete:  function(xhr){
 									status = xhr.status;
 									my_url = (xhr.responseText.split(';'))[1];
-									my_url2 = (my_url.split('&')_[0];
+									my_url2 = (my_url.split('&'))[0];
 									directory = my_url2.split('/');
 									mychamp_png = directory[4];
 									mychamp = mychamp_png.split('.')[0];

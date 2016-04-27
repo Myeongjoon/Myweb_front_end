@@ -238,7 +238,7 @@
 	});
 	
 	app.get('/media/:id', function(req, res) {
-		res.sendfile('media/'+req.params.id+'.png'); //go to lol_home.htmls
+		res.sendfile('media/'+req.params.id); //go to lol_home.htmls
 	});
 
 	// listen (start app with node server.js) ======================================

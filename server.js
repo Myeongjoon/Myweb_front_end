@@ -236,6 +236,10 @@
 	app.get('/media/Unranked.png', function(req, res) {
 		res.sendfile('media/Unranked.png'); //go to lol_home.htmls
 	});
+	
+	app.get('/media/:id', function(req, res) {
+		res.sendfile('media/'+req.params.id+'.png'); //go to lol_home.htmls
+	});
 
 	// listen (start app with node server.js) ======================================
 	app.listen(8080, argv.fe_ip);

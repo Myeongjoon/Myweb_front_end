@@ -68,7 +68,22 @@
 			text-align: left;
 			width: 500px;
 		}
-			
+		
+		.tab2_div>.Medal  {
+			display: table-cell;
+			vertical-align: middle;
+			width: 135px;
+			height: 116px;
+			text-align: center;
+		}
+		.tab2_div>.TierRankInfo {
+			display: table-cell;
+			vertical-align: middle;
+			font-size: 12px;
+			line-height: 1.5;
+			text-align: left;
+			width: 500px;
+		}
 		</style>
 		<script src="bower_components/todomvc-common/base.js"></script>
 		<script src="bower_components/angular/angular.js"></script>
@@ -109,6 +124,7 @@ function summonerLookUp() {
                 
                 sumName = json[SUMMONER_NAME_NOSPACES].name;
 				getMyleagueEntry(summoner_ID);
+				stats_ranked(summoner_ID);
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 alert("error summonerLookUp()");
@@ -199,7 +215,37 @@ function getMyleagueEntry(summonerID) {
     } else {}
 };
 
+function stats_ranked(summonerID) {
 
+    if (summonerID !== "") {
+
+        $.ajax({
+            url: 'https://kr.api.pvp.net/api/lol/kr/v1.3/stats/by-summoner/' + summonerID + '/ranked?season=SEASON2016&api_key=2c8415cb-53b2-488d-85f2-b1b9d97be2b2',
+            type: 'GET',
+            dataType: 'json',
+            data: {
+
+            },
+            success: function (json) {
+					champions = json["champions"];
+					for(i=0;i<champions.length;i++){
+						current_champion = champions[i];
+						id = current_champion.id;
+						if(id==0){
+							break;
+						}
+						win = current_champion.stats.totalSessionsWon;
+						lost = current_champion.stats.totalSessionsLost;
+						$('.tab2_div').remove();
+						Champion_name = getChampion_name(id);
+					}		
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                
+            }
+        });
+    } else {}
+};
 $(function () {
 
     $(".tab_content").hide();
@@ -215,7 +261,25 @@ $(function () {
     });
 });
 
+function getChampion_name(id){
+	 $.ajax({
+            url: 'https://global.api.pvp.net/api/lol/static-data/kr/v1.2/champion/' + id + '?api_key=2c8415cb-53b2-488d-85f2-b1b9d97be2b2',
+            type: 'GET',
+            dataType: 'json',
+            data: {
 
+            },
+            success: function (json) {
+					name = json.name;
+					key = json.key;
+					$("#tab2").append("<div class=\"tab2_div\"><div class=\"TierRankInfo\"><ul id=\"lol_information\"><li id=\"summoner_level\">챔프 이름 : "+ name+ "</li><li id=\"summoner_tier\">승률</li><li id=\"summoner_leaguePoints\">점수</li></ul></div><div class=\"Medal\"><img id = \"tierimage\" src=\"media/"+ key +".png\" class=\"Image\"></div></div>");
+					
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("getChampion_name() error");
+            }
+        });
+}
 
 
 
@@ -287,7 +351,21 @@ $(function () {
 				</div>
 			</div>
 			<div id="tab2" class="SummonerRatingMedium SummonerContent tab_content">
-				
+				<!--div class="tab2_div">
+					<div class="TierRankInfo">
+						<ul id="lol_information">
+								<li id="summoner_level">챔프명
+								</li>
+								<li id="summoner_tier">승률
+								</li>
+								<li id="summoner_leaguePoints">점수
+								</li>
+						</ul>
+					</div>
+					<div class="Medal">
+						<img id = "tierimage" src="media/challenger_1.png" class="Image">
+					</div>
+				</div>-->
 			</div>
 			<div id="tab3" class="SummonerRatingMedium SummonerContent tab_content">
 				

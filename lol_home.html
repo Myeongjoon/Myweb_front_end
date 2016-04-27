@@ -271,9 +271,9 @@ function getChampion_name(id){
             },
             success: function (json) {
 							key = json.key;
+							name = json.name;
 					UrlExists('media/'+key+".png", function(status){
 						if(status === 200){
-							name = json.name;
 							$("#tab2").append("<div class=\"tab2_div\"><div class=\"TierRankInfo\"><ul id=\"lol_information\"><li id=\"summoner_level\">챔프 이름 : "+ name+ "</li><li id=\"summoner_tier\">승률</li><li id=\"summoner_leaguePoints\">점수</li></ul></div><div class=\"Medal\"><img id = \"tierimage\" src=\"media/"+ key +".png\" class=\"Image\"></div></div>");
 						}
 						else if(status === 404){

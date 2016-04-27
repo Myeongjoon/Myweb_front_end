@@ -280,10 +280,10 @@ function getChampion(champions){
 								type:     'GET',
 								complete:  function(xhr){
 									status = xhr.status;
-									if(status === 200){
+									if(status === "200"){
 										$("#tab2").append("<div class=\"tab2_div\"><div class=\"TierRankInfo\"><ul id=\"lol_information\"><li id=\"summoner_level\">챔프 이름 : "+ name+ "</li><li id=\"summoner_tier\">승률</li><li id=\"summoner_leaguePoints\">점수</li></ul></div><div class=\"Medal\"><img id = \"tierimage\" src=\"media/"+ key +".png\" class=\"Image\"></div></div>");
 									}
-									else if(status === 404){
+									else if(status === "404"){
 										$("#tab2").append("<div class=\"tab2_div\"><div class=\"TierRankInfo\"><ul id=\"lol_information\"><li id=\"summoner_level\">챔프 이름 : "+ name+ "</li><li id=\"summoner_tier\">승률</li><li id=\"summoner_leaguePoints\">점수</li></ul></div><div class=\"Medal\"><img id = \"tierimage\" src=\"media/Caitlyn.png\" class=\"Image\"></div></div>");
 									// 404 not found you must download
 													}

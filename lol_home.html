@@ -228,17 +228,7 @@ function stats_ranked(summonerID) {
             },
             success: function (json) {
 					champions = json["champions"];
-					for(i=0;i<champions.length;i++){
-						current_champion = champions[i];
-						id = current_champion.id;
-						if(id==0){
-							break;
-						}
-						win = current_champion.stats.totalSessionsWon;
-						lost = current_champion.stats.totalSessionsLost;
-						$('.tab2_div').remove();
-						Champion_name = getChampion_name(id);
-					}		
+					getChampion(champions);	
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 
@@ -260,6 +250,50 @@ $(function () {
         $("#" + activeTab).fadeIn()
     });
 });
+
+
+
+
+function getChampion(champions){
+	for(i=0;i<champions.length;i++){
+						current_champion = champions[i];
+						id = current_champion.id;
+						if(id==0){
+							break;
+						}
+						win = current_champion.stats.totalSessionsWon;
+						lost = current_champion.stats.totalSessionsLost;
+						$('.tab2_div').remove();
+						$.ajax({
+							url: 'https://global.api.pvp.net/api/lol/static-data/kr/v1.2/champion/' + id + '?api_key=2c8415cb-53b2-488d-85f2-b1b9d97be2b2',
+							type: 'GET',
+							dataType: 'json',
+							data: {
+
+							},
+							success: function (json) {
+											key = json.key;
+											name = json.name;
+									UrlExists('media/'+key+".png", function(status){
+										if(status === 200){
+											$("#tab2").append("<div class=\"tab2_div\"><div class=\"TierRankInfo\"><ul id=\"lol_information\"><li id=\"summoner_level\">챔프 이름 : "+ name+ "</li><li id=\"summoner_tier\">승률</li><li id=\"summoner_leaguePoints\">점수</li></ul></div><div class=\"Medal\"><img id = \"tierimage\" src=\"media/"+ key +".png\" class=\"Image\"></div></div>");
+										}
+										else if(status === 404){
+											$("#tab2").append("<div class=\"tab2_div\"><div class=\"TierRankInfo\"><ul id=\"lol_information\"><li id=\"summoner_level\">챔프 이름 : "+ name+ "</li><li id=\"summoner_tier\">승률</li><li id=\"summoner_leaguePoints\">점수</li></ul></div><div class=\"Medal\"><img id = \"tierimage\" src=\"media/Caitlyn.png\" class=\"Image\"></div></div>");
+										// 404 not found you must download
+										}
+									});
+									
+									
+							},
+							error: function (XMLHttpRequest, textStatus, errorThrown) {
+								alert("getChampion_name() error");
+							}
+							});
+	}
+}
+
+
 
 function getChampion_name(id){
 	 $.ajax({

@@ -137,6 +137,10 @@
 	app.get('/data.n3', function(req, res) {
 		res.sendfile('data.n3'); //go to lol_home.htmls
 	});
+	
+	app.get('/query.n3', function(req, res) {
+		res.sendfile('query.n3'); //go to lol_home.htmls
+	});
 
 	// listen (start app with node server.js) ======================================
 	app.listen(8080, argv.fe_ip);

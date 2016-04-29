@@ -1,0 +1,5 @@
+
+:Socrates a _:Man.
+_:Man rdfs:subClassOf :Mortal.
+
+{?A rdfs:subClassOf ?B. ?S a ?A} => {?S a ?B}.

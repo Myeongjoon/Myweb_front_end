@@ -10,22 +10,22 @@
 		<link rel="stylesheet" href="bower_components/todomvc-common/lol_home.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<style>[ng-cloak] { display: none; }
-		#header_title {
-    /*position: absolute;*/
-    top: -120px;
-    width: 100%;
-    font-size: 70px;
-    font-weight: bold;
-    text-align: center;
-    color: #b3b3b3;
-    color: rgba(255, 255, 255, 0.3);
-    text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
-    -webkit-text-rendering: optimizeLegibility;
-    -moz-text-rendering: optimizeLegibility;
-    -ms-text-rendering: optimizeLegibility;
-    -o-text-rendering: optimizeLegibility;
-    text-rendering: optimizeLegibility;
-}
+			#header_title {
+				/*position: absolute;*/
+				top: -120px;
+				width: 100%;
+				font-size: 70px;
+				font-weight: bold;
+				text-align: center;
+				color: #b3b3b3;
+				color: rgba(255, 255, 255, 0.3);
+				text-shadow: -1px -1px rgba(0, 0, 0, 0.2);
+				-webkit-text-rendering: optimizeLegibility;
+				-moz-text-rendering: optimizeLegibility;
+				-ms-text-rendering: optimizeLegibility;
+				-o-text-rendering: optimizeLegibility;
+				text-rendering: optimizeLegibility;
+			}
 			.MenuList>.Item {
     		display: inline-block;
     		margin: 0 -1px 0 0;
@@ -405,6 +405,7 @@ function MaxMove (player, level, ParentMin, want) {
 		return GetBoardVal(player);
 	} else {
 	
+	
 		var MaxCol = 0;
 		var MaxVal = -WINVAL*10;
 		for(var col = 0; col<COLS; col++) {
@@ -429,7 +430,9 @@ function MaxMove (player, level, ParentMin, want) {
 			}
 		}
 		//debug( "Max -> MaxVal=" + MaxVal + ", MaxCol=" + MaxCol + "\n" ); 
-		
+		if(level==1){
+		alert(MaxCol);
+		}
 		if (want=="Val") {
 			return MaxVal;
 		} else {

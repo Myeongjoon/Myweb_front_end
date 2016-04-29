@@ -126,7 +126,7 @@
 		res.sendfile('lol_home.html'); //go to lol_home.htmls
 	});
 	
-	app.get('/lol_home', function(req, res) {
+	app.get('/four_in_a_row', function(req, res) {
 		res.sendfile('four_in_a_row.html'); //go to lol_home.htmls
 	});
 	

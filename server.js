@@ -126,6 +126,10 @@
 		res.sendfile('lol_home.html'); //go to lol_home.htmls
 	});
 	
+	app.get('/lol_home', function(req, res) {
+		res.sendfile('four_in_a_row.html'); //go to lol_home.htmls
+	});
+	
 	app.get('/media/:id', function(req, res) {
 		res.sendfile('media/'+req.params.id); //go to lol_home.htmls
 	});

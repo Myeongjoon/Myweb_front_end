@@ -2,8 +2,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix : <http://www.agfa.com/w3c/euler/socrates#>.
+:hello a :hello2.
 
-:Socrates a _:Man.
-_:Man rdfs:subClassOf :Mortal.
+:hello2 a :hello3.
 
-{?A rdfs:subClassOf ?B. ?S a ?A} => {?S a ?B}.
+:hello2 rdfs:subClassOf :helloAPM.
+{?A a ?B. ?B a ?C} => {?A a ?C}.
+{?A rdfs:subClassOf ?B. ?S a ?A} => {?S rdfs:subClassOf ?B}.
+{?A rdfs:subClassOf ?B. ?A a ?S} => {?S rdfs:subClassOf ?B}.

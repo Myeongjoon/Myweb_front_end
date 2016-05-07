@@ -2,16 +2,7 @@
 <html ng-app="todomvc" lang="en" >
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content ="width=device-witdth,initial-scale=1"/>
 		<title>Myeongjoon's Web</title>
-		
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-9809379847084556",
-    enable_page_level_ads: true
-  });
-</script>
 		<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
 		<link rel="stylesheet" href="bower_components/todomvc-common/style.css">
 		<link rel="stylesheet" href="bower_components/todomvc-common/lol_home.css">
@@ -341,57 +332,12 @@ function AComputersTurn(player) {
 	
 	Difficulty = document.formo.difficulty.value;
 	switch (Difficulty) {
-		case "Too Easy":
-			Levels = 2;
-			StartStupid = 2;
-			StupidProb = 0.9;
-			break;
-			
-		case "Easy":
-			Levels = 2;
-			StartStupid = 4;
-			StupidProb = 0.7;
-			break;
-			
-		case "Medium":
-			Levels = 2;
-			StartStupid = 10;
-			StupidProb = 0.2;
-			break;
-			
-		case "Hard":
-			Levels = 2;
-			StartStupid = 1000;
-			StupidProb = 0.0;
-			break;
-			
 		case "Impossible":
 			Levels = 9;
-			StartStupid = 1000;
-			StupidProb = 0.0;
 			break;
-			
-		default :
-			Levels = 2;
-			StartStupid = 6;
-			StupidProb = 0.7;
 	} 
-	//debug("Levels=" + Levels + "," + StupidProb + "," + Difficulty );
-	
 	BestCol = MaxMove(player, Levels, Number.MAX_VALUE, "Col");
-	
-	// make it easier by randomly being stupid
 	moves += 1;
-	if (moves > StartStupid ) {
-		if ( Math.random() < StupidProb ) {
-			TryCol = Math.floor(Math.random()*COLS);
-			//debug("TryCol=" + TryCol + ",");
-			if (colcount[TryCol]<ROWS) {
-				BestCol = TryCol;
-			}
-		} 
-	}
-	 
 	dropIt(BestCol);
 }
 
@@ -429,6 +375,9 @@ function MaxMove (player, level, ParentMin, want) {
 				if(TheVal > ParentMin) {// no need to go further, because the max will be greater than the min already found
 					return TheVal;
 				} else {
+					if(level==9){
+						alert("Depth 9 : "+TheVal)
+					}
 					if (TheVal > MaxVal ) {
 						MaxVal = TheVal ;
 						MaxCol = col;
@@ -437,9 +386,6 @@ function MaxMove (player, level, ParentMin, want) {
 			}
 		}
 		//debug( "Max -> MaxVal=" + MaxVal + ", MaxCol=" + MaxCol + "\n" ); 
-		if(level==9){
-		alert(MaxCol);
-		}
 		if (want=="Val") {
 			return MaxVal;
 		} else {
@@ -791,6 +737,7 @@ function drawnextframe() {
 
 <center>
 <form name="formo" id="formo">
+	<div >
 								<table border="0">
 				  					<tr> 
 										<td valign="top" bgcolor="#FFFFCC"> 
@@ -911,67 +858,67 @@ function drawnextframe() {
 						  							<td> 
 														<table cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFF99">
 							  								<tr> 
-																<td><a href="javascript:void dropIt(0)" onMouseOver="placeTop(0); setMsg(''); return true" onMouseOut="unPlaceTop(0)"><img border="0" src="images/c4clearness.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(1)" onMouseOver="placeTop(1); setMsg(''); return true" onMouseOut="unPlaceTop(1)"><img border="0" src="images/c4clearness.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(2)" onMouseOver="placeTop(2); setMsg(''); return true" onMouseOut="unPlaceTop(2)"><img border="0" src="images/c4clearness.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(3)" onMouseOver="placeTop(3); setMsg(''); return true" onMouseOut="unPlaceTop(3)"><img border="0" src="images/c4clearness.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(4)" onMouseOver="placeTop(4); setMsg(''); return true" onMouseOut="unPlaceTop(4)"><img border="0" src="images/c4clearness.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(5)" onMouseOver="placeTop(5); setMsg(''); return true" onMouseOut="unPlaceTop(5)"><img border="0" src="images/c4clearness.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(6)" onMouseOver="placeTop(6); setMsg(''); return true" onMouseOut="unPlaceTop(6)"><img border="0" src="images/c4clearness.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(0)" onMouseOver="placeTop(0); setMsg(''); return true" onMouseOut="unPlaceTop(0)"><img border="0" src="https://www.mathsisfun.com/games/images/c4clearness.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(1)" onMouseOver="placeTop(1); setMsg(''); return true" onMouseOut="unPlaceTop(1)"><img border="0" src="https://www.mathsisfun.com/games/images/c4clearness.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(2)" onMouseOver="placeTop(2); setMsg(''); return true" onMouseOut="unPlaceTop(2)"><img border="0" src="https://www.mathsisfun.com/games/images/c4clearness.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(3)" onMouseOver="placeTop(3); setMsg(''); return true" onMouseOut="unPlaceTop(3)"><img border="0" src="https://www.mathsisfun.com/games/images/c4clearness.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(4)" onMouseOver="placeTop(4); setMsg(''); return true" onMouseOut="unPlaceTop(4)"><img border="0" src="https://www.mathsisfun.com/games/images/c4clearness.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(5)" onMouseOver="placeTop(5); setMsg(''); return true" onMouseOut="unPlaceTop(5)"><img border="0" src="https://www.mathsisfun.com/games/images/c4clearness.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(6)" onMouseOver="placeTop(6); setMsg(''); return true" onMouseOut="unPlaceTop(6)"><img border="0" src="https://www.mathsisfun.com/games/images/c4clearness.gif" height="50" width="50" /></a></td>
 															</tr>
 							  								<tr> 
-																<td><a href="javascript:void dropIt(0)" onMouseOver="placeTop(0); setMsg(''); return true" onMouseOut="unPlaceTop(0)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(1)" onMouseOver="placeTop(1); setMsg(''); return true" onMouseOut="unPlaceTop(1)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(2)" onMouseOver="placeTop(2); setMsg(''); return true" onMouseOut="unPlaceTop(2)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(3)" onMouseOver="placeTop(3); setMsg(''); return true" onMouseOut="unPlaceTop(3)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(4)" onMouseOver="placeTop(4); setMsg(''); return true" onMouseOut="unPlaceTop(4)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(5)" onMouseOver="placeTop(5); setMsg(''); return true" onMouseOut="unPlaceTop(5)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(6)" onMouseOver="placeTop(6); setMsg(''); return true" onMouseOut="unPlaceTop(6)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(0)" onMouseOver="placeTop(0); setMsg(''); return true" onMouseOut="unPlaceTop(0)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(1)" onMouseOver="placeTop(1); setMsg(''); return true" onMouseOut="unPlaceTop(1)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(2)" onMouseOver="placeTop(2); setMsg(''); return true" onMouseOut="unPlaceTop(2)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(3)" onMouseOver="placeTop(3); setMsg(''); return true" onMouseOut="unPlaceTop(3)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(4)" onMouseOver="placeTop(4); setMsg(''); return true" onMouseOut="unPlaceTop(4)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(5)" onMouseOver="placeTop(5); setMsg(''); return true" onMouseOut="unPlaceTop(5)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(6)" onMouseOver="placeTop(6); setMsg(''); return true" onMouseOut="unPlaceTop(6)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
 															</tr>
 							  								<tr> 
-																<td><a href="javascript:void dropIt(0)" onMouseOver="placeTop(0); setMsg(''); return true" onMouseOut="unPlaceTop(0)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(1)" onMouseOver="placeTop(1); setMsg(''); return true" onMouseOut="unPlaceTop(1)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(2)" onMouseOver="placeTop(2); setMsg(''); return true" onMouseOut="unPlaceTop(2)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(3)" onMouseOver="placeTop(3); setMsg(''); return true" onMouseOut="unPlaceTop(3)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(4)" onMouseOver="placeTop(4); setMsg(''); return true" onMouseOut="unPlaceTop(4)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(5)" onMouseOver="placeTop(5); setMsg(''); return true" onMouseOut="unPlaceTop(5)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(6)" onMouseOver="placeTop(6); setMsg(''); return true" onMouseOut="unPlaceTop(6)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(0)" onMouseOver="placeTop(0); setMsg(''); return true" onMouseOut="unPlaceTop(0)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(1)" onMouseOver="placeTop(1); setMsg(''); return true" onMouseOut="unPlaceTop(1)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(2)" onMouseOver="placeTop(2); setMsg(''); return true" onMouseOut="unPlaceTop(2)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(3)" onMouseOver="placeTop(3); setMsg(''); return true" onMouseOut="unPlaceTop(3)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(4)" onMouseOver="placeTop(4); setMsg(''); return true" onMouseOut="unPlaceTop(4)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(5)" onMouseOver="placeTop(5); setMsg(''); return true" onMouseOut="unPlaceTop(5)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(6)" onMouseOver="placeTop(6); setMsg(''); return true" onMouseOut="unPlaceTop(6)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
 															</tr>
 							  								<tr> 
-																<td><a href="javascript:void dropIt(0)" onMouseOver="placeTop(0); setMsg(''); return true" onMouseOut="unPlaceTop(0)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(1)" onMouseOver="placeTop(1); setMsg(''); return true" onMouseOut="unPlaceTop(1)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(2)" onMouseOver="placeTop(2); setMsg(''); return true" onMouseOut="unPlaceTop(2)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(3)" onMouseOver="placeTop(3); setMsg(''); return true" onMouseOut="unPlaceTop(3)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(4)" onMouseOver="placeTop(4); setMsg(''); return true" onMouseOut="unPlaceTop(4)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(5)" onMouseOver="placeTop(5); setMsg(''); return true" onMouseOut="unPlaceTop(5)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(6)" onMouseOver="placeTop(6); setMsg(''); return true" onMouseOut="unPlaceTop(6)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(0)" onMouseOver="placeTop(0); setMsg(''); return true" onMouseOut="unPlaceTop(0)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(1)" onMouseOver="placeTop(1); setMsg(''); return true" onMouseOut="unPlaceTop(1)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(2)" onMouseOver="placeTop(2); setMsg(''); return true" onMouseOut="unPlaceTop(2)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(3)" onMouseOver="placeTop(3); setMsg(''); return true" onMouseOut="unPlaceTop(3)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(4)" onMouseOver="placeTop(4); setMsg(''); return true" onMouseOut="unPlaceTop(4)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(5)" onMouseOver="placeTop(5); setMsg(''); return true" onMouseOut="unPlaceTop(5)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(6)" onMouseOver="placeTop(6); setMsg(''); return true" onMouseOut="unPlaceTop(6)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
 															</tr>
 							  								<tr> 
-																<td><a href="javascript:void dropIt(0)" onMouseOver="placeTop(0); setMsg(''); return true" onMouseOut="unPlaceTop(0)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(1)" onMouseOver="placeTop(1); setMsg(''); return true" onMouseOut="unPlaceTop(1)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(2)" onMouseOver="placeTop(2); setMsg(''); return true" onMouseOut="unPlaceTop(2)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(3)" onMouseOver="placeTop(3); setMsg(''); return true" onMouseOut="unPlaceTop(3)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(4)" onMouseOver="placeTop(4); setMsg(''); return true" onMouseOut="unPlaceTop(4)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(5)" onMouseOver="placeTop(5); setMsg(''); return true" onMouseOut="unPlaceTop(5)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(6)" onMouseOver="placeTop(6); setMsg(''); return true" onMouseOut="unPlaceTop(6)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(0)" onMouseOver="placeTop(0); setMsg(''); return true" onMouseOut="unPlaceTop(0)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(1)" onMouseOver="placeTop(1); setMsg(''); return true" onMouseOut="unPlaceTop(1)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(2)" onMouseOver="placeTop(2); setMsg(''); return true" onMouseOut="unPlaceTop(2)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(3)" onMouseOver="placeTop(3); setMsg(''); return true" onMouseOut="unPlaceTop(3)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(4)" onMouseOver="placeTop(4); setMsg(''); return true" onMouseOut="unPlaceTop(4)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(5)" onMouseOver="placeTop(5); setMsg(''); return true" onMouseOut="unPlaceTop(5)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(6)" onMouseOver="placeTop(6); setMsg(''); return true" onMouseOut="unPlaceTop(6)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
 															</tr>
 							  								<tr> 
-																<td><a href="javascript:void dropIt(0)" onMouseOver="placeTop(0); setMsg(''); return true" onMouseOut="unPlaceTop(0)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(1)" onMouseOver="placeTop(1); setMsg(''); return true" onMouseOut="unPlaceTop(1)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(2)" onMouseOver="placeTop(2); setMsg(''); return true" onMouseOut="unPlaceTop(2)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(3)" onMouseOver="placeTop(3); setMsg(''); return true" onMouseOut="unPlaceTop(3)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(4)" onMouseOver="placeTop(4); setMsg(''); return true" onMouseOut="unPlaceTop(4)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(5)" onMouseOver="placeTop(5); setMsg(''); return true" onMouseOut="unPlaceTop(5)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(6)" onMouseOver="placeTop(6); setMsg(''); return true" onMouseOut="unPlaceTop(6)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(0)" onMouseOver="placeTop(0); setMsg(''); return true" onMouseOut="unPlaceTop(0)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(1)" onMouseOver="placeTop(1); setMsg(''); return true" onMouseOut="unPlaceTop(1)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(2)" onMouseOver="placeTop(2); setMsg(''); return true" onMouseOut="unPlaceTop(2)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(3)" onMouseOver="placeTop(3); setMsg(''); return true" onMouseOut="unPlaceTop(3)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(4)" onMouseOver="placeTop(4); setMsg(''); return true" onMouseOut="unPlaceTop(4)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(5)" onMouseOver="placeTop(5); setMsg(''); return true" onMouseOut="unPlaceTop(5)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(6)" onMouseOver="placeTop(6); setMsg(''); return true" onMouseOut="unPlaceTop(6)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
 															</tr>
 							  								<tr> 
-																<td><a href="javascript:void dropIt(0)" onMouseOver="placeTop(0); setMsg(''); return true" onMouseOut="unPlaceTop(0)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(1)" onMouseOver="placeTop(1); setMsg(''); return true" onMouseOut="unPlaceTop(1)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(2)" onMouseOver="placeTop(2); setMsg(''); return true" onMouseOut="unPlaceTop(2)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(3)" onMouseOver="placeTop(3); setMsg(''); return true" onMouseOut="unPlaceTop(3)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(4)" onMouseOver="placeTop(4); setMsg(''); return true" onMouseOut="unPlaceTop(4)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(5)" onMouseOver="placeTop(5); setMsg(''); return true" onMouseOut="unPlaceTop(5)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
-																<td><a href="javascript:void dropIt(6)" onMouseOver="placeTop(6); setMsg(''); return true" onMouseOut="unPlaceTop(6)"><img border="0" src="images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(0)" onMouseOver="placeTop(0); setMsg(''); return true" onMouseOut="unPlaceTop(0)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(1)" onMouseOver="placeTop(1); setMsg(''); return true" onMouseOut="unPlaceTop(1)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(2)" onMouseOver="placeTop(2); setMsg(''); return true" onMouseOut="unPlaceTop(2)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(3)" onMouseOver="placeTop(3); setMsg(''); return true" onMouseOut="unPlaceTop(3)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(4)" onMouseOver="placeTop(4); setMsg(''); return true" onMouseOut="unPlaceTop(4)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(5)" onMouseOver="placeTop(5); setMsg(''); return true" onMouseOut="unPlaceTop(5)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
+																<td><a href="javascript:void dropIt(6)" onMouseOver="placeTop(6); setMsg(''); return true" onMouseOut="unPlaceTop(6)"><img border="0" src="https://www.mathsisfun.com/games/images/c4fillempty.gif" height="50" width="50" /></a></td>
 															</tr>
 														</table>
 													</td>
@@ -980,6 +927,7 @@ function drawnextframe() {
 										</td>
 									</tr>
 								</table>
+	</div>
 							</form>
 						</center>
 

@@ -297,6 +297,18 @@ function AComputersTurn(player) {
 		}else{
 			BestCol = MaxMove(player, Levels, Number.MAX_VALUE, "Col");
 		}
+	}else if(moves==5){
+		if(board[0][1]==YourNum&&board[0][2]==MyNum&&board[1][1]==YourNum&&board[2][1]==MyNum&&board[3][1]==YourNum){
+			BestCol=2;
+		}else{
+			BestCol = MaxMove(player, Levels, Number.MAX_VALUE, "Col");
+		}
+	}else if(moves==7){
+		if(board[0][1]==YourNum&&board[0][2]==MyNum&&board[1][1]==YourNum&&board[2][1]==MyNum&&board[3][1]==YourNum&&board[1][2]==MyNum&&board[2][2]==YourNum){
+			BestCol=2;
+		}else{
+			BestCol = MaxMove(player, Levels, Number.MAX_VALUE, "Col");
+		}
 	}
 	 else {
 		BestCol = MaxMove(player, Levels, Number.MAX_VALUE, "Col");

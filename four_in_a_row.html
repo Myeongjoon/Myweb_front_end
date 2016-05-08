@@ -1,12 +1,9 @@
+
 <!doctype html>
-<html ng-app="todomvc" lang="en" >
-	<head>
-		<meta charset="utf-8">
-		<title>Myeongjoon's Web</title>
-		<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
+<html>
+<head>
+	<link rel="stylesheet" href="bower_components/todomvc-common/base.css">
 		<link rel="stylesheet" href="bower_components/todomvc-common/style.css">
-		<link rel="stylesheet" href="bower_components/todomvc-common/lol_home.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<style>[ng-cloak] { display: none; }
 			#header_title {
 				/*position: absolute;*/
@@ -24,89 +21,15 @@
 				-o-text-rendering: optimizeLegibility;
 				text-rendering: optimizeLegibility;
 			}
-			.MenuList>.Item {
-    		display: inline-block;
-    		margin: 0 -1px 0 0;
-    		padding: 0;
-			}
-			
-			.MenuList>.Item>a {
-			display: block;
-			min-width: 70px;
-			height: 39px;
-			border: 1px solid #c6cbcb;
-			padding-left: 6px;
-			padding-right: 6px;
-			background-color: #f2f2f2;
-			color: #555e5e;
-			font-size: 13px;
-			line-height: 40px;
-			text-decoration: none;
-			text-align: center;
-		}
-		
-		.SummonerContent {
-			display: inline-block;
-			width: 300px;
-			font-size: 12px;
-			vertical-align: top;
-		}
-		
-		.SummonerRatingMedium {
-			display: table;
-			width: 100%;
-			color: #879292;
-		}
-		
-		
-		
-		.Medal>.Image {
-			width: 120px;
-			height: 120px;
-			margin: -5px 0 -10px 0;
-		}
-		
-		.SummonerRatingMedium>.Medal {
-			display: table-cell;
-			vertical-align: middle;
-			width: 135px;
-			height: 116px;
-			text-align: center;
-		}
-		
-		.SummonerRatingMedium>.TierRankInfo {
-			display: table-cell;
-			vertical-align: middle;
-			font-size: 12px;
-			line-height: 1.5;
-			text-align: left;
-			width: 500px;
-		}
-		
-		.tab2_div>.Medal  {
-			display: table-cell;
-			vertical-align: middle;
-			width: 135px;
-			height: 116px;
-			text-align: center;
-		}
-		.tab2_div>.TierRankInfo {
-			display: table-cell;
-			vertical-align: middle;
-			font-size: 12px;
-			line-height: 1.5;
-			text-align: left;
-			width: 500px;
-		}
 		</style>
-		<script src="bower_components/todomvc-common/base.js"></script>
+<script src="bower_components/todomvc-common/base.js"></script>
 		<script src="bower_components/angular/angular.js"></script>
 		<script src="bower_components/angular-route/angular-route.js"></script>
 		<script src="js/services/todoStorage.js"></script>
 		<script src="js/controllers/todoCtrl.js"></script>
 		<script src="js/directives/todoFocus.js"></script>
 		<script src="js/directives/todoEscape.js"></script>
-		<style type="text/css">
+<style type="text/css">
 	img {border: 0}
 	.bluetext {font-size: 14px; font-family: "Comic Sans MS", Verdana; color: blue; font-weight: bold}
 	.redtext {font-size: 14px; font-family: "Comic Sans MS", Verdana; color: red; font-weight: bold}
@@ -329,14 +252,10 @@ function ComputersTurn(player) {
 }
 
 function AComputersTurn(player) {
-	
-	Difficulty = document.formo.difficulty.value;
-	switch (Difficulty) {
-		case "Impossible":
-			Levels = 9;
-			break;
-	} 
+	//debug("Levels=" + Levels + "," + StupidProb + "," + Difficulty );
+	Levels = 8;
 	BestCol = MaxMove(player, Levels, Number.MAX_VALUE, "Col");
+	
 	moves += 1;
 	if(moves==1){
 		BestCol=1;
@@ -361,7 +280,6 @@ function MaxMove (player, level, ParentMin, want) {
 		return GetBoardVal(player);
 	} else {
 	
-	
 		var MaxCol = 0;
 		var MaxVal = -WINVAL*10;
 		for(var col = 0; col<COLS; col++) {
@@ -378,9 +296,6 @@ function MaxMove (player, level, ParentMin, want) {
 				if(TheVal > ParentMin) {// no need to go further, because the max will be greater than the min already found
 					return TheVal;
 				} else {
-					if(level==9){
-						alert("Depth 9 : "+TheVal)
-					}
 					if (TheVal > MaxVal ) {
 						MaxVal = TheVal ;
 						MaxCol = col;
@@ -389,6 +304,7 @@ function MaxMove (player, level, ParentMin, want) {
 			}
 		}
 		//debug( "Max -> MaxVal=" + MaxVal + ", MaxCol=" + MaxCol + "\n" ); 
+		
 		if (want=="Val") {
 			return MaxVal;
 		} else {
@@ -731,16 +647,19 @@ function drawnextframe() {
 
 
 // End -->
-</script>		<script src="http://code.jquery.com/jquery-latest.js"></script>
-	</head>
-	<body ng-controller="todoCtrl" id="todomvc-index.html">
-		
-		
-	<h1 id = "header_title">Four In a Row</h1>
+</script>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" href="../style2.css" />
+
+</head>
+
+<body style="">
+		<h1 id="header_title">Four In a Rows</h1>
 
 <center>
 <form name="formo" id="formo">
-	<div >
 								<table border="0">
 				  					<tr> 
 										<td valign="top" bgcolor="#FFFFCC"> 
@@ -758,16 +677,7 @@ function drawnextframe() {
 						  							<td width="128">&nbsp; </td>
 													<td width="144">&nbsp; </td>
 												</tr>
-												<tr> 
-						  							<td  align="right" width="128"> 
-														<div class="blacktext">Difficulty</div>
-													</td>
-													<td width="144"> 
-														<select name="difficulty">
-															<option value="Impossible">Impossible</option>
-														</select>
-						  </td>
-												</tr>
+												
 												<tr> 
 						  							<td width="128"></td>
 													<td width="144">&nbsp;</td>
@@ -930,10 +840,10 @@ function drawnextframe() {
 										</td>
 									</tr>
 								</table>
-	</div>
 							</form>
 						</center>
 
 <script language="JavaScript" type="text/javascript">AutoStart();</script>
-	</body>
-</html>
+
+</body>
+<!-- #EndTemplate --></html>

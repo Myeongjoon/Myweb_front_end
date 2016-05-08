@@ -255,6 +255,13 @@ function ComputersTurn(player) {
 function AComputersTurn(player) {
 	//debug("Levels=" + Levels + "," + StupidProb + "," + Difficulty );
 	Levels = 8;
+	MyNum=player;
+	if(MyNum==RedNum){
+		YourNum=BlkNum;
+	}else{
+		YourNum=RedNum;
+	}
+		
 	//hardCoding
 	if(moves==0){
 		BestCol=1;
@@ -276,7 +283,22 @@ function AComputersTurn(player) {
 		}else{
 			BestCol=5;
 		}
-	}else{
+	}else if(moves==2){
+		if(board[0][1]==MyNum&&board[0][0]==YourNum){
+			BestCol=1;
+		}else if(board[0][1]==MyNum&&board[1][1]==YourNum){
+			BestCol=4;
+		}else if(board[0][1]==MyNum&&board[0][2]==YourNum){
+			BestCol=1;
+		}else if(board[0][1]==MyNum&&board[0][3]==YourNum){
+			BestCol=3;
+		}else if(board[0][1]==MyNum&&board[0][6]==YourNum){
+			BestCol=1;
+		}else{
+			BestCol = MaxMove(player, Levels, Number.MAX_VALUE, "Col");
+		}
+	}
+	 else {
 		BestCol = MaxMove(player, Levels, Number.MAX_VALUE, "Col");
 	}
 	dropIt(BestCol);

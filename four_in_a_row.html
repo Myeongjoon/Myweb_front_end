@@ -338,6 +338,9 @@ function AComputersTurn(player) {
 	} 
 	BestCol = MaxMove(player, Levels, Number.MAX_VALUE, "Col");
 	moves += 1;
+	if(moves==1){
+		BestCol=2;
+	}
 	dropIt(BestCol);
 }
 

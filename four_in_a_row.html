@@ -254,7 +254,7 @@ function ComputersTurn(player) {
 
 function AComputersTurn(player) {
 	//debug("Levels=" + Levels + "," + StupidProb + "," + Difficulty );
-	Levels = 8;
+	Levels = 4;
 	MyNum=player;
 	if(MyNum==RedNum){
 		YourNum=BlkNum;
@@ -310,7 +310,7 @@ function AComputersTurn(player) {
 			BestCol = MaxMove(player, Levels, Number.MAX_VALUE, "Col");
 		}
 	}
-	 else {
+	 else {//MaxMove(BlkNum, 8, Number.MAX_VALUE, "Col");
 		BestCol = MaxMove(player, Levels, Number.MAX_VALUE, "Col");
 	}
 	dropIt(BestCol);
@@ -340,7 +340,7 @@ function MaxMove (player, level, ParentMin, want) {
 			var row = freerow(col);
 			if (row>=0) {
 
-				board[row][col] = player;
+				board[row][col] = player;//MinMove(RedNum, 7, -WINVAL*10, "Val");
 				var TheVal = MinMove(player, level-1, MaxVal, "Val");
 				board[row][col]=0; // undo move
 				

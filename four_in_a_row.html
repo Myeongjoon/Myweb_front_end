@@ -470,7 +470,7 @@ function Strength(player, row, col, rowchg, colchg) {
 	if (YouMaxInARow==3) {
 		x -= (64 - MeMaxInARow*16);
 	}
-	if (YouMaxInARow==4) x = -WINVAL;
+	if (YouMaxInARow==4) x = -10*WINVAL;
 	
 	return x;
 }

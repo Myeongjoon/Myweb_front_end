@@ -169,6 +169,7 @@ function unPlaceTop(picToUnplace) {
 
 
 function dropIt(whichCol) {
+	moves+=1;
 	if (gameActive == 1) {
 		if (isdropping == 0) {
 		
@@ -256,9 +257,29 @@ function AComputersTurn(player) {
 	Levels = 8;
 	BestCol = MaxMove(player, Levels, Number.MAX_VALUE, "Col");
 	
-	moves += 1;
-	if(moves==1){
+	if(moves==0){
 		BestCol=1;
+	}
+	//hardCoding
+	if(moves==1){
+		//after turn
+		if(board[0][0]!=0){
+			BestCol=1;
+		}else if(board[0][1]!=0){
+			BestCol=2;
+		}else if(board[0][2]!=0){
+			BestCol=3;
+		}else if(board[0][3]!=0){
+			BestCol=3;
+		}else if(board[0][4]!=0){
+			BestCol=3;
+		}else if(board[0][5]!=0){
+			BestCol=4;
+		}else{
+			BestCol=5;
+		}
+	}else if(moves==2){
+		if(board[0][0])
 	}
 	dropIt(BestCol);
 }

@@ -157,7 +157,7 @@
 		var fstream;
 		req.pipe(req.busboy);
 		console.log("1"); 
-		console.log(__dirname);
+		//console.log(__dirname);
 			req.busboy.on('file', function (fieldname, file, filename) {
 				console.log("2");
 				console.log("Uploading: " + filename); 
@@ -178,7 +178,11 @@
 		//console.log("req.fileUpload : "+req.fileUpload);
 
 		
-		
+		var output = 'req.files \n';
+		for (var property in req.files) {
+			i++;
+		output +=i+"'th is : ["+ property + ']: ' + req.files[property]+'; \n';
+		}
 		fs.readFile(req.files.uploadFile.path,function(error,data){
 			
 			var filePath = ___dirname + req.files.uploadFile.name;

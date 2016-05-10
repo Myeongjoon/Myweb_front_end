@@ -155,8 +155,10 @@
 	var fileupload = require('fileupload').createFileUpload('//home/kimmj8409/Myweb_front_end').middleware
 	app.post('/upload', fileupload, function(req, res) {
 		var fstream;
-			req.pipe(req.busboy);
+		req.pipe(req.busboy);
+		console.log("1"); 
 			req.busboy.on('file', function (fieldname, file, filename) {
+				console.log("2");
 				console.log("Uploading: " + filename); 
 				fstream = fs.createWriteStream(__dirname + '/files/' + filename);
 				file.pipe(fstream);

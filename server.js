@@ -152,7 +152,7 @@
 	// listen (start app with node server.js) ======================================
 	var busboy = require('connect-busboy');
 	app.use(busboy()); 
-	var fileupload = require('fileupload').createFileUpload('//home/kimmj8409/Myweb_front_end').middleware
+	var fileupload = require('fileupload').createFileUpload('/home/kimmj8409/Myweb_front_end').middleware
 	app.post('/upload', fileupload, function(req, res) {
 		var fstream;
 		req.pipe(req.busboy);
@@ -185,6 +185,8 @@
 		}
 		
 		console.log(output);
+		console.log(req.files.fileUpload);
+		console.log(req.files.keywords);
 		fs.readFile(req.files.uploadFile.path,function(error,data){
 			
 			var filePath = ___dirname + req.files.uploadFile.name;

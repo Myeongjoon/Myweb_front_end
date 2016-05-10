@@ -156,6 +156,7 @@
 		console.log("/upload");
 		console.log("req: "+req);
 		console.log("req.files : "+req.files);
+		console.log("fileUpload : "+req.fileUpload);
 		fs.readFile(req.files.uploadFile.path,function(error,data){
 			
 			var filePath = ___dirname + req.files.uploadFile.name;

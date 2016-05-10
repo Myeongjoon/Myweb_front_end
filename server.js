@@ -23,7 +23,13 @@
  */
 
 	// set up ========================
-	var express  = require('express');
+	var express = require('express');
+    var favicon = require('serve-favicon');
+    var logger = require('morgan');
+    var methodOverride = require('method-override');
+    var session = require('express-session');
+    var multer = require('multer');
+    var errorHandler = require('errorhandler');
 	var app      = express(); 								// create our app w/ express
 	var mongoose = require('mongoose'); 					// mongoose for mongodb
 	var morgan = require('morgan'); 			// log requests to the console (express4)

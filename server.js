@@ -154,8 +154,10 @@
 	var fileupload = require('fileupload').createFileUpload('//home/kimmj8409/Myweb_front_end').middleware
 	app.post('/upload', fileupload, function(req, res) {
 		console.log("/upload");
+		console.log("req: "+req);
+		console.log("req.files : "+req.files);
 		fs.readFile(req.files.uploadFile.path,function(error,data){
-			console.log(req.files);
+			
 			var filePath = ___dirname + req.files.uploadFile.name;
 			fs.writeFile(filePath,data,function(error){
 				if(error){

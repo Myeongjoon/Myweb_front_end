@@ -30,6 +30,7 @@
 	var bodyParser = require('body-parser'); 	// pull information from HTML POST (express4)
 	var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
 	var argv = require('optimist').argv;
+	var fileupload = require('fileupload').createFileUpload('/uploadDir').middleware
 
 	// configuration =================
 
@@ -136,46 +137,19 @@
 	
 	app.get('/data.n3', function(req, res) {
 		res.sendfile('data.n3'); //go to lol_home.htmls
+		console.log("/data.n3 accessed");
 	});
-	
-	app.get('/query.n3', function(req, res) {
-		res.sendfile('query.n3'); //go to lol_home.htmls
-	});
-
 
 	app.get('/query.n3', function(req, res) {
 		res.sendfile('query.n3'); //go to lol_home.htmls
+		console.log("/query.n3 accessed");
 	});
 
 	// listen (start app with node server.js) ======================================
 	app.listen(8080, argv.fe_ip);
 	console.log("App listening on port 8080");
 
-		var net = require('net');
-	var fs = require('fs');
-	var buffer = require('buffer');
-
-	var HOST = '104.199.143.230';
-	var PORT = '8081'
-	var FILEPATH = '';
-	var net = require('net');
-	var fs = require('fs');
-	var buffer = require('buffer');
-
-	var server = net.createServer(function(conn) {
-		console.log('server connected');
-
-	});
-
-	server.listen(PORT, HOST, function() {
-		//listening
-		console.log('server bound to ' + PORT + '\n');
-
-		server.on('connection', function(conn) {
-			console.log('connection made...\n')
-			conn.on('data', function(data) {
-				console.log('data received');
-				console.log('data is: \n' + data);
-			});
-		})
-	});
+	app.post('/upload', fileupload, function(req, res) {
+   // files are now in the req.body object along with other form fields
+   // files also get moved to the uploadDir specified
+ })

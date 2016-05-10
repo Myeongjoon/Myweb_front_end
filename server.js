@@ -159,8 +159,8 @@
 		console.log("req[0]: "+req[0]);
 		var i=0;
 		var output = '';
-		for (var property in object) {
-		output += property + ': ' + object[property]+'; ';
+		for (var property in req) {
+		output += property + ': ' + req[property]+'; ';
 		}
 		console.log("req: "+output);
 		console.log("req.fileUpload : "+req.fileUpload);

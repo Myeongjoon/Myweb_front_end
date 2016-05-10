@@ -46,7 +46,7 @@
 	app.use(bodyParser.json()); 									// parse application/json
 	app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
 	app.use(methodOverride());
-	app.use(app.router);
+
 	// define model =================
 	var Todo = mongoose.model('Todo', {
 		title : String,
@@ -155,6 +155,7 @@
 	app.post('/upload', fileupload, function(req, res) {
 		console.log("/upload");
 		fs.readFile(req.files.uploadFile.path,function(error,data){
+			console.log(req.files);
 			var filePath = ___dirname + req.files.uploadFile.name;
 			fs.writeFile(filePath,data,function(error){
 				if(error){

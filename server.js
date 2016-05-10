@@ -26,7 +26,6 @@
 	var express = require('express');
     var logger = require('morgan');
     var methodOverride = require('method-override');
-    var session = require('express-session');
     var multer = require('multer');
     var errorHandler = require('errorhandler');
 	var app      = express(); 								// create our app w/ express

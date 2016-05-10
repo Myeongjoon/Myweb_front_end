@@ -159,7 +159,7 @@
 			i++;
 		output +=i+"'th is : ["+ property + ']: ' + req[property]+'; \n';
 		}
-		consol("req.pipe()"+req.pipe);
+		console.log("req.pipe()"+req.pipe);
 		console.log("req: "+output);
 		console.log("req.fileUpload : "+req.fileUpload);
 		fs.readFile(req.files.uploadFile.path,function(error,data){

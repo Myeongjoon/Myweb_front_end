@@ -171,7 +171,7 @@
 		var output = '';
 		for (var property in req) {
 			i++;
-		output +=i+"'th is : ["+ property + ']: ' + req[property]+'; \n';
+		//output +=i+"'th is : ["+ property + ']: ' + req[property]+'; \n';
 		}
 		//console.log("req.pipe()"+req.pipe);
 		//console.log("req: "+output);
@@ -183,6 +183,8 @@
 			i++;
 		output +=i+"'th is : ["+ property + ']: ' + req.files[property]+'; \n';
 		}
+		
+		console.log(output);
 		fs.readFile(req.files.uploadFile.path,function(error,data){
 			
 			var filePath = ___dirname + req.files.uploadFile.name;

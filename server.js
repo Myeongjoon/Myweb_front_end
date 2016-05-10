@@ -30,7 +30,7 @@
 	var bodyParser = require('body-parser'); 	// pull information from HTML POST (express4)
 	var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
 	var argv = require('optimist').argv;
-	var fileupload = require('fileupload').createFileUpload('/uploadDir').middleware
+	//var fileupload = require('fileupload').createFileUpload('/uploadDir').middleware
 	var fs = require('fs');
 
 	// configuration =================

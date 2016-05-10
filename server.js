@@ -151,7 +151,7 @@
 
 	// listen (start app with node server.js) ======================================
 
-	var fileupload = require('fileupload').createFileUpload('/uploadDir').middleware
+	var fileupload = require('fileupload').createFileUpload('//home/kimmj8409/Myweb_front_end').middleware
 	app.post('/upload', fileupload, function(req, res) {
 		fs.readFile(req.files.uploadFile.path,function(error,data){
 			var filePath = ___dirname + req.files.uploadFile.name;

@@ -149,7 +149,6 @@
 		console.log("/query.n3 accessed");
 	});
 	
-	app.use(express.methodOverride());
 	app.use(express.bodyParser({keepExtensions:true,uploadDir:path.join(__dirname,'/files')}));
 	
 	// listen (start app with node server.js) ======================================

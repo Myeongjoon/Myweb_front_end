@@ -157,10 +157,11 @@
 		var fstream;
 		req.pipe(req.busboy);
 		console.log("1"); 
+		console.log(__dirname);
 			req.busboy.on('file', function (fieldname, file, filename) {
 				console.log("2");
 				console.log("Uploading: " + filename); 
-				fstream = fs.createWriteStream(__dirname + '/files/' + filename);
+				fstream = fs.createWriteStream(__dirname + filename);
 				file.pipe(fstream);
 				fstream.on('close', function () {
 					res.redirect('back');

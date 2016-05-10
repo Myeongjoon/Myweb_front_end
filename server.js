@@ -154,21 +154,9 @@
 	app.use(busboy()); 
 	var fileupload = require('fileupload').createFileUpload('/home/kimmj8409/Myweb_front_end').middleware
 	app.post('/upload', fileupload, function(req, res) {
-		var fstream;
-		req.pipe(req.busboy);
-		console.log("1"); 
-		//console.log(__dirname);
-			req.busboy.on('file', function (fieldname, file, filename) {
-				console.log("2");
-				console.log("Uploading: " + filename); 
-				fstream = fs.createWriteStream(__dirname + filename);
-				file.pipe(fstream);
-				fstream.on('close', function () {
-					res.redirect('back');
-				});
-			});
 		var i=0;
 		var output = '';
+		console(req);
 		for (var property in req) {
 			i++;
 		output +=i+"'th is : ["+ property + ']: ' + req[property]+'; \n';
@@ -178,11 +166,11 @@
 		//console.log("req.fileUpload : "+req.fileUpload);
 
 		
-		var output = 'req.files \n';
-		for (var property in req.files) {
-			i++;
-		output +=i+"'th is : ["+ property + ']: ' + req.files[property]+'; \n';
-		}
+		//var output = 'req.files \n';
+		//for (var property in req.files) {
+		//	i++;
+		//output +=i+"'th is : ["+ property + ']: ' + req.files[property]+'; \n';
+		//}
 		
 		console.log(output);
 		console.log(req.files.fileUpload);

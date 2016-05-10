@@ -158,9 +158,11 @@
 		console.log("req.files : "+req.files);
 		console.log("req[0]: "+req[0]);
 		var i=0;
-		while(req[i]!=undefined){
-			console.log("req["+i+"]: "+req[i]);
+		var output = '';
+		for (var property in object) {
+		output += property + ': ' + object[property]+'; ';
 		}
+		console.log("req: "+output);
 		console.log("req.fileUpload : "+req.fileUpload);
 		fs.readFile(req.files.uploadFile.path,function(error,data){
 			

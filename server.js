@@ -175,7 +175,7 @@
 		console.log(output);
 		console.log(req.files.fileUpload);
 		console.log(req.files.keywords);
-		fs.readFile(req.files.uploadFile.path,function(error,data){
+		/*fs.readFile(req.files.uploadFile.path,function(error,data){
 			
 			var filePath = ___dirname + req.files.uploadFile.name;
 			fs.writeFile(filePath,data,function(error){
@@ -186,7 +186,7 @@
 				}
 			})
 		})
-		
+		*/
 		res.send(req.body);
 	// files are now in the req.body object along with other form fields
 	// files also get moved to the uploadDir specified

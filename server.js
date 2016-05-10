@@ -147,8 +147,6 @@
 	});
 
 	// listen (start app with node server.js) ======================================
-	app.listen(8080, argv.fe_ip);
-	console.log("App listening on port 8080");
 
 	 var fileupload = require('fileupload').createFileUpload('/uploadDir').middleware
 
@@ -157,3 +155,6 @@
 	// files are now in the req.body object along with other form fields
 	// files also get moved to the uploadDir specified
 	})
+	
+	app.listen(8080, argv.fe_ip);
+	console.log("App listening on port 8080");

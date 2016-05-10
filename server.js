@@ -141,6 +141,7 @@
 	});
 
 	app.get('/query.n3', function(req, res) {
+		console.log("/query.n3 accessed");
 		res.sendfile('query.n3'); //go to lol_home.htmls
 		console.log("/query.n3 accessed");
 	});

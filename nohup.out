@@ -2793,3 +2793,1543 @@ Error: listen EADDRINUSE
 [0mGET / [32m200 [0m3.178 ms - 2997[0m
 [0mGET /learn.json [33m404 [0m0.420 ms - 23[0m
 [0mGET /api/todos [36m304 [0m2.385 ms - -[0m
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: failed to connect to [10.140.0.2:80]
+    at null.<anonymous> (/home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/lib/mongodb/connection/server.js:555:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (/home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/lib/mongodb/connection/connection_pool.js:156:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (/home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/lib/mongodb/connection/connection.js:534:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:441:14
+    at process._tickCallback (node.js:415:13)
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+[0mGET / [32m200 [0m7.611 ms - 3244[0m
+[0mGET /learn.json [33m404 [0m1.652 ms - 23[0m
+[0mGET /api/todos [36m304 [0m9.896 ms - -[0m
+[0mGET / [32m200 [0m1.950 ms - 3244[0m
+[0mGET / [32m200 [0m0.884 ms - 3244[0m
+[0mGET /api/todos [36m304 [0m3.039 ms - -[0m
+[0mGET / [32m200 [0m1.002 ms - 3244[0m
+[0mGET / [36m304 [0m0.439 ms - -[0m
+[0mGET /api/todos [36m304 [0m3.113 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m1.281 ms - 34118[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.786 ms - 36[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.606 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.219 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.306 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m0.710 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m0.757 ms - 34118[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.957 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.423 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.679 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m1.006 ms - 34118[0m
+[0mGET /images/c4clearness.gif [33m404 [0m1.587 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m1.648 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.722 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.391 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.209 ms - 35[0m
+[0mGET /api/todos [32m200 [0m2.222 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.544 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.474 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.919 ms - 24[0m
+[0mGET /four_in_a_row [36m304 [0m0.758 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.637 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.418 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.712 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.447 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.812 ms - 35[0m
+[0mGET /api/todos [36m304 [0m3.131 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m1.106 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.440 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.414 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.785 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.419 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.277 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.770 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m2.165 ms - 34118[0m
+[0mGET /four_in_a_row [36m304 [0m0.685 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.534 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.230 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.816 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m1.599 ms - 34118[0m
+[0mGET /four_in_a_row [36m304 [0m0.504 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m2.223 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.281 ms - 35[0m
+[0mGET /api/todos [36m304 [0m2.235 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m1.710 ms - 34118[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.316 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.446 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.991 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.465 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.235 ms - 35[0m
+[0mGET /api/todos [32m200 [0m1.685 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.457 ms - 24[0m
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: failed to connect to [10.140.0.2:80]
+    at null.<anonymous> (/home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/lib/mongodb/connection/server.js:555:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (/home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/lib/mongodb/connection/connection_pool.js:156:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (/home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/lib/mongodb/connection/connection.js:534:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:441:14
+    at process._tickCallback (node.js:415:13)
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+[0mGET /four_in_a_row [32m200 [0m8.412 ms - 34191[0m
+[0mGET /four_in_a_row [32m200 [0m1.831 ms - 34191[0m
+[0mGET /images/c4clearness.gif [33m404 [0m1.623 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m1.229 ms - 35[0m
+[0mGET /api/todos [36m304 [0m9.637 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m1.309 ms - 34191[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.574 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.401 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.809 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.423 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.221 ms - 35[0m
+[0mGET /api/todos [36m304 [0m3.123 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m0.976 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.437 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.398 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.691 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.343 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.224 ms - 35[0m
+[0mGET /api/todos [36m304 [0m2.314 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m0.963 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.365 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.427 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m2.032 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.612 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.229 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.733 ms - -[0m
+[0mGET /four_in_a_row/ [32m200 [0m1.753 ms - 34191[0m
+[0mGET /four_in_a_row/bower_components/angular-route/angular-route.js [33m404 [0m0.457 ms - 74[0m
+[0mGET /four_in_a_row/bower_components/angular/angular.js [33m404 [0m0.253 ms - 62[0m
+[0mGET /four_in_a_row/bower_components/todomvc-common/base.css [33m404 [0m0.233 ms - 67[0m
+[0mGET /four_in_a_row/bower_components/todomvc-common/base.js [33m404 [0m0.228 ms - 66[0m
+[0mGET /four_in_a_row/bower_components/todomvc-common/lol_home.css [33m404 [0m0.221 ms - 71[0m
+[0mGET /four_in_a_row/bower_components/todomvc-common/style.css [33m404 [0m0.860 ms - 68[0m
+[0mGET /four_in_a_row/js/services/todoStorage.js [33m404 [0m0.442 ms - 53[0m
+[0mGET /four_in_a_row/js/controllers/todoCtrl.js [33m404 [0m0.201 ms - 53[0m
+[0mGET /four_in_a_row/js/directives/todoFocus.js [33m404 [0m0.215 ms - 53[0m
+[0mGET /four_in_a_row/js/directives/todoEscape.js [33m404 [0m0.195 ms - 54[0m
+[0mGET /four_in_a_row/images/c4clearness.gif [33m404 [0m0.385 ms - 49[0m
+[0mGET /four_in_a_row/images/c4fillempty.gif [33m404 [0m0.207 ms - 49[0m
+[0mGET /four_in_a_row [32m200 [0m1.081 ms - 34191[0m
+[0mGET /four_in_a_row [32m200 [0m0.871 ms - 34191[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.533 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.220 ms - 35[0m
+[0mGET /api/todos [36m304 [0m2.516 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m1.795 ms - 34191[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.673 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.708 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m1.612 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.351 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.212 ms - 35[0m
+[0mGET /api/todos [32m200 [0m2.524 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.479 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.660 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.403 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m1.774 ms - 24[0m
+[0mGET /four_in_a_row [36m304 [0m0.844 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.939 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.946 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.703 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.677 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.217 ms - 35[0m
+[0mGET /api/todos [36m304 [0m2.078 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m1.538 ms - 34191[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.456 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.973 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.314 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.722 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.417 ms - 35[0m
+[0mGET /api/todos [32m200 [0m2.275 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m1.761 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.491 ms - 24[0m
+[0mGET /four_in_a_row [32m200 [0m1.389 ms - 34191[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.394 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.675 ms - 35[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.451 ms - 36[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.305 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.272 ms - 35[0m
+[0mGET /api/todos [32m200 [0m2.393 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.887 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.453 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.471 ms - 24[0m
+[0mGET / [32m200 [0m1.165 ms - 3317[0m
+[0mGET /learn.json [33m404 [0m0.410 ms - 23[0m
+[0mGET /api/todos [32m200 [0m1.800 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.522 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.453 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.646 ms - 24[0m
+[0mGET / [32m200 [0m2.325 ms - 3317[0m
+[0mGET / [36m304 [0m0.915 ms - -[0m
+[0mGET /api/todos [32m200 [0m2.194 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.532 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.822 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.550 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.641 ms - 24[0m
+[0mGET / [36m304 [0m1.129 ms - -[0m
+[0mGET / [36m304 [0m1.130 ms - -[0m
+[0mGET /api/todos [36m304 [0m2.860 ms - -[0m
+[0mGET / [36m304 [0m11.054 ms - -[0m
+[0mGET / [36m304 [0m0.643 ms - -[0m
+[0mGET /api/todos [36m304 [0m1.779 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m1.131 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.811 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.835 ms - 35[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.553 ms - 36[0m
+[0mGET /api/todos [36m304 [0m2.673 ms - -[0m
+[0mGET / [32m200 [0m1.906 ms - 3317[0m
+[0mGET /learn.json [33m404 [0m0.639 ms - 23[0m
+[0mGET /api/todos [36m304 [0m2.214 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m1.305 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.395 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.453 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.724 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.275 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.206 ms - 35[0m
+[0mGET /api/todos [36m304 [0m2.357 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m0.681 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.319 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.347 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m1.174 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.445 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.838 ms - -[0m
+[0mGET / [32m200 [0m1.207 ms - 3317[0m
+[0mGET / [36m304 [0m0.560 ms - -[0m
+[0mGET /api/todos [32m200 [0m2.041 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.473 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.413 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.420 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.807 ms - 24[0m
+[0mGET / [36m304 [0m0.714 ms - -[0m
+[0mGET / [36m304 [0m0.722 ms - -[0m
+[0mGET /api/todos [36m304 [0m2.368 ms - -[0m
+[0mGET / [32m200 [0m4.239 ms - 3317[0m
+[0mGET / [36m304 [0m0.671 ms - -[0m
+[0mGET /api/todos [32m200 [0m1.731 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.444 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.401 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.395 ms - 24[0m
+[0mGET /four_in_a_row [32m200 [0m1.335 ms - 34191[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.467 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.424 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.618 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.456 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.303 ms - 35[0m
+[0mGET /api/todos [32m200 [0m1.897 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.432 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.396 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.398 ms - 24[0m
+[0mGET /four_in_a_row [32m200 [0m1.461 ms - 34191[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.421 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.417 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m1.239 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.459 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.220 ms - 35[0m
+[0mGET /api/todos [32m200 [0m2.439 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.454 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.429 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.417 ms - 24[0m
+[0mGET /four_in_a_row [36m304 [0m0.704 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.448 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.429 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.660 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.384 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.207 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.335 ms - -[0m
+[0mGET / [32m200 [0m1.421 ms - 3317[0m
+[0mGET / [36m304 [0m0.641 ms - -[0m
+[0mGET /api/todos [32m200 [0m1.707 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.432 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.424 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.430 ms - 24[0m
+[0mGET /four_in_a_row [32m200 [0m1.092 ms - 34191[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.282 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.430 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.620 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.828 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.228 ms - 35[0m
+[0mGET /api/todos [32m200 [0m1.888 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.479 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.421 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.404 ms - 24[0m
+[0mGET /four_in_a_row [32m200 [0m1.115 ms - 34191[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.460 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.698 ms - 35[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.207 ms - 36[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.437 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.209 ms - 35[0m
+[0mGET /api/todos [32m200 [0m1.879 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.740 ms - 24[0m
+[0mGET / [32m200 [0m1.473 ms - 3317[0m
+[0mGET / [36m304 [0m0.692 ms - -[0m
+[0mGET /api/todos [32m200 [0m1.967 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.486 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.424 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.387 ms - 24[0m
+[0mGET / [32m200 [0m1.041 ms - 3317[0m
+[0mGET / [36m304 [0m0.567 ms - -[0m
+[0mGET /api/todos [32m200 [0m1.666 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.454 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.487 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.419 ms - 24[0m
+[0mGET / [32m200 [0m1.076 ms - 3317[0m
+[0mGET / [36m304 [0m0.482 ms - -[0m
+[0mGET /api/todos [32m200 [0m2.040 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.462 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.442 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.427 ms - 24[0m
+[0mGET / [36m304 [0m0.698 ms - -[0m
+[0mGET / [36m304 [0m0.678 ms - -[0m
+[0mGET /api/todos [36m304 [0m1.309 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m1.058 ms - 34191[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.408 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.716 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.452 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.287 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.211 ms - 35[0m
+[0mGET /api/todos [32m200 [0m1.776 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.400 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.435 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.849 ms - 24[0m
+[0mGET /four_in_a_row [36m304 [0m0.681 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.290 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m1.156 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.660 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.483 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.202 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.783 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m1.322 ms - 34191[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.437 ms - 36[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.406 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.321 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.480 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.218 ms - 35[0m
+[0mGET /api/todos [32m200 [0m2.595 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.401 ms - 24[0m
+[0mGET / [32m200 [0m1.153 ms - 3317[0m
+[0mGET / [36m304 [0m0.689 ms - -[0m
+[0mGET /api/todos [36m304 [0m3.642 ms - -[0m
+[0mGET / [36m304 [0m0.759 ms - -[0m
+[0mGET / [36m304 [0m0.642 ms - -[0m
+[0mGET /api/todos [36m304 [0m1.312 ms - -[0m
+[0mGET / [36m304 [0m0.688 ms - -[0m
+[0mGET / [36m304 [0m0.663 ms - -[0m
+[0mGET /api/todos [36m304 [0m1.354 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m0.878 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.484 ms - 35[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.416 ms - 36[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.422 ms - 35[0m
+[0mGET /api/todos [36m304 [0m2.032 ms - -[0m
+[0mGET / [36m304 [0m0.837 ms - -[0m
+[0mGET / [36m304 [0m0.687 ms - -[0m
+[0mGET /api/todos [36m304 [0m1.928 ms - -[0m
+[0mGET / [36m304 [0m0.699 ms - -[0m
+[0mGET / [36m304 [0m0.895 ms - -[0m
+[0mGET /api/todos [36m304 [0m1.604 ms - -[0m
+[0mGET /lol_home [32m200 [0m1.267 ms - 14628[0m
+[0mGET /media/challenger_1.png [32m200 [0m6.099 ms - 56911[0m
+[0mGET /lol_homelearn.json [33m404 [0m0.613 ms - 31[0m
+[0mGET /api/todos [36m304 [0m1.421 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m1.257 ms - 34191[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.477 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.389 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.631 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m1.341 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.418 ms - 35[0m
+[0mGET /api/todos [32m200 [0m2.067 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.411 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.406 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.397 ms - 24[0m
+[0mGET / [32m200 [0m0.939 ms - 3317[0m
+[0mGET / [36m304 [0m0.589 ms - -[0m
+[0mGET /api/todos [32m200 [0m1.480 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.412 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.389 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.403 ms - 24[0m
+[0mGET /four_in_a_row [32m200 [0m1.046 ms - 34191[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.416 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.419 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m1.197 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.404 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.208 ms - 35[0m
+[0mGET /api/todos [32m200 [0m1.869 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.431 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.400 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.382 ms - 24[0m
+[0mGET /four_in_a_row [36m304 [0m0.631 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m1.296 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.409 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.660 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.361 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.189 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.344 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m0.950 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.433 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.378 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.731 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.387 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.195 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.884 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m0.413 ms - 24[0m
+[0mGET /four_in_a_row [36m304 [0m0.603 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.284 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.392 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.632 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.422 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.223 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.940 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m1.227 ms - 34191[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.387 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.338 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.623 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.504 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.198 ms - 35[0m
+[0mGET /api/todos [32m200 [0m1.821 ms - 2[0m
+[0mGET /four_in_a_row [36m304 [0m0.691 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.314 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.415 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.788 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.412 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.204 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.374 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m0.702 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.268 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.413 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.636 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.400 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.198 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.316 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m0.763 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.385 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.407 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.911 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.421 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.260 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.949 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m0.815 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.305 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.399 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.613 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.396 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.422 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.411 ms - -[0m
+[0mGET / [32m200 [0m1.172 ms - 3317[0m
+[0mGET / [36m304 [0m0.653 ms - -[0m
+[0mGET /api/todos [36m304 [0m1.949 ms - -[0m
+[0mGET / [36m304 [0m0.653 ms - -[0m
+[0mGET / [36m304 [0m0.683 ms - -[0m
+[0mGET /api/todos [36m304 [0m2.116 ms - -[0m
+[0mGET / [36m304 [0m0.771 ms - -[0m
+[0mGET / [36m304 [0m0.616 ms - -[0m
+[0mGET /api/todos [36m304 [0m1.922 ms - -[0m
+[0mGET / [32m200 [0m1.320 ms - 3317[0m
+[0mGET / [36m304 [0m0.391 ms - -[0m
+[0mGET /api/todos [36m304 [0m1.996 ms - -[0m
+[0mGET / [36m304 [0m0.691 ms - -[0m
+[0mGET / [36m304 [0m0.387 ms - -[0m
+[0mGET /api/todos [36m304 [0m1.361 ms - -[0m
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: failed to connect to [10.140.0.2:80]
+    at null.<anonymous> (/home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/lib/mongodb/connection/server.js:555:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (/home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/lib/mongodb/connection/connection_pool.js:156:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (/home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/lib/mongodb/connection/connection.js:534:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:441:14
+    at process._tickCallback (node.js:415:13)
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+[0mGET / [32m200 [0m8.881 ms - 3315[0m
+[0mGET / [36m304 [0m1.530 ms - -[0m
+[0mGET /api/todos [36m304 [0m12.356 ms - -[0m
+[0mGET / [36m304 [0m1.090 ms - -[0m
+[0mGET / [36m304 [0m0.461 ms - -[0m
+[0mGET /api/todos [36m304 [0m3.068 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m1.842 ms - 34189[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m1.216 ms - 36[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.757 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.571 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.507 ms - -[0m
+[0mGET / [32m200 [0m1.680 ms - 3315[0m
+[0mGET / [36m304 [0m0.619 ms - -[0m
+[0mGET /api/todos [36m304 [0m1.585 ms - -[0m
+[0mGET / [36m304 [0m0.628 ms - -[0m
+[0mGET / [36m304 [0m0.933 ms - -[0m
+[0mGET /api/todos [36m304 [0m1.862 ms - -[0m
+[0mGET / [36m304 [0m0.630 ms - -[0m
+[0mGET / [36m304 [0m0.622 ms - -[0m
+[0mGET /api/todos [36m304 [0m1.569 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m1.120 ms - 34189[0m
+[0mGET /images/c4clearness.gif [33m404 [0m1.502 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.416 ms - 35[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.377 ms - 36[0m
+[0mGET /api/todos [36m304 [0m1.804 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m1.424 ms - 34189[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.744 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.445 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.502 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.877 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.254 ms - 35[0m
+[0mGET /api/todos [32m200 [0m4.415 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.714 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.453 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.410 ms - 24[0m
+[0mGET /four_in_a_row [36m304 [0m0.863 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.422 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.436 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m2.364 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.607 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.499 ms - 35[0m
+[0mGET /api/todos [36m304 [0m2.245 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m1.608 ms - 34189[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.662 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.700 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.479 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.477 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.284 ms - 35[0m
+[0mGET /api/todos [32m200 [0m3.270 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.621 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.431 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.434 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.437 ms - 24[0m
+[0mGET /four_in_a_row [36m304 [0m1.223 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.295 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.627 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.697 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.401 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.499 ms - 35[0m
+[0mGET /api/todos [36m304 [0m2.479 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m1.123 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.395 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m1.630 ms - 35[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.709 ms - 36[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.696 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.276 ms - 35[0m
+[0mGET /api/todos [36m304 [0m2.104 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m0.902 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.425 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.803 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.506 ms - -[0m
+[0mGET /api/todos [36m304 [0m2.313 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m0.731 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.369 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.459 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.694 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.459 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.237 ms - 35[0m
+[0mGET /api/todos [36m304 [0m2.136 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m1.204 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.427 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.722 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.861 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.409 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.251 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.775 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m0.730 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.373 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.636 ms - 35[0m
+[0mGET /four_in_a_row [36m304 [0m0.785 ms - -[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.438 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.211 ms - 35[0m
+[0mGET /api/todos [36m304 [0m2.412 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m2.120 ms - 34189[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.647 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.425 ms - 35[0m
+[0mGET /four_in_a_row [32m200 [0m1.447 ms - 34189[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.453 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.618 ms - 35[0m
+[0mGET /api/todos [32m200 [0m2.161 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.557 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.868 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.424 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.315 ms - 24[0m
+[0mGET /four_in_a_row [32m200 [0m1.894 ms - 34189[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.581 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.588 ms - 35[0m
+[0mGET /four_in_a_row [32m200 [0m1.580 ms - 34189[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.422 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.225 ms - 35[0m
+[0mGET /api/todos [32m200 [0m1.857 ms - 2[0m
+[0mGET / [32m200 [0m1.599 ms - 3315[0m
+[0mGET /learn.json [33m404 [0m0.499 ms - 23[0m
+[0mGET /api/todos [32m200 [0m2.386 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.444 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.452 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.408 ms - 24[0m
+[0mGET / [36m304 [0m1.119 ms - -[0m
+[0mGET / [36m304 [0m1.804 ms - -[0m
+[0mGET /api/todos [36m304 [0m1.855 ms - -[0m
+[0mGET / [36m304 [0m0.701 ms - -[0m
+[0mGET / [36m304 [0m0.820 ms - -[0m
+[0mGET /api/todos [36m304 [0m2.024 ms - -[0m
+[0mGET / [36m304 [0m1.252 ms - -[0m
+[0mGET / [36m304 [0m0.513 ms - -[0m
+[0mGET /api/todos [36m304 [0m2.127 ms - -[0m
+[0mGET / [36m304 [0m0.720 ms - -[0m
+[0mGET / [36m304 [0m0.599 ms - -[0m
+[0mGET /api/todos [36m304 [0m1.720 ms - -[0m
+[0mGET / [36m304 [0m1.127 ms - -[0m
+[0mGET / [36m304 [0m0.740 ms - -[0m
+[0mGET /api/todos [36m304 [0m4.471 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m0.594 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.422 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.439 ms - 24[0m
+[0mGET /script [33m404 [0m0.781 ms - 19[0m
+[0mGET / [32m200 [0m1.843 ms - 3315[0m
+[0mGET /four_in_a_row [32m200 [0m1.440 ms - 34189[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.492 ms - 36[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.443 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.461 ms - 35[0m
+[0mGET /api/todos [32m200 [0m2.177 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.447 ms - 24[0m
+[0mGET / [32m200 [0m1.579 ms - 3315[0m
+[0mGET / [36m304 [0m0.784 ms - -[0m
+[0mGET /api/todos [32m200 [0m2.206 ms - 2[0m
+[0mGET /four_in_a_row [32m200 [0m1.566 ms - 34189[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.523 ms - 36[0m
+[0mGET /api/todos [32m200 [0m1.875 ms - 2[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.486 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.227 ms - 35[0m
+[0mGET http://www.baidu.com [32m200 [0m1.482 ms - 3315[0m
+[0mGET / [32m200 [0m1.623 ms - 3315[0m
+[0mGET / [32m200 [0m1.516 ms - 3315[0m
+[0mGET / [36m304 [0m0.810 ms - -[0m
+[0mGET /api/todos [32m200 [0m3.414 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.494 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.419 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.650 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.441 ms - 24[0m
+[0mGET / [32m200 [0m1.494 ms - 3315[0m
+[0mGET /invoker/JMXInvokerServlet [33m404 [0m0.498 ms - 38[0m
+[0mGET /axis2/axis2-admin/ [33m404 [0m0.435 ms - 31[0m
+[0mGET /zabbix/index.php [33m404 [0m0.436 ms - 29[0m
+[0mGET /script [33m404 [0m0.418 ms - 19[0m
+[0mGET http://www.baidu.com/cache/global/img/gs.gif [33m404 [0m0.675 ms - 56[0m
+[0mGET / [32m200 [0m1.534 ms - 3315[0m
+[0mGET / [32m200 [0m3.003 ms - 3315[0m
+[0mGET /lol_home [32m200 [0m1.826 ms - 14628[0m
+[0mGET /favicon.ico [33m404 [0m3.207 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.384 ms - 24[0m
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: failed to connect to [10.140.0.2:80]
+    at null.<anonymous> (/home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/lib/mongodb/connection/server.js:555:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (/home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/lib/mongodb/connection/connection_pool.js:156:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (/home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/lib/mongodb/connection/connection.js:534:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:441:14
+    at process._tickCallback (node.js:415:13)
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+[0mGET / [32m200 [0m7.376 ms - 3686[0m
+[0mGET /learn.json [33m404 [0m1.669 ms - 23[0m
+[0mGET /api/todos [36m304 [0m9.935 ms - -[0m
+[0mGET / [32m200 [0m2.235 ms - 3686[0m
+[0mGET / [36m304 [0m0.779 ms - -[0m
+[0mGET /api/todos [32m200 [0m3.866 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.707 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.613 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.479 ms - 24[0m
+[0mGET / [32m200 [0m2.680 ms - 3686[0m
+[0mGET http://www.google.com/reader/about/ [33m404 [0m0.665 ms - 47[0m
+[0mGET / [32m200 [0m1.875 ms - 3686[0m
+[0mGET / [32m200 [0m1.813 ms - 3686[0m
+[0mGET http://httpheader.net/ [32m200 [0m2.585 ms - 3686[0m
+[0mGET / [32m200 [0m1.861 ms - 3686[0m
+[0mGET / [32m200 [0m1.651 ms - 3686[0m
+[0mGET /learn.json [33m404 [0m0.670 ms - 23[0m
+[0mGET /api/todos [32m200 [0m2.656 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.464 ms - 24[0m
+[0mGET / [32m200 [0m1.371 ms - 3686[0m
+[0mGET /learn.json [33m404 [0m0.407 ms - 23[0m
+[0mGET /api/todos [32m200 [0m12.461 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.486 ms - 24[0m
+[0mGET / [36m304 [0m1.031 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.337 ms - 23[0m
+[0mGET /api/todos [36m304 [0m3.480 ms - -[0m
+[0mGET /learn.json [33m404 [0m1.346 ms - 23[0m
+[0mGET / [32m200 [0m2.494 ms - 3686[0m
+[0mGET /manager/html [33m404 [0m0.818 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.539 ms - 25[0m
+[0mGET /manager/html [33m404 [0m1.976 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.472 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.459 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.451 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.524 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.452 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.812 ms - 25[0m
+[0mGET /manager/html [33m404 [0m0.531 ms - 25[0m
+[0mGET / [32m200 [0m1.828 ms - 3686[0m
+[0mGET / [32m200 [0m4.019 ms - 3686[0m
+[0mGET / [32m200 [0m1.846 ms - 3686[0m
+[0mGET http://www.baidu.com/cache/global/img/gs.gif [33m404 [0m0.708 ms - 56[0m
+[0mGET /tmUnblock.cgi [33m404 [0m0.844 ms - 26[0m
+[0mGET / [32m200 [0m1.826 ms - 3686[0m
+[0mGET / [32m200 [0m2.089 ms - 3686[0m
+[0mGET / [32m200 [0m3.294 ms - 3686[0m
+[0mGET / [32m200 [0m3.170 ms - 3686[0m
+[0mGET /learn.json [33m404 [0m0.538 ms - 23[0m
+[0mGET /api/todos [32m200 [0m2.891 ms - 2[0m
+[0mGET / [36m304 [0m2.931 ms - -[0m
+[0mGET / [36m304 [0m1.887 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.393 ms - 23[0m
+[0mGET /api/todos [36m304 [0m3.841 ms - -[0m
+[0mGET /data.n3 [32m200 [0m14.739 ms - 449[0m
+[0mGET /data.n3 [36m304 [0m0.814 ms - -[0m
+[0mGET /query.n3 [32m200 [0m2.871 ms - 777[0m
+[0mGET /query.n3 [36m304 [0m2.775 ms - -[0m
+[0mGET /data.n3 [36m304 [0m3.196 ms - -[0m
+[0mGET /data.n3 [36m304 [0m2.863 ms - -[0m
+[0mGET /query.n3 [36m304 [0m1.369 ms - -[0m
+[0mGET /query.n4 [33m404 [0m0.699 ms - 21[0m
+[0mGET /query.n3 [36m304 [0m0.840 ms - -[0m
+[0mGET /query.n3 [36m304 [0m0.799 ms - -[0m
+[0mGET /query.n3 [32m200 [0m1.291 ms - 777[0m
+[0mGET /query.n3 [36m304 [0m0.845 ms - -[0m
+[0mGET /data.n3 [32m200 [0m1.454 ms - 449[0m
+[0mGET /data.n3 [36m304 [0m0.804 ms - -[0m
+[0mGET /query.n3 [32m200 [0m2.508 ms - 777[0m
+[0mGET /data.n3 [32m200 [0m1.910 ms - 449[0m
+[0mGET /query.n3 [32m200 [0m3.321 ms - 777[0m
+[0mGET /data.n3 [32m200 [0m2.703 ms - 449[0m
+[0mGET /query.n3 [32m200 [0m2.167 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m2.553 ms - 777[0m
+[0mGET /data.n3 [32m200 [0m1.850 ms - 449[0m
+[0mGET /query.n3 [32m200 [0m2.521 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m2.206 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m1.314 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m1.588 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m1.583 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m1.668 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m1.308 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m1.695 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m4.203 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m4.433 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m1.115 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m1.327 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m2.078 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m2.539 ms - 777[0m
+[0mGET /query.n3 [36m304 [0m1.280 ms - -[0m
+[0mGET /data.n3 [36m304 [0m0.823 ms - -[0m
+[0mGET /query.n3 [32m200 [0m3.606 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m0.783 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m3.871 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m2.342 ms - 777[0m
+[0mGET /data.n3 [32m200 [0m2.620 ms - 449[0m
+[0mGET /query.n3 [32m200 [0m1.325 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m4.509 ms - 777[0m
+[0mGET /data.n3 [32m200 [0m1.474 ms - 449[0m
+[0mGET /query.n3 [32m200 [0m2.770 ms - 777[0m
+[0mGET /data.n3 [32m200 [0m2.027 ms - 449[0m
+[0mGET /query.n3 [32m200 [0m2.969 ms - 777[0m
+[0mGET /data.n3 [32m200 [0m2.606 ms - 449[0m
+[0mGET /data.n3 [32m200 [0m1.933 ms - 449[0m
+[0mGET /query.n3 [32m200 [0m1.399 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m2.320 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m1.057 ms - 777[0m
+[0mGET /data.n3 [32m200 [0m1.265 ms - 449[0m
+[0mGET /query.n3 [32m200 [0m1.987 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m2.176 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m2.383 ms - 777[0m
+[0mGET /data.n3 [32m200 [0m2.250 ms - 449[0m
+[0mGET /data.n3 [32m200 [0m1.771 ms - 449[0m
+[0mGET /manager/html [33m404 [0m0.930 ms - 25[0m
+[0mGET / [36m304 [0m1.117 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.758 ms - 23[0m
+[0mGET /api/todos [32m200 [0m2.509 ms - 2[0m
+[0mGET /query.n3 [32m200 [0m2.169 ms - 777[0m
+[0mGET / [32m200 [0m1.688 ms - 3686[0m
+[0mGET /favicon.ico [33m404 [0m0.683 ms - 24[0m
+[0mGET /apple-touch-icon-precomposed.png [33m404 [0m0.337 ms - 45[0m
+[0mGET /apple-touch-icon.png [33m404 [0m0.517 ms - 33[0m
+[0mGET / [36m304 [0m1.051 ms - -[0m
+[0mGET /apple-touch-icon-precomposed.png [33m404 [0m1.107 ms - 45[0m
+[0mGET /apple-touch-icon.png [33m404 [0m0.603 ms - 33[0m
+[0mGET /data.n3 [36m304 [0m1.356 ms - -[0m
+[0mGET /apple-touch-icon-precomposed.png [33m404 [0m0.839 ms - 45[0m
+[0mGET /apple-touch-icon.png [33m404 [0m0.731 ms - 33[0m
+[0mGET /query.n3 [32m200 [0m2.498 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m1.966 ms - 777[0m
+[0mGET /data.n3 [32m200 [0m3.234 ms - 451[0m
+[0mGET /query.n3 [32m200 [0m2.222 ms - 777[0m
+[0mGET /data.n3 [32m200 [0m3.482 ms - 451[0m
+[0mGET /manager/html [33m404 [0m1.385 ms - 25[0m
+[0mGET /manager/html [33m404 [0m1.217 ms - 25[0m
+[0mGET /data.n3 [36m304 [0m2.403 ms - -[0m
+[0mGET /query.n3 [32m200 [0m20.264 ms - 777[0m
+[0mGET /query.n3 [32m200 [0m2.369 ms - 777[0m
+[0mGET / [32m200 [0m1.675 ms - 3686[0m
+[0mGET / [32m200 [0m1.805 ms - 3686[0m
+[0mGET /tmUnblock.cgi [33m404 [0m1.040 ms - 26[0m
+[0mGET / [32m200 [0m2.088 ms - 3686[0m
+[0mGET / [32m200 [0m2.045 ms - 3686[0m
+[0mGET /lol_home [32m200 [0m7.344 ms - 14628[0m
+[0mGET /favicon.ico [33m404 [0m0.476 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.427 ms - 24[0m
+[0mGET http://www.google.ru/search?q=yandex [33m404 [0m0.611 ms - 48[0m
+[0mGET / [32m200 [0m1.798 ms - 3686[0m
+[0mGET / [32m200 [0m1.729 ms - 3686[0m
+[0mGET /query.n3 [32m200 [0m2.944 ms - 777[0m
+[0mGET /data.n3 [32m200 [0m1.010 ms - 451[0m
+[0mGET /query.n3 [32m200 [0m0.947 ms - 777[0m
+[0mGET / [32m200 [0m1.184 ms - 3686[0m
+[0mGET /learn.json [33m404 [0m0.604 ms - 23[0m
+[0mGET /api/todos [32m200 [0m3.158 ms - 2[0m
+[0mGET / [32m200 [0m4.199 ms - 3686[0m
+[0mGET /invoker/JMXInvokerServlet [33m404 [0m0.814 ms - 38[0m
+[0mGET /manager/html [33m404 [0m1.266 ms - 25[0m
+[0mGET https://m.baidu.com/ [32m200 [0m5.371 ms - 3686[0m
+[0mGET / [32m200 [0m1.717 ms - 3686[0m
+[0mGET http://www.baidu.com/cache/global/img/gs.gif [33m404 [0m2.764 ms - 56[0m
+[0mGET / [32m200 [0m1.742 ms - 3686[0m
+[0mGET http://www.qyer.com/ [32m200 [0m1.933 ms - 3686[0m
+[0mGET http://www.qyer.com/ [32m200 [0m1.235 ms - 3686[0m
+[0mGET / [32m200 [0m2.020 ms - 3686[0m
+[0mGET / [32m200 [0m1.734 ms - 3686[0m
+[0mGET / [32m200 [0m1.736 ms - 3686[0m
+[0mGET https://m.baidu.com/ [32m200 [0m1.683 ms - 3686[0m
+[0mGET / [32m200 [0m1.947 ms - 3686[0m
+[0mGET / [32m200 [0m1.862 ms - 3686[0m
+[0mGET http://www.baidu.com/robots.txt [33m404 [0m0.838 ms - 43[0m
+[0mGET /manager/html [33m404 [0m0.907 ms - 25[0m
+[0mGET / [32m200 [0m1.935 ms - 3686[0m
+[0mGET /lol_home [32m200 [0m6.031 ms - 14628[0m
+[0mGET /favicon.ico [33m404 [0m0.560 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.549 ms - 24[0m
+[0mGET / [32m200 [0m2.257 ms - 3686[0m
+[0mGET / [32m200 [0m1.982 ms - 3686[0m
+[0mGET http://www.google.com/reader/about/ [33m404 [0m0.872 ms - 47[0m
+[0mGET /robots.txt [33m404 [0m1.049 ms - 23[0m
+[0mGET / [32m200 [0m1.720 ms - 3686[0m
+[0mGET /learn.json [33m404 [0m0.576 ms - 23[0m
+[0mGET /api/todos [32m200 [0m19.158 ms - 2[0m
+[0mGET /lol_home [32m200 [0m1.293 ms - 14628[0m
+[0mGET / [32m200 [0m1.652 ms - 3686[0m
+[0mGET /favicon.ico [33m404 [0m0.784 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.501 ms - 24[0m
+[0mGET / [36m304 [0m0.901 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.704 ms - 23[0m
+[0mGET /api/todos [36m304 [0m4.140 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m0.509 ms - 24[0m
+[0mGET / [36m304 [0m0.806 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.538 ms - 23[0m
+[0mGET /api/todos [36m304 [0m1.630 ms - -[0m
+[0mGET / [36m304 [0m1.310 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.544 ms - 23[0m
+[0mGET /api/todos [36m304 [0m2.661 ms - -[0m
+[0mGET / [36m304 [0m0.783 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.385 ms - 23[0m
+[0mGET /api/todos [36m304 [0m2.650 ms - -[0m
+[0mGET / [32m200 [0m1.257 ms - 3686[0m
+[0mGET /learn.json [33m404 [0m0.641 ms - 23[0m
+[0mGET /api/todos [32m200 [0m1.608 ms - 2[0m
+[0mGET / [36m304 [0m0.840 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.586 ms - 23[0m
+[0mGET /api/todos [36m304 [0m1.576 ms - -[0m
+[0mGET / [32m200 [0m1.446 ms - 3686[0m
+[0mGET /learn.json [33m404 [0m0.521 ms - 23[0m
+[0mGET /api/todos [32m200 [0m1.586 ms - 2[0m
+[0mGET / [36m304 [0m1.238 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.413 ms - 23[0m
+[0mGET /api/todos [36m304 [0m2.440 ms - -[0m
+[0mGET / [32m200 [0m1.843 ms - 3686[0m
+[0mGET /manager/html [33m404 [0m1.627 ms - 25[0m
+[0mGET http://www.baidu.com/cache/global/img/gs.gif [33m404 [0m0.718 ms - 56[0m
+[0mGET / [36m304 [0m2.380 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.655 ms - 23[0m
+[0mGET /api/todos [32m200 [0m4.423 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.589 ms - 24[0m
+[0mGET /four_in_a_row [32m200 [0m9.635 ms - 34189[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.487 ms - 36[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.579 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.246 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.619 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m1.235 ms - 34189[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.465 ms - 35[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.378 ms - 36[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.237 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.429 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.234 ms - 35[0m
+[0mGET /api/todos [32m200 [0m1.804 ms - 2[0m
+[0mGET /favicon.ico [33m404 [0m0.558 ms - 24[0m
+[0mGET / [36m304 [0m0.771 ms - -[0m
+[0mGET / [36m304 [0m0.686 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.437 ms - 23[0m
+[0mGET /api/todos [36m304 [0m1.698 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.311 ms - 23[0m
+[0mGET /api/todos [36m304 [0m1.210 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m1.051 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m12.292 ms - 35[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.445 ms - 36[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.415 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.421 ms - 35[0m
+[0mGET /api/todos [36m304 [0m2.095 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m1.324 ms - 34189[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.436 ms - 35[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.458 ms - 36[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.395 ms - 35[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.447 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.236 ms - 35[0m
+[0mGET /api/todos [36m304 [0m2.016 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m1.208 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.414 ms - 35[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.447 ms - 36[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.464 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.998 ms - -[0m
+[0mGET /lol_home [32m200 [0m1.178 ms - 14628[0m
+[0mGET /lol_homelearn.json [33m404 [0m0.334 ms - 31[0m
+[0mGET /media/challenger_1.png [32m200 [0m7.254 ms - 56911[0m
+[0mGET /api/todos [36m304 [0m1.539 ms - -[0m
+[0mGET /media/platinum_5.png [32m200 [0m5.702 ms - 46017[0m
+[0mGET /media/Malphite.png [32m200 [0m6.331 ms - 17446[0m
+[0mGET /media/Gangplank.png [32m200 [0m3.521 ms - 19904[0m
+[0mGET /media/Zed.png [32m200 [0m6.247 ms - 16413[0m
+[0mGET /media/Viktor.png [32m200 [0m2.680 ms - 18365[0m
+[0mGET /media/Diana.png [32m200 [0m1.797 ms - 13463[0m
+[0mGET /media/Khazix.png [32m200 [0m2.323 ms - 13047[0m
+[0mGET /media/Malphite.png [36m304 [0m0.722 ms - -[0m
+[0mGET /media/Diana.png [36m304 [0m0.614 ms - -[0m
+[0mGET /media/Gangplank.png [36m304 [0m0.683 ms - -[0m
+[0mGET /media/Viktor.png [36m304 [0m1.804 ms - -[0m
+[0mGET /media/Zed.png [36m304 [0m0.696 ms - -[0m
+[0mGET /media/Rengar.png [32m200 [0m2.200 ms - 21607[0m
+[0mGET /media/RekSai.png [32m200 [0m1.686 ms - 17978[0m
+[0mGET /media/Khazix.png [36m304 [0m0.411 ms - -[0m
+[0mGET /media/Darius.png [32m200 [0m4.762 ms - 19150[0m
+[0mGET /media/Rengar.png [36m304 [0m0.686 ms - -[0m
+[0mGET /media/RekSai.png [36m304 [0m0.457 ms - -[0m
+[0mGET /media/Darius.png [36m304 [0m0.742 ms - -[0m
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: failed to connect to [10.140.0.2:80]
+    at null.<anonymous> (/home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/lib/mongodb/connection/server.js:555:74)
+    at EventEmitter.emit (events.js:106:17)
+    at null.<anonymous> (/home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/lib/mongodb/connection/connection_pool.js:156:15)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (/home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/lib/mongodb/connection/connection.js:534:10)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at net.js:441:14
+    at process._tickCallback (node.js:415:13)
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+[0mGET /lol_home [36m304 [0m8.031 ms - -[0m
+[0mGET /media/challenger_1.png [36m304 [0m2.094 ms - -[0m
+[0mGET /lol_homelearn.json [33m404 [0m2.554 ms - 31[0m
+[0mGET /api/todos [36m304 [0m11.057 ms - -[0m
+[0mGET / [32m200 [0m2.847 ms - 3073[0m
+[0mGET /learn.json [33m404 [0m0.587 ms - 23[0m
+[0mGET /api/todos [36m304 [0m2.237 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m0.737 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.521 ms - 35[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.421 ms - 36[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.396 ms - 35[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.275 ms - 35[0m
+[0mGET /api/todos [36m304 [0m1.868 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m0.894 ms - -[0m
+[0mGET /images/c4clearness.gif [33m404 [0m0.358 ms - 35[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.393 ms - 36[0m
+[0mGET /images/c4fillempty.gif [33m404 [0m0.441 ms - 35[0m
+[0mGET /api/todos [36m304 [0m2.171 ms - -[0m
+[0mGET / [36m304 [0m1.111 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.341 ms - 23[0m
+[0mGET /api/todos [36m304 [0m2.425 ms - -[0m
+[0mGET /lol_home [36m304 [0m1.138 ms - -[0m
+[0mGET /media/challenger_1.png [36m304 [0m1.621 ms - -[0m
+[0mGET /lol_homelearn.json [33m404 [0m0.441 ms - 31[0m
+[0mGET /api/todos [36m304 [0m1.760 ms - -[0m
+[0mGET /lol_home [36m304 [0m0.640 ms - -[0m
+[0mGET /lol_homelearn.json [33m404 [0m0.608 ms - 31[0m
+[0mGET /media/challenger_1.png [36m304 [0m1.073 ms - -[0m
+[0mGET /api/todos [36m304 [0m2.262 ms - -[0m
+[0mGET /lol_home [36m304 [0m1.340 ms - -[0m
+[0mGET /media/challenger_1.png [36m304 [0m0.746 ms - -[0m
+[0mGET /lol_homelearn.json [33m404 [0m1.827 ms - 31[0m
+[0mGET /api/todos [36m304 [0m2.665 ms - -[0m
+[0mGET /lol_home [36m304 [0m1.003 ms - -[0m
+[0mGET /media/challenger_1.png [36m304 [0m0.549 ms - -[0m
+[0mGET /lol_homelearn.json [33m404 [0m0.304 ms - 31[0m
+[0mGET /api/todos [36m304 [0m2.374 ms - -[0m
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3
+[0mGET /four_in_a_row [32m200 [0m2.949 ms - 34721[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.681 ms - 36[0m
+[0mGET /api/todos [36m304 [0m3.632 ms - -[0m
+[0mGET / [36m304 [0m0.903 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.359 ms - 23[0m
+[0mGET /api/todos [36m304 [0m2.182 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m1.805 ms - 34721[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.461 ms - 36[0m
+[0mGET /api/todos [36m304 [0m1.345 ms - -[0m
+[0mGET /manager/html [33m404 [0m0.788 ms - 25[0m
+[0mGET /four_in_a_row [36m304 [0m1.020 ms - -[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.504 ms - 36[0m
+[0mGET /api/todos [36m304 [0m2.069 ms - -[0m
+[0mGET http://www.google.com/reader/about/ [33m404 [0m0.930 ms - 47[0m
+[0mGET /manager/html [33m404 [0m0.723 ms - 25[0m
+[0mGET / [32m200 [0m2.148 ms - 3073[0m
+[0mGET /manager/html [33m404 [0m0.642 ms - 25[0m
+[0mGET / [32m200 [0m1.706 ms - 3073[0m
+[0mGET / [32m200 [0m2.052 ms - 3073[0m
+[0mGET https://m.baidu.com/ [32m200 [0m2.135 ms - 3073[0m
+[0mGET / [32m200 [0m2.725 ms - 3073[0m
+[0mGET /lol_home [32m200 [0m1.657 ms - 14628[0m
+[0mGET / [32m200 [0m0.756 ms - 3073[0m
+[0mGET /favicon.ico [33m404 [0m0.460 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.412 ms - 24[0m
+[0mGET / [32m200 [0m1.464 ms - 3073[0m
+[0mGET / [32m200 [0m4.269 ms - 3073[0m
+[0mGET http://www.google.com/reader/about/ [33m404 [0m0.810 ms - 47[0m
+[0mGET / [32m200 [0m3.624 ms - 3073[0m
+[0mGET /learn.json [33m404 [0m1.805 ms - 23[0m
+[0mGET /api/todos [36m304 [0m3.419 ms - -[0m
+[0mGET /four_in_a_row [32m200 [0m2.362 ms - 34721[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m1.630 ms - 36[0m
+[0mGET /api/todos [36m304 [0m2.886 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m1.546 ms - -[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.651 ms - 36[0m
+[0mGET /api/todos [36m304 [0m2.256 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m0.738 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m1.067 ms - -[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.962 ms - 36[0m
+[0mGET /api/todos [36m304 [0m3.065 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m1.302 ms - -[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.652 ms - 36[0m
+[0mGET /api/todos [36m304 [0m2.566 ms - -[0m
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3
+[0mGET / [32m200 [0m2.037 ms - 3073[0m
+[0mGET /favicon.ico [33m404 [0m1.451 ms - 24[0m
+[0mGET /apple-touch-icon-precomposed.png [33m404 [0m0.822 ms - 45[0m
+[0mGET /apple-touch-icon.png [33m404 [0m0.619 ms - 33[0m
+[0mGET / [36m304 [0m0.942 ms - -[0m
+[0mGET /apple-touch-icon-precomposed.png [33m404 [0m0.558 ms - 45[0m
+[0mGET /apple-touch-icon.png [33m404 [0m1.562 ms - 33[0m
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3
+[0mGET /four_in_a_row [32m200 [0m1.920 ms - 34752[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.883 ms - 36[0m
+[0mGET /api/todos [36m304 [0m2.027 ms - -[0m
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3
+[0mGET /four_in_a_row [32m200 [0m1.773 ms - 34752[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.425 ms - 36[0m
+[0mGET /api/todos [36m304 [0m2.167 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m1.551 ms - -[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.933 ms - 36[0m
+[0mGET /api/todos [36m304 [0m2.581 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m1.210 ms - -[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.480 ms - 36[0m
+[0mGET /api/todos [36m304 [0m2.316 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m0.677 ms - -[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.513 ms - 36[0m
+[0mGET /api/todos [36m304 [0m2.097 ms - -[0m
+[0mGET / [36m304 [0m1.222 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.436 ms - 23[0m
+[0mGET /api/todos [36m304 [0m2.118 ms - -[0m
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3
+[0mGET /four_in_a_row [32m200 [0m2.408 ms - 32784[0m
+[0mGET /style2.css [33m404 [0m0.345 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.318 ms - 36[0m
+[0mGET /apple-touch-icon-precomposed.png [33m404 [0m0.520 ms - 45[0m
+[0mGET /apple-touch-icon.png [33m404 [0m0.443 ms - 33[0m
+[0mGET /four_in_a_row [32m200 [0m1.269 ms - 32784[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.434 ms - 36[0m
+[0mGET /style2.css [33m404 [0m0.385 ms - 23[0m
+[0mGET /four_in_a_row [32m200 [0m1.370 ms - 32784[0m
+[0mGET /style2.css [33m404 [0m0.475 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.498 ms - 36[0m
+[0mGET /four_in_a_row [32m200 [0m1.149 ms - 32784[0m
+[0mGET /style2.css [33m404 [0m0.498 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.225 ms - 36[0m
+[0mGET /style2.css [33m404 [0m0.382 ms - 23[0m
+[0mGET /four_in_a_row [36m304 [0m1.016 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.815 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.380 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m1.223 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.437 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.350 ms - 36[0m
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3
+[0mGET /four_in_a_row [32m200 [0m1.552 ms - 33141[0m
+[0mGET /style2.css [33m404 [0m0.437 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.298 ms - 36[0m
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3
+[0mGET /four_in_a_row [32m200 [0m1.537 ms - 33102[0m
+[0mGET /style2.css [33m404 [0m3.196 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.474 ms - 36[0m
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3
+[0mGET /four_in_a_row [32m200 [0m1.458 ms - 33114[0m
+[0mGET /style2.css [33m404 [0m0.468 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.386 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m0.850 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.555 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.396 ms - 36[0m
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3
+[0mGET /four_in_a_row [32m200 [0m1.628 ms - 33634[0m
+[0mGET /style2.css [33m404 [0m0.365 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.496 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m1.302 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.437 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.349 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m0.934 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.486 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.578 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m0.679 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.372 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.338 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m1.092 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.349 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.398 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m0.658 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.446 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.402 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m0.610 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.519 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.447 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m1.063 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.405 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.430 ms - 36[0m
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3
+[0mGET /four_in_a_row [32m200 [0m1.551 ms - 34122[0m
+[0mGET /style2.css [33m404 [0m0.374 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.417 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m1.038 ms - -[0m
+[0mGET /four_in_a_row [36m304 [0m2.623 ms - -[0m
+[0mGET /style2.css [33m404 [0m1.426 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.226 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m0.692 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.466 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.208 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m1.211 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.458 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.212 ms - 36[0m
+[0mGET / [32m200 [0m1.736 ms - 3073[0m
+[0mGET /lol_home [32m200 [0m0.688 ms - 14628[0m
+[0mGET /favicon.ico [33m404 [0m0.453 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.463 ms - 24[0m
+[0mGET /four_in_a_row [36m304 [0m1.058 ms - -[0m
+[0mGET /style2.css [33m404 [0m1.290 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.282 ms - 36[0m
+[0mGET /four_in_a_row [32m200 [0m1.423 ms - 34122[0m
+[0mGET /style2.css [33m404 [0m0.334 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.398 ms - 36[0m
+[0mGET /favicon.ico [33m404 [0m0.489 ms - 24[0m
+[0mGET /four_in_a_row [32m200 [0m2.121 ms - 34122[0m
+[0mGET /style2.css [33m404 [0m0.300 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.409 ms - 36[0m
+[0mGET /four_in_a_row [32m200 [0m1.490 ms - 34122[0m
+[0mGET /style2.css [33m404 [0m3.375 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.305 ms - 36[0m
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3
+[0mGET /four_in_a_row [32m200 [0m1.812 ms - 34208[0m
+[0mGET /style2.css [33m404 [0m0.680 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.352 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m0.710 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.434 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.413 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m0.783 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.440 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.527 ms - 36[0m
+[0mGET /four_in_a_row [32m200 [0m1.449 ms - 34208[0m
+[0mGET /style2.css [33m404 [0m0.356 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.397 ms - 36[0m
+[0mGET /four_in_a_row [32m200 [0m1.641 ms - 34208[0m
+[0mGET /style2.css [33m404 [0m0.315 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.332 ms - 36[0m
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3
+[0mGET /four_in_a_row [32m200 [0m1.592 ms - 34208[0m
+[0mGET /style2.css [33m404 [0m0.562 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.489 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m0.773 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.340 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.458 ms - 36[0m
+[0mGET /four_in_a_row [32m200 [0m1.128 ms - 34208[0m
+[0mGET /style2.css [33m404 [0m0.362 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.304 ms - 36[0m
+[0mGET /four_in_a_row [32m200 [0m1.620 ms - 34208[0m
+[0mGET /style2.css [33m404 [0m0.544 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.372 ms - 36[0m
+[0mGET /four_in_a_row [32m200 [0m1.710 ms - 34208[0m
+[0mGET /style2.css [33m404 [0m0.552 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.315 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m1.170 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.400 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.380 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m1.098 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.507 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.460 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m1.166 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.522 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.385 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m1.054 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.501 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.262 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m0.895 ms - -[0m
+[0mGET /style2.css [33m404 [0m0.525 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.376 ms - 36[0m
+[0mGET /four_in_a_row [32m200 [0m1.646 ms - 34208[0m
+[0mGET /style2.css [33m404 [0m0.474 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.558 ms - 36[0m
+[0mGET /four_in_a_row [36m304 [0m1.275 ms - -[0m
+[0mGET /style2.css [33m404 [0m1.443 ms - 23[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.503 ms - 36[0m
+[0mGET /favicon.ico [33m404 [0m0.446 ms - 24[0m
+[0mGET http://www.qunar.com/ [32m200 [0m1.541 ms - 3073[0m
+[0mGET / [32m200 [0m1.483 ms - 3073[0m
+[0mGET / [32m200 [0m1.584 ms - 3073[0m
+[0mGET /manager/html [33m404 [0m0.712 ms - 25[0m
+[0mGET / [32m200 [0m1.658 ms - 3073[0m
+[0mGET /robots.txt [33m404 [0m0.458 ms - 23[0m
+[0mGET /sitemap.xml [33m404 [0m0.420 ms - 24[0m
+[0mGET / [32m200 [0m1.498 ms - 3073[0m
+[0mGET http://www.baidu.com/cache/global/img/gs.gif [33m404 [0m0.625 ms - 56[0m
+[0mGET / [32m200 [0m1.475 ms - 3073[0m
+[0mGET / [32m200 [0m1.404 ms - 3073[0m
+[0mGET /lol_home [32m200 [0m0.614 ms - 14628[0m
+[0mGET /favicon.ico [33m404 [0m0.487 ms - 24[0m
+[0mGET /favicon.ico [33m404 [0m0.217 ms - 24[0m
+[0mGET / [32m200 [0m1.520 ms - 3073[0m
+[0mGET /robots.txt [33m404 [0m0.545 ms - 23[0m
+[0mGET /sitemap.xml [33m404 [0m0.439 ms - 24[0m
+[0mGET /manager/html [33m404 [0m1.657 ms - 25[0m
+[0mGET / [32m200 [0m1.522 ms - 3073[0m
+[0mGET http://www.google.com/reader/about/ [33m404 [0m0.633 ms - 47[0m
+[0mGET http://www.elong.com/ [32m200 [0m2.989 ms - 3073[0m
+[0mGET / [32m200 [0m1.654 ms - 3073[0m
+[0mGET https://m.baidu.com/ [32m200 [0m1.495 ms - 3073[0m
+[0mGET /manager/html [33m404 [0m0.936 ms - 25[0m
+[0mGET http://httpheader.net/ [32m200 [0m1.466 ms - 3073[0m
+[0mGET / [32m200 [0m1.738 ms - 3073[0m
+[0mGET / [32m200 [0m1.808 ms - 3073[0m
+[0mGET / [32m200 [0m1.595 ms - 3073[0m
+[0mGET /manager/html [33m404 [0m0.692 ms - 25[0m
+[0mGET / [32m200 [0m1.568 ms - 3073[0m
+[0mGET / [32m200 [0m16.488 ms - 3073[0m
+[0mGET /learn.json [33m404 [0m0.844 ms - 23[0m
+[0mGET /api/todos [32m200 [0m21.893 ms - 2[0m
+[0mGET /four_in_a_row [32m200 [0m6.121 ms - 34208[0m
+[0mGET /four_in_a_rowlearn.json [33m404 [0m0.334 ms - 36[0m
+[0mGET /style2.css [33m404 [0m0.413 ms - 23[0m
+[0mGET /manager/html [33m404 [0m0.742 ms - 25[0m
+[0mGET / [32m200 [0m1.262 ms - 3073[0m
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3
+[0mGET / [36m304 [0m1.012 ms - -[0m
+[0mGET / [36m304 [0m0.802 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.380 ms - 23[0m
+[0mGET /api/todos [36m304 [0m2.360 ms - -[0m
+[0mGET / [36m304 [0m0.776 ms - -[0m
+[0mGET / [36m304 [0m1.216 ms - -[0m
+[0mGET /api/todos [36m304 [0m2.042 ms - -[0m
+[0mGET / [36m304 [0m0.956 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.502 ms - 23[0m
+[0mGET /api/todos [36m304 [0m1.942 ms - -[0m
+[0mGET / [36m304 [0m0.663 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.285 ms - 23[0m
+[0mGET / [36m304 [0m0.680 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.310 ms - 23[0m
+[0mGET /data.n3 [32m200 [0m1.291 ms - 451[0m
+[0mGET /data.n3 [36m304 [0m0.714 ms - -[0m
+[0mGET /data.n3 [36m304 [0m0.672 ms - -[0m
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3
+[0mGET /data.n3 [36m304 [0m0.842 ms - -[0m
+[0mGET / [36m304 [0m0.949 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.344 ms - 23[0m
+[0mGET /api/todos [36m304 [0m3.225 ms - -[0m
+[0mGET /query.n3 [32m200 [0m5.212 ms - 777[0m
+[0mGET /query.n3 [36m304 [0m0.709 ms - -[0m
+[0mGET / [36m304 [0m0.682 ms - -[0m
+[0mGET /query.n3 [36m304 [0m0.671 ms - -[0m
+[0mGET /query.n3 [36m304 [0m0.866 ms - -[0m
+[0mGET /query.n3 [36m304 [0m0.869 ms - -[0m
+[0mGET / [36m304 [0m0.649 ms - -[0m
+[0mGET / [36m304 [0m0.447 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.370 ms - 23[0m
+[0mGET /api/todos [36m304 [0m1.882 ms - -[0m
+[0mGET /learn.json [33m404 [0m0.405 ms - 23[0m
+[0mGET /api/todos [36m304 [0m1.741 ms - -[0m
+[0mGET /data.n3 [36m304 [0m0.649 ms - -[0m
+[0mGET /data.n3 [36m304 [0m0.680 ms - -[0m
+[0mGET /query.n3 [36m304 [0m0.684 ms - -[0m
+[0mGET /query.n3 [36m304 [0m0.686 ms - -[0m
+[0mGET /query.n3 [36m304 [0m0.664 ms - -[0m
+[0mGET http://www.elong.com/ [32m200 [0m2.059 ms - 3073[0m
+[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:901:11)
+    at Server._listen2 (net.js:1039:14)
+    at listen (net.js:1061:10)
+    at net.js:1143:9
+    at dns.js:72:18
+    at process._tickCallback (node.js:415:13)
+    at Function.Module.runMain (module.js:499:11)
+    at startup (node.js:119:16)
+    at node.js:902:3

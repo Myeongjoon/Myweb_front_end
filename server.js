@@ -153,6 +153,7 @@
 	 var fileupload = require('fileupload').createFileUpload('/uploadDir').middleware
 
 	app.post('/upload', fileupload, function(req, res) {
+		res.send(req.body);
 	// files are now in the req.body object along with other form fields
 	// files also get moved to the uploadDir specified
 	})

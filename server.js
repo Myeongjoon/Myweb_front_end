@@ -156,7 +156,7 @@
 	app.post('/upload', fileupload, function(req, res) {
 		var i=0;
 		var output = '';
-		console(req);
+		console.log(req);
 		for (var property in req) {
 			i++;
 		output +=i+"'th is : ["+ property + ']: ' + req[property]+'; \n';

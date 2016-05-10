@@ -173,9 +173,9 @@
 			i++;
 		output +=i+"'th is : ["+ property + ']: ' + req[property]+'; \n';
 		}
-		console.log("req.pipe()"+req.pipe);
-		console.log("req: "+output);
-		console.log("req.fileUpload : "+req.fileUpload);
+		//console.log("req.pipe()"+req.pipe);
+		//console.log("req: "+output);
+		//console.log("req.fileUpload : "+req.fileUpload);
 
 		
 		

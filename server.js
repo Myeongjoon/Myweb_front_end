@@ -148,11 +148,10 @@
 		res.sendfile('query.n3'); //go to lol_home.htmls
 		console.log("/query.n3 accessed");
 	});
-	app.configure(function(){
+	
 	app.use(express.methodOverride());
 	app.use(express.bodyParser({keepExtensions:true,uploadDir:path.join(__dirname,'/files')}));
-
-	});
+	
 	// listen (start app with node server.js) ======================================
 	var busboy = require('connect-busboy');
 	app.use(busboy()); 

@@ -31,6 +31,7 @@
 	var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
 	var argv = require('optimist').argv;
 	var fileupload = require('fileupload').createFileUpload('/uploadDir').middleware
+	var fs = require('fs');
 
 	// configuration =================
 
@@ -149,8 +150,18 @@
 	// listen (start app with node server.js) ======================================
 
 	 var fileupload = require('fileupload').createFileUpload('/uploadDir').middleware
-
+	app.use(express.bodyParser);
 	app.post('/upload', fileupload, function(req, res) {
+		fs.readFile(req.files.uploadFile.path,function(error,data){
+			var filePath = ___dirname + req.files.uploadFile.name;
+			fs.writeFile(filePath,data,function(error){
+				if(error){
+					throw err;
+				}else{
+					res.redirect("back");
+				}
+			})
+		})
 		res.send(req.body);
 	// files are now in the req.body object along with other form fields
 	// files also get moved to the uploadDir specified

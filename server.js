@@ -171,10 +171,10 @@
 		var output = '';
 		for (var property in req) {
 			i++;
-		//output +=i+"'th is : ["+ property + ']: ' + req[property]+'; \n';
+		output +=i+"'th is : ["+ property + ']: ' + req[property]+'; \n';
 		}
 		//console.log("req.pipe()"+req.pipe);
-		//console.log("req: "+output);
+		console.log("req: "+output);
 		//console.log("req.fileUpload : "+req.fileUpload);
 
 		

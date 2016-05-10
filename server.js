@@ -24,6 +24,7 @@
 
 	// set up ========================
 	var express = require('express');
+	var path = require('path');
     var logger = require('morgan');
     var methodOverride = require('method-override');
 	var app      = express(); 								// create our app w/ express

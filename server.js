@@ -150,9 +150,20 @@
 	});
 
 	// listen (start app with node server.js) ======================================
-
+	var busboy = require('connect-busboy');
+	app.use(busboy()); 
 	var fileupload = require('fileupload').createFileUpload('//home/kimmj8409/Myweb_front_end').middleware
 	app.post('/upload', fileupload, function(req, res) {
+		var fstream;
+			req.pipe(req.busboy);
+			req.busboy.on('file', function (fieldname, file, filename) {
+				console.log("Uploading: " + filename); 
+				fstream = fs.createWriteStream(__dirname + '/files/' + filename);
+				file.pipe(fstream);
+				fstream.on('close', function () {
+					res.redirect('back');
+				});
+			});
 		var i=0;
 		var output = '';
 		for (var property in req) {
@@ -162,6 +173,9 @@
 		console.log("req.pipe()"+req.pipe);
 		console.log("req: "+output);
 		console.log("req.fileUpload : "+req.fileUpload);
+
+		
+		
 		fs.readFile(req.files.uploadFile.path,function(error,data){
 			
 			var filePath = ___dirname + req.files.uploadFile.name;

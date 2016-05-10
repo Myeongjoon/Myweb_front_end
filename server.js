@@ -154,13 +154,11 @@
 	var fileupload = require('fileupload').createFileUpload('//home/kimmj8409/Myweb_front_end').middleware
 	app.post('/upload', fileupload, function(req, res) {
 		console.log("/upload");
-		console.log("req: "+req);
-		console.log("req.files : "+req.files);
-		console.log("req[0]: "+req[0]);
 		var i=0;
 		var output = '';
 		for (var property in req) {
-		output += property + ': ' + req[property]+'; ';
+			i++;
+		output +=i+"'th is : []"+ property + ']: ' + req[property]+'; \n';
 		}
 		console.log("req: "+output);
 		console.log("req.fileUpload : "+req.fileUpload);

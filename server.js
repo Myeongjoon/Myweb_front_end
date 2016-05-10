@@ -26,8 +26,6 @@
 	var express = require('express');
     var logger = require('morgan');
     var methodOverride = require('method-override');
-    var multer = require('multer');
-    var errorHandler = require('errorhandler');
 	var app      = express(); 								// create our app w/ express
 	var mongoose = require('mongoose'); 					// mongoose for mongodb
 	var morgan = require('morgan'); 			// log requests to the console (express4)

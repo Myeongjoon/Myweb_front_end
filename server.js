@@ -150,3 +150,32 @@
 	// listen (start app with node server.js) ======================================
 	app.listen(8080, argv.fe_ip);
 	console.log("App listening on port 8080");
+
+		var net = require('net');
+	var fs = require('fs');
+	var buffer = require('buffer');
+
+	var HOST = '104.199.143.230';
+	var PORT = '8081'
+	var FILEPATH = '';
+	var net = require('net');
+	var fs = require('fs');
+	var buffer = require('buffer');
+
+	var server = net.createServer(function(conn) {
+		console.log('server connected');
+
+	});
+
+	server.listen(PORT, HOST, function() {
+		//listening
+		console.log('server bound to ' + PORT + '\n');
+
+		server.on('connection', function(conn) {
+			console.log('connection made...\n')
+			conn.on('data', function(data) {
+				console.log('data received');
+				console.log('data is: \n' + data);
+			});
+		})
+	});

@@ -162,15 +162,10 @@
 		console.log("req : "+req)
 		console.log("res : "+res)
 		console.log("next : "+next)
+		res.sendStatus(200)
   // req.file is the `avatar` file 
   // req.body will hold the text fields, if there were any 
 	})
-	
-	var fileupload = require('fileupload').createFileUpload('/home/kimmj8409/Myweb_front_end')
-		fileupload.put('result', function(error, file) {
-		// file is an object with information about the uploaded file
-		// See below for the contents of this object
-		})
 	
 	app.listen(8080, argv.fe_ip);
 	console.log("App listening on port 8080");

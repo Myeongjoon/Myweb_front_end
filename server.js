@@ -150,7 +150,7 @@
 		console.log("/query.n3 accessed");
 	});
 	
-	app.use(bodyParser.urlencoded());
+	app.use(bodyParser.urlencoded({ extended: true }));
 
 	app.use(bodyParser.json());
 	

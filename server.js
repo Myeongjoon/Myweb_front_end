@@ -159,20 +159,14 @@
 	app.post('/upload', fileupload, function(req, res) {
 		var i=0;
 		var output = '';
-		console.log(req);
+		//console.log(req);
 		for (var property in req) {
 			i++;
 		output +=i+"'th is : ["+ property + ']: ' + req[property]+'; \n';
 		}
 		//console.log("req.pipe()"+req.pipe);
-		console.log("req: "+output);
+		//console.log("req: "+output);
 		//console.log("req.fileUpload : "+req.fileUpload);
-		
-		var fileupload = require('fileupload').createFileUpload('/home/kimmj8409/Myweb_front_end')
-		fileupload.put('resut', function(error, file) {
-		// file is an object with information about the uploaded file
-		// See below for the contents of this object
-		})
 		
 		//var output = 'req.files \n';
 		//for (var property in req.files) {
@@ -180,9 +174,9 @@
 		//output +=i+"'th is : ["+ property + ']: ' + req.files[property]+'; \n';
 		//}
 		
-		console.log(output);
-		console.log(req.files.fileUpload);
-		console.log(req.files.keywords);
+		//console.log(output);
+		//console.log(req.files.fileUpload);
+		//console.log(req.files.keywords);
 		/*fs.readFile(req.files.uploadFile.path,function(error,data){
 			
 			var filePath = ___dirname + req.files.uploadFile.name;
@@ -199,6 +193,12 @@
 	// files are now in the req.body object along with other form fields
 	// files also get moved to the uploadDir specified
 	})
+	
+	var fileupload = require('fileupload').createFileUpload('/home/kimmj8409/Myweb_front_end')
+		fileupload.put('result', function(error, file) {
+		// file is an object with information about the uploaded file
+		// See below for the contents of this object
+		})
 	
 	app.listen(8080, argv.fe_ip);
 	console.log("App listening on port 8080");

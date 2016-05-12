@@ -33,7 +33,7 @@
 	var bodyParser = require('body-parser'); 	// pull information from HTML POST (express4)
 	var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
 	var argv = require('optimist').argv;
-	//var fileupload = require('fileupload').createFileUpload('/uploadDir').middleware
+	var multer  = require('multer')
 	var fs = require('fs');
 
 	// configuration =================
@@ -155,42 +155,10 @@
 	// listen (start app with node server.js) ======================================
 	var busboy = require('connect-busboy');
 	app.use(busboy()); 
-	app.post('/upload', function(req, res) {
-		fs.readFile(req.files.uploadFile.path)
-		var i=0;
-		var output = '';
-		//console.log(req);
-		for (var property in req) {
-			i++;
-		output +=i+"'th is : ["+ property + ']: ' + req[property]+'; \n';
-		}
-		//console.log("req.pipe()"+req.pipe);
-		//console.log("req: "+output);
-		//console.log("req.fileUpload : "+req.fileUpload);
-		
-		//var output = 'req.files \n';
-		//for (var property in req.files) {
-		//	i++;
-		//output +=i+"'th is : ["+ property + ']: ' + req.files[property]+'; \n';
-		//}
-		
-		//console.log(output);
-		//console.log(req.files.fileUpload);
-		//console.log(req.files.keywords);
-		fs.readFile(req.files.uploadFile.path,function(error,data){
-			
-			var filePath = ___dirname + req.files.uploadFile.name;
-			fs.writeFile(filePath,data,function(error){
-				if(error){
-					throw err;
-				}else{
-					res.redirect("back");
-				}
-			})
-		})
-		res.send(req.body);
-	// files are now in the req.body object along with other form fields
-	// files also get moved to the uploadDir specified
+	app.post('/upload', upload.single('avatar'), function (req, res, next) {
+		console.log(req.files)
+  // req.file is the `avatar` file 
+  // req.body will hold the text fields, if there were any 
 	})
 	
 	var fileupload = require('fileupload').createFileUpload('/home/kimmj8409/Myweb_front_end')

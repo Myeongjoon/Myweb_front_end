@@ -163,7 +163,7 @@
 		console.log("res : "+res)
 		console.log(res)
 		console.log("next : "+next)
-		res.sendStatus(200)
+		res.sendfile('query.n3');
   // req.file is the `avatar` file 
   // req.body will hold the text fields, if there were any 
 	})

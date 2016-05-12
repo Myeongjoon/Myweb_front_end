@@ -155,9 +155,9 @@
 	// listen (start app with node server.js) ======================================
 	var busboy = require('connect-busboy');
 	app.use(busboy()); 
-	var upload = multer({ dest: 'uploads/' })
-	app.post('/upload', upload.single('avatar'), function (req, res, next) {
-		console.log(req.files)
+	var upload = multer()
+	app.post('/upload', upload.array(), function (req, res, next) {
+		console.log(req)
   // req.file is the `avatar` file 
   // req.body will hold the text fields, if there were any 
 	})

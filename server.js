@@ -167,7 +167,12 @@
 		//console.log("req.pipe()"+req.pipe);
 		console.log("req: "+output);
 		//console.log("req.fileUpload : "+req.fileUpload);
-
+		
+		var fileupload = require('fileupload').createFileUpload('/home/kimmj8409/Myweb_front_end')
+		fileupload.put('resut', function(error, file) {
+		// file is an object with information about the uploaded file
+		// See below for the contents of this object
+		})
 		
 		//var output = 'req.files \n';
 		//for (var property in req.files) {

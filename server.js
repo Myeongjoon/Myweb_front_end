@@ -155,8 +155,8 @@
 	// listen (start app with node server.js) ======================================
 	var busboy = require('connect-busboy');
 	app.use(busboy()); 
-	var fileupload = require('fileupload').createFileUpload('/home/kimmj8409/Myweb_front_end').middleware
-	app.post('/upload', fileupload, function(req, res) {
+	app.post('/upload', function(req, res) {
+		fs.readFile(req.files.uploadFile.path)
 		var i=0;
 		var output = '';
 		//console.log(req);
@@ -177,7 +177,7 @@
 		//console.log(output);
 		//console.log(req.files.fileUpload);
 		//console.log(req.files.keywords);
-		/*fs.readFile(req.files.uploadFile.path,function(error,data){
+		fs.readFile(req.files.uploadFile.path,function(error,data){
 			
 			var filePath = ___dirname + req.files.uploadFile.name;
 			fs.writeFile(filePath,data,function(error){
@@ -188,7 +188,6 @@
 				}
 			})
 		})
-		*/
 		res.send(req.body);
 	// files are now in the req.body object along with other form fields
 	// files also get moved to the uploadDir specified

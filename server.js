@@ -161,7 +161,7 @@
 	app.post('/upload', upload.array(), function (req, res, next) {
 		console.log("req : "+req)
 		console.log("res : "+res)
-		consol.log(res)
+		console.log(res)
 		console.log("next : "+next)
 		res.sendStatus(200)
   // req.file is the `avatar` file 

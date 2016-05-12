@@ -157,8 +157,8 @@
 	// listen (start app with node server.js) ======================================
 	var upload = multer()
 	app.post('/upload', upload.array("fileUpload"), function (req, res, next) {
-		console.log("req.fileUpload : ");
-		console.log(req.fileUpload);
+		console.log("req.files : ");
+		console.log(req.files);
 		console.log("req : "+req)
 		console.log("res : "+res)
 		console.log(res)

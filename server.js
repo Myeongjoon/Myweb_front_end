@@ -155,10 +155,9 @@
 	app.use(bodyParser.json());
 	
 	// listen (start app with node server.js) ======================================
-	var busboy = require('connect-busboy');
-	app.use(busboy()); 
 	var upload = multer()
-	app.post('/upload', upload.array(), function (req, res, next) {
+	app.post('/upload', upload.array("fileUpload"), function (req, res, next) {
+		console.log("req.fileUpload : ");
 		console.log(req.fileUpload);
 		console.log("req : "+req)
 		console.log("res : "+res)

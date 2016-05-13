@@ -36,7 +36,6 @@
 			res.json(todos);
 		});
 	});
-
 	app.post('/api/todos', function(req, res) {
 
 		Todo.create({
@@ -111,7 +110,17 @@
 	//
 	//var upload = multer({ storage:storage }).single('file')
 	//app.post('/upload', upload.single('fileUpload'), function (req, res, next) {
-		app.post('/upload', function (req, res, next) {	
+		var uploadData= multer({dest : './uploads/'}).single('fileUpload');
+		app.post('/upload', function (req, res, next) {
+			uploadData(req, res, function (err) {
+    if (err) {
+      console.log(err.message);
+      // An error occurred when uploading
+      return
+    }
+    console.log('Everything went fine');
+    // Everything went fine
+ 		})
 		console.log('uploading---')
     //console.log(req)
     var storage = multer.diskStorage({

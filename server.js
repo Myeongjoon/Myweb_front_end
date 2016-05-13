@@ -39,8 +39,6 @@
 	// configuration =================
 
 	mongoose.connect('mongodb://' + argv.be_ip + ':80/my_database');
-
-	app.use(app.router);
     app.use('/js', express.static(__dirname + '/js'));
    	app.use('/bower_components', express.static(__dirname + '/bower_components'));
 	app.use(morgan('dev')); 										// log every request to the console
@@ -157,6 +155,7 @@
 	
 	// listen (start app with node server.js) ======================================
 	var upload = multer()
+	app.use(multer({ dest: './uploads/'}))
 	console.log("upload.array(\"fileUpload\")")
 	console.log(upload.array("fileUpload"))
 	console.log("upload.array()")

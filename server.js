@@ -162,7 +162,7 @@
 	console.log(upload.array())
 	console.log("upload")
 	console.log(upload)
-	app.post('/upload', upload.array("fileUpload"), function (req, res, next) {
+	app.post('/upload', upload.single('fileUpload'), function (req, res, next) {
 		console.log("req.files : ");
 		console.log(req.files);
 		console.log("req.body : ");

@@ -35,7 +35,7 @@
 	var argv = require('optimist').argv;
 	var multer  = require('multer')
 	var fs = require('fs');
-
+	var formidable = require('formidable');
 	// configuration =================
 
 	mongoose.connect('mongodb://' + argv.be_ip + ':80/my_database');
@@ -164,6 +164,12 @@
 	console.log("upload")
 	console.log(upload)
 	app.post('/upload', upload.single('fileUpload'), function (req, res, next) {
+		var form = new formidable.IncomingForm();
+		form.keepExtensions = true;
+		form.on('file', function(field, file) {
+            //On file received
+            console.log(file);
+        })
 		console.log("req.files : ");
 		console.log(req.files);
 		console.log("req.body : ");

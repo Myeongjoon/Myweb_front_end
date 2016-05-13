@@ -113,7 +113,7 @@
 		
 			var storage = multer.diskStorage({
 		destination: function (req, file, cb) {
-			cb(null, './uploads/')
+			cb(null, '/home/kimmj8409/Myweb_front_end/uploads')
 		},
 		filename: function (req, file, cb) {
 			crypto.pseudoRandomBytes(16, function (err, raw) {
@@ -126,7 +126,7 @@
 		
 		
 		
-		var uploadData= multer({dest : './uploads/'}).single('fileUpload');
+		var uploadData= multer({dest : '/home/kimmj8409/Myweb_front_end/uploads'}).single('fileUpload');
 		app.post('/upload', function (req, res, next) {
 			upload(req, res, function (err) {
     if (err) {

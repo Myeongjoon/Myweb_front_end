@@ -13,7 +13,7 @@
 	var formidable = require('formidable');
 	
 	var upload = multer();
-	app.use(multer({ dest: './uploads/'}))
+//	app.use(multer({ dest: './uploads/'}))
 
 	mongoose.connect('mongodb://' + argv.be_ip + ':80/my_database');
     app.use('/js', express.static(__dirname + '/js'));
@@ -110,7 +110,7 @@
 	});
 	var upload = multer({ storage:storage }).single('file')
 	//app.post('/upload', upload.single('fileUpload'), function (req, res, next) {
-	app.post('/upload', function (req, res, next) {	
+		app.post('/upload', function (req, res, next) {	
 		console.log('uploading---')
     console.log(req)
     var storage = multer.diskStorage({

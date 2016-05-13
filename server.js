@@ -152,14 +152,12 @@
 	
 	app.use(bodyParser.urlencoded({ extended: true }));
 
-	app.use(bodyParser.json());
+	//app.use(bodyParser.json());
 	
 	// listen (start app with node server.js) ======================================
 	var upload = multer()
 	console.log("upload.array(\"fileUpload\")")
 	console.log(upload.array("fileUpload"))
-	console.log("upload.array(fileUpload)")
-	console.log(upload.array(fileUpload))
 	console.log("upload.array()")
 	console.log(upload.array())
 	console.log("upload")

@@ -110,9 +110,25 @@
 	//
 	//var upload = multer({ storage:storage }).single('file')
 	//app.post('/upload', upload.single('fileUpload'), function (req, res, next) {
+		
+			var storage = multer.diskStorage({
+		destination: function (req, file, cb) {
+			cb(null, './uploads/')
+		},
+		filename: function (req, file, cb) {
+			crypto.pseudoRandomBytes(16, function (err, raw) {
+				cb(null, raw.toString('hex') + Date.now() + '.' + mime.extension(file.mimetype));
+			});
+		}
+	});
+	var upload = multer({ storage: storage });
+		
+		
+		
+		
 		var uploadData= multer({dest : './uploads/'}).single('fileUpload');
 		app.post('/upload', function (req, res, next) {
-			uploadData(req, res, function (err) {
+			upload(req, res, function (err) {
     if (err) {
       console.log(err.message);
       // An error occurred when uploading
@@ -122,16 +138,6 @@
     // Everything went fine
  		})
 		console.log('uploading---')
-    //console.log(req)
-    var storage = multer.diskStorage({
-          destination: function (req, file, cb) {
-            console.log(req.body)
-            cb(null, ('hidden/images/slip/' +req.body.classId) )
-          },
-          filename: function (req, file, cb) {
-            cb(null, file.fieldname + '-' + Date.now())
-          }
-     })
 
     //var upload = multer({ dest: ('hidden/images/slip/' + req.body.classId) }).single('file')
     var upload = multer({ storage:storage }).single('fileUpload')

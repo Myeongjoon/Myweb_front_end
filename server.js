@@ -108,7 +108,8 @@
 		res.sendfile('query.n3');
 		console.log("/query.n3 accessed");
 	});
-	var upload = multer({ storage:storage }).single('file')
+	//
+	//var upload = multer({ storage:storage }).single('file')
 	//app.post('/upload', upload.single('fileUpload'), function (req, res, next) {
 		app.post('/upload', function (req, res, next) {	
 		console.log('uploading---')

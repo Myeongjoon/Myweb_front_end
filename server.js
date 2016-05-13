@@ -11,9 +11,7 @@
 	var multer  = require('multer')
 	var fs = require('fs');
 	var formidable = require('formidable');
-	
-	var upload = multer();
-//	app.use(multer({ dest: './uploads/'}))
+	var upload = multer({ dest: 'uploads/' })
 
 	mongoose.connect('mongodb://' + argv.be_ip + ':80/my_database');
     app.use('/js', express.static(__dirname + '/js'));
@@ -107,51 +105,8 @@
 		res.sendfile('query.n3');
 		console.log("/query.n3 accessed");
 	});
-	//
-	//var upload = multer({ storage:storage }).single('file')
-	//app.post('/upload', upload.single('fileUpload'), function (req, res, next) {
-		
-			var storage = multer.diskStorage({
-		destination: function (req, file, cb) {
-			cb(null, '/home/kimmj8409/Myweb_front_end/uploads')
-		},
-		filename: function (req, file, cb) {
-			crypto.pseudoRandomBytes(16, function (err, raw) {
-				cb(null, raw.toString('hex') + Date.now() + '.' + mime.extension(file.mimetype));
-			});
-		}
-	});
-	var upload = multer({ storage: storage });
-		
-		
-		
-		
-		var uploadData= multer({dest : '/home/kimmj8409/Myweb_front_end/uploads'}).single('fileUpload');
-		app.post('/upload', function (req, res, next) {
-			upload(req, res, function (err) {
-    if (err) {
-      console.log(err.message);
-      // An error occurred when uploading
-      return
-    }
-    console.log('Everything went fine');
-    // Everything went fine
- 		})
-		console.log('uploading---')
-
-    //var upload = multer({ dest: ('hidden/images/slip/' + req.body.classId) }).single('file')
-    var upload = multer({ storage:storage }).single('fileUpload')
-		
-		var form = new formidable.IncomingForm();
-		form.keepExtensions = true;
-		form.on('file', function(field, file) {
-            console.log(file);
-        })
-		console.log("req.files : ");
-		console.log(req.files);
-		console.log("req.body : ");
-		console.log(req.body);
-		console.log("req : "+req)
+	
+	app.post('/upload',upload.single('fileUpload'),function (req, res, next) {
 		res.send(200);
 	})
 	app.listen(8080, argv.fe_ip);

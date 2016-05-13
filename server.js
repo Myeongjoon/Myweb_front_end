@@ -128,8 +128,8 @@
 	});
 	
 	app.post('/upload',multer({ dest: './uploads/'}).single('fileUpload'),function (req, res, next) {
-		alert(req.file);
-		alert(req.body);
+		console.log(req.file);
+		console.log(req.body);
 		res.send(200);
 	})
 	app.listen(8080, argv.fe_ip);

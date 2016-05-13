@@ -5,13 +5,34 @@
 	var app      = express(); 							
 	var mongoose = require('mongoose'); 			
 	var morgan = require('morgan'); 		
-	var bodyParser = require('body-parser'); 
 	var methodOverride = require('method-override');
 	var argv = require('optimist').argv;
 	var multer  = require('multer')
 	var fs = require('fs');
 	var formidable = require('formidable');
-	var upload = multer({ dest: 'uploads/' })
+	var bodyParser = require('body-parser'),
+	var path = require('path');
+
+	app.use(bodyParser.json());
+
+	// view engine setup
+	app.set('views', path.join(__dirname, 'views'));
+	app.set('view engine', 'jade');
+	
+	
+	
+	
+	
+	var storage = multer.diskStorage({
+	destination: function (req, file, cb) {
+		cb(null, '/home/kimmj8409/Myweb_front_end/uploads')
+	},
+	filename: function (req, file, cb) {
+		cb(null, file.fieldname + '-' + Date.now())
+	}
+	})
+
+	var upload = multer({ storage: storage })
 
 	mongoose.connect('mongodb://' + argv.be_ip + ':80/my_database');
     app.use('/js', express.static(__dirname + '/js'));
@@ -106,7 +127,9 @@
 		console.log("/query.n3 accessed");
 	});
 	
-	app.post('/upload',upload.single('fileUpload'),function (req, res, next) {
+	app.post('/upload',multer({ dest: './uploads/'}).single('fileUpload'),function (req, res, next) {
+		alert(req.file);
+		alert(req.body);
 		res.send(200);
 	})
 	app.listen(8080, argv.fe_ip);

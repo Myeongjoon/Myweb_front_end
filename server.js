@@ -113,7 +113,7 @@
 	//app.post('/upload', upload.single('fileUpload'), function (req, res, next) {
 		app.post('/upload', function (req, res, next) {	
 		console.log('uploading---')
-    console.log(req)
+    //console.log(req)
     var storage = multer.diskStorage({
           destination: function (req, file, cb) {
             console.log(req.body)

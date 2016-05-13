@@ -127,7 +127,10 @@
 		console.log("/query.n3 accessed");
 	});
 	
-	app.post('/upload',multer({ dest: './uploads/'}).single('fileUpload'),function (req, res, next) {
+	var multipart = require('connect-multiparty');
+	var multipartMiddleware = multipart();
+	
+	app.post('/upload',multipartMiddleware,function (req, res, next) {
 		console.log(req.file);
 		console.log(req.body);
 		res.send(200);

@@ -10,7 +10,7 @@
 	var multer  = require('multer')
 	var fs = require('fs');
 	var formidable = require('formidable');
-	var bodyParser = require('body-parser'),
+	var bodyParser = require('body-parser');
 	var path = require('path');
 
 	app.use(bodyParser.json());

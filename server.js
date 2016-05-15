@@ -125,9 +125,6 @@
 		console.log("/query.n3 accessed");
 	});
 	
-	var multipart = require('connect-multiparty');
-	var multipartMiddleware = multipart();
-	
 	app.post('/upload',multipartMiddleware,function (req, res, next) {
 		if(!is(req, ['multipart'])){
 			console.log("not multipart");

@@ -37,7 +37,6 @@
    	app.use('/bower_components', express.static(__dirname + '/bower_components'));
 	app.use(morgan('dev')); 									
 	app.use(methodOverride());
-	app.use(is());
 	app.use(multer());
 	var Todo = mongoose.model('Todo', {
 		title : String,

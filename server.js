@@ -132,7 +132,7 @@
 		//console.log("is.hasbody(req) : ");
 		//console.log(is.hasBody(req));
 		console.log("req.headers.content-type");
-		console.log(req.headers.content-type);
+		console.log(req.headers[content-type]);
 		console.log("is(req, ['multipart'])");
 		console.log(is(req, ['multipart']));
 		console.log("!is(req, ['multipart'])");

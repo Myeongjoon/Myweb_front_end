@@ -125,7 +125,7 @@
 		console.log("/query.n3 accessed");
 	});
 	
-	app.post('/upload',multipartMiddleware,function (req, res, next) {
+	app.post('/upload',upload.single("fileUpload"),function (req, res, next) {
 		if(!is(req, ['multipart'])){
 			console.log("not multipart");
 		}else{

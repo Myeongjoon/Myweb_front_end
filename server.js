@@ -1,15 +1,13 @@
 	var express = require('express');
 	var path = require('path');
     var logger = require('morgan');
-    var methodOverride = require('method-override');
 	var app      = express(); 							
 	var mongoose = require('mongoose'); 			
 	var morgan = require('morgan'); 		
 	var methodOverride = require('method-override');
 	var argv = require('optimist').argv;
-	var multer  = require('multer')
+	var multer  = require('multer');
 	var fs = require('fs');
-	var formidable = require('formidable');
 	var bodyParser = require('body-parser');
 	var path = require('path');
 
@@ -131,6 +129,11 @@
 	var multipartMiddleware = multipart();
 	
 	app.post('/upload',multipartMiddleware,function (req, res, next) {
+		if(!is(req, ['multipart'])){
+			console.log("not multipart");
+		}else{
+			console.log("it is multipart");
+		}
 		console.log(req.file);
 		console.log(req.body);
 		res.send(200);

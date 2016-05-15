@@ -13,25 +13,6 @@
 	var is = require('type-is')
 	app.use(bodyParser.json());
 
-	// view engine setup
-	app.set('views', path.join(__dirname, 'views'));
-	app.set('view engine', 'jade');
-	
-	
-	//
-	
-	
-	var storage = multer.diskStorage({
-	destination: function (req, file, cb) {
-		cb(null, '/home/kimmj8409/Myweb_front_end/uploads')
-	},
-	filename: function (req, file, cb) {
-		cb(null, file.fieldname + '-' + Date.now())
-	}
-	})
-
-	var upload = multer({ storage: storage })
-
 	mongoose.connect('mongodb://' + argv.be_ip + ':80/my_database');
     app.use('/js', express.static(__dirname + '/js'));
    	app.use('/bower_components', express.static(__dirname + '/bower_components'));
@@ -123,7 +104,19 @@
 		res.sendfile('query.n3');
 		console.log("/query.n3 accessed");
 	});
-	app.use(multer({dest:'./media/'}).single('fileUpload'));
+	
+		
+	var storage = multer.diskStorage({
+	destination: function (req, file, cb) {
+		cb(null, '/home/kimmj8409/Myweb_front_end/')
+	},
+	filename: function (req, file, cb) {
+		cb(null, file.originalname)
+	}
+	})
+	var upload = multer({ storage: storage })
+	
+	app.use(multer({ storage: storage }).single('fileUpload'));
 	app.post('/upload',function (req, res, next) {
 		console.log("1");
 		console.log(req.file);

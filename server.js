@@ -133,8 +133,8 @@
 		//console.log(is.hasBody(req));
 		console.log("req.headers['content-type']");
 		console.log(req.headers['content-type']);
-		console.log("is(req, ['multipart/form-data;'])");
-		console.log(is(req, ['multipart/form-data;']));
+		console.log("is(req, ['multipart'])");
+		console.log(is(req, ['multipart']));
 		if(!is(req, ['multipart'])){
 			console.log("not multipart");
 		}else{

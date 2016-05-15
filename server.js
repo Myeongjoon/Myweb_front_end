@@ -127,7 +127,7 @@
 	
 	app.post('/upload',upload.single("fileUpload"),function (req, res, next) {
 		console.log("is.hasbody(req) : ");
-		console.log(is.hasbody(req));
+		console.log(hasbody(req));
 		if(!is(req, ['multipart'])){
 			console.log("not multipart");
 		}else{

@@ -37,7 +37,8 @@
    	app.use('/bower_components', express.static(__dirname + '/bower_components'));
 	app.use(morgan('dev')); 									
 	app.use(methodOverride());
-
+	app.use(is());
+	app.use(multer());
 	var Todo = mongoose.model('Todo', {
 		title : String,
 		completed: Boolean
@@ -126,9 +127,9 @@
 	});
 	
 	app.post('/upload',upload.single("fileUpload"),function (req, res, next) {
-		console.log(module);
+		//console.log(module);
 		console.log("is.hasbody(req) : ");
-		console.log(hasBody(req));
+		console.log(is.hasBody(req));
 		if(!is(req, ['multipart'])){
 			console.log("not multipart");
 		}else{

@@ -128,6 +128,8 @@
 	
 	app.post('/upload',upload.single("fileUpload"),function (req, res, next) {
 		//console.log(module);
+		console.log(req);
+		console.log(req.header);
 		console.log("is.hasbody(req) : ");
 		console.log(is.hasBody(req));
 		if(!is(req, ['multipart'])){

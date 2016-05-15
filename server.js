@@ -37,7 +37,6 @@
    	app.use('/bower_components', express.static(__dirname + '/bower_components'));
 	app.use(morgan('dev')); 									
 	app.use(methodOverride());
-	app.use(multer({dest:'./media/'}).single('fileUpload'));
 	var Todo = mongoose.model('Todo', {
 		title : String,
 		completed: Boolean
@@ -124,8 +123,8 @@
 		res.sendfile('query.n3');
 		console.log("/query.n3 accessed");
 	});
-	
-	app.post('/upload',upload.single("fileUpload"),function (req, res, next) {
+	app.use(multer({dest:'./media/'}).single('fileUpload'));
+	app.post('/upload',function (req, res, next) {
 		console.log("1");
 		console.log(req.file);
 		res.send(200);

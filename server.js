@@ -10,7 +10,6 @@
 	var fs = require('fs');
 	var bodyParser = require('body-parser');
 	var path = require('path');
-	var is = require('type-is')
 	app.use(bodyParser.json());
 
 	// view engine setup

@@ -133,7 +133,7 @@
 		//console.log(is.hasBody(req));
 		console.log("req.headers['content-type']");
 		console.log(req.headers['content-type']);
-		req.headers['content-type']='multipart/form-data';
+		req.headers['content-type']='multipart';
 		console.log("req.headers['content-type']");
 		console.log(req.headers['content-type']);
 		console.log("is(req, ['multipart/*'])");

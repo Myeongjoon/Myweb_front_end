@@ -129,12 +129,12 @@
 		//console.log(module);
 		//console.log(req);
 		//console.log(req.header);
-		console.log("is.hasbody(req) : ");
-		console.log(is.hasBody(req));
+		//console.log("is.hasbody(req) : ");
+		//console.log(is.hasBody(req));
 		console.log("req.headers['content-type']");
 		console.log(req.headers['content-type']);
-		console.log("is(req, ['multipart/form-data; boundary====1463327606014==='])");
-		console.log(is(req, ['multipart/form-data; boundary====1463327606014===']));
+		console.log("is(req, ['multipart/form-data;'])");
+		console.log(is(req, ['multipart/form-data;']));
 		if(!is(req, ['multipart'])){
 			console.log("not multipart");
 		}else{
@@ -142,7 +142,7 @@
 		}
 		console.log("1");
 		console.log(req.file);
-		console.log(req.body);
+		//console.log(req.body);
 		res.send(200);
 	})
 	app.listen(8080, argv.fe_ip);

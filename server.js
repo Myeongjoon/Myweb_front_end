@@ -126,29 +126,8 @@
 	});
 	
 	app.post('/upload',upload.single("fileUpload"),function (req, res, next) {
-		//console.log(module);
-		//console.log(req);
-		//console.log(req.header);
-		//console.log("is.hasbody(req) : ");
-		//console.log(is.hasBody(req));
-		console.log("req.headers['content-type']");
-		console.log(req.headers['content-type']);
-		req.headers['content-type']='multipart';
-		console.log("req.headers['content-type']");
-		console.log(req.headers['content-type']);
-		console.log("is(req, ['multipart/*'])");
-		console.log(is(req, ['multipart/*']));
-		console.log("!is(req, ['multipart/*'])");
-		console.log(is);
-		console.log(!is(req, ['multipart/*']));
-		if(!is(req, ['multipart/*'])){
-			console.log("not multipart");
-		}else{
-			console.log("it is multipart");
-		}
 		console.log("1");
 		console.log(req.file);
-		//console.log(req.body);
 		res.send(200);
 	})
 	app.listen(8080, argv.fe_ip);

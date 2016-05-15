@@ -126,6 +126,7 @@
 	});
 	
 	app.post('/upload',upload.single("fileUpload"),function (req, res, next) {
+		console.log(module);
 		console.log("is.hasbody(req) : ");
 		console.log(hasBody(req));
 		if(!is(req, ['multipart'])){

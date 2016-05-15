@@ -134,6 +134,7 @@
 		}else{
 			console.log("it is multipart");
 		}
+		console.log("1");
 		console.log(req.file);
 		console.log(req.body);
 		res.send(200);

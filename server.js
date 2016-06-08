@@ -23,6 +23,32 @@
 		completed: Boolean
 	});
 
+	var TB_LolCombinationOfChampion = mongoose.model('TB_LolCombinationOfChampion', {
+		Top : int,
+		Mid : int,
+		Jungle : int,
+		Ad : int,
+		Support : int,
+		eTop : int,
+		eMid : int,
+		eJungle : int,
+		eAd : int,
+		eSupport : int,
+		win : int,
+		lose : int,
+	});
+	
+	app.get('/api/TB_LolCombinationOfChampion', function(req, res) {
+
+		TB_LolCombinationOfChampion.find(function(err, TB_LolCombinationOfChampion) {
+
+			if (err)
+				res.send(err)
+
+			res.json(TB_LolCombinationOfChampion);
+		});
+	});
+
 	app.get('/api/todos', function(req, res) {
 
 		Todo.find(function(err, todos) {
@@ -33,6 +59,8 @@
 			res.json(todos);
 		});
 	});
+
+
 	app.post('/api/todos', function(req, res) {
 
 		Todo.create({

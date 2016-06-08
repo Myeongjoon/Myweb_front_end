@@ -132,6 +132,7 @@ function summonerLookUp() {
                 sumName = json[SUMMONER_NAME_NOSPACES].name;
 				getMyleagueEntry(summoner_ID);
 				stats_ranked(summoner_ID);
+				championCombinationTest(summoner_ID);
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 alert("error summonerLookUp()");
@@ -142,6 +143,79 @@ function summonerLookUp() {
 
 function Name() {
     alert(sumName);
+}
+
+function championCombinationTest(summoner_ID){
+	var API_KEY = "2c8415cb-53b2-488d-85f2-b1b9d97be2b2";
+
+	if(summoner_ID != ""){
+		$.ajax({
+            url: 'https://kr.api.pvp.net/api/lol/kr/v2.2/matchlist/by-summoner/' + summoner_ID + '?api_key=2c8415cb-53b2-488d-85f2-b1b9d97be2b2',
+            type: 'GET',
+            dataType: 'json',
+            data: {
+
+            },
+            success: function (json) {
+					
+					matchID = (json["matches"])[0].matchId;
+					//아이디 받았으니 이걸 바탕으로 대전 정보를 가져온다.
+					$.ajax({
+			            url: 'https://kr.api.pvp.net/api/lol/kr/v2.2/match/' + matchID + '?api_key=2c8415cb-53b2-488d-85f2-b1b9d97be2b2',
+			            type: 'GET',
+			            dataType: 'json',
+			            data: {
+
+			            },
+			            success: function (matchjson) {
+								var myteam={};
+								var enemy={};
+								for(var i =0;i<10;i++){
+									//10명의 챔피언 마다	
+									myline = matchjson["participants"][i]["timeline"].lane;
+									//라인을 찾고
+									team = matchjson["participants"][i].teamId;
+									//팀을 찾고
+									championId = matchjson["participants"][i].championId;
+									//챔피언을 찾는다.
+									winner = matchjson["participants"][i]["stats"].winner;
+									if(myline=="BOTTOM"){
+										myline =  matchjson["participants"][i]["timeline"].role;
+									}
+
+									//팀은 100 or 200
+									if(winner){
+										alert("My Team is "+ team+ " and My line is "+ myline+"\nMy Champion is "+championId+"\nI win!!");
+									}else{
+										alert("My Team is "+ team+ " and My line is "+ myline+"\nMy Champion is "+championId+"\nI lose..");			
+									}
+									if(team==100){
+										myteam[myline] = championId;
+										myteam["win"]=winner;
+									}else{
+										enemy[myline] = championId;
+										enemy["win"]=winner;
+									}
+									//이걸 리스트형태로 다시 만들고
+									//DB와 연결한다.
+									//없는 디비면 새로 만들고
+									//있는 디비면 이기고 진것을 체크한다.
+
+								}
+								
+			            },
+			            error: function (XMLHttpRequest, textStatus, errorThrown) {
+
+			            }
+			        });
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+
+            }
+        });
+	}else{
+
+	}
 }
 
 function getMyleagueEntry(summonerID) {
@@ -369,26 +443,25 @@ function UrlExists(url, cb){
 				<form id="todo-form">
 					<input id="userName" placeholder="아이디를 입력하시오." ng-model="newTodo" autofocus>
 					<script type="text/javascript">
-				// Using jQuery.
-				$(function() {
-					$('form').each(function() {
-						$(this).find('input').keypress(function(e) {
-							// Enter pressed?
-							if(e.which == 10 || e.which == 13) {
-								summonerLookUp();
-							}
-						});
+					// Using jQuery.
+					$(function() {
+						$('form').each(function() {
+							$(this).find('input').keypress(function(e) {
+								// Enter pressed?
+								if(e.which == 10 || e.which == 13) {
+									summonerLookUp();
 
-						$(this).find('input[type=submit]').hide();
-					});
-				});
-				</script>
+								}
+							});
+
+							$(this).find('input[type=submit]').hide();
+							});
+						});
+					</script>
 				</form>
 			</header>
 			
-			<dl class="MenuList tabHeaders"style="
-    margin-left: 15px;
-">
+			<dl class="MenuList tabHeaders"style="margin-left: 15px;">
 				<dd class="Item tabHeader active" data-tab-show-class="summonerLayout-summary">
 					<a id="initial_tab" href=""rel="tab1">종합</a>
 				</dd>
@@ -406,6 +479,9 @@ function UrlExists(url, cb){
 				</dd>
 				<dd class="Item tabHeader" data-tab-show-class="summonerLayout-mastery">
 					<a href=""rel="tab6">특성</a>
+				</dd>
+				<dd class="Item tabHeader" data-tab-show-class="summonerLayout-combination">
+					<a href=""rel="tab7">조합</a>
 				</dd>
 			</dl>
 			<div id="tab1" class="SummonerRatingMedium SummonerContent tab_content">
@@ -450,7 +526,24 @@ function UrlExists(url, cb){
 				
 			</div>
 			<div id="tab6" class="SummonerRatingMedium SummonerContent tab_content">
-				
+				이부분은 특성 부분입니다.
+			</div>
+			<div id="tab7" class="SummonerRatingMedium SummonerContent tab_content">
+				이부분은 조합 부분입니다.
+				<div class="my_team">
+						우리팀 탑<input type="text"><br>
+						우리팀 정글<input type="text"><br>
+						우리팀 미드<input type="text"><br>
+						우리팀 원딜<input type="text"><br>
+						우리팀 서폿<input type="text"><br>
+						적팀 탑<input type="text"><br>
+						적팀 정글<input type="text"><br>
+						적팀 미드<input type="text"><br>
+						적팀 원딜<input type="text"><br>
+						적팀 서폿<input type="text"><br>
+						<input type="submit"><br>
+						결과
+				</div>
 			</div>
 		</section>
 		<footer id="info">

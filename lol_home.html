@@ -206,7 +206,12 @@ function championCombinationTest(summoner_ID){
 											enemy
 			            				},
 										success:function(json){
-											alert(json);
+											var output = '';
+											for (var property in json) {
+											  output += property + ': ' + object[property]+'; ';
+											}
+											alert(output);
+											//alert(json);
 										},
 										error: function (XMLHttpRequest, textStatus, errorThrown) {
 											alert(textStatus);

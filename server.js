@@ -119,6 +119,7 @@
 							if (err)
 								res.send(err);
 
+							res.json(todo);
 							//Todo.find(function(err, todos) {
 							//	if (err)
 							//		res.send(err)

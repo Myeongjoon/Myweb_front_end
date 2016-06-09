@@ -60,6 +60,113 @@
 		});
 	});
 
+	app.post('/api/TB_LolCombinationOfChampion', function(req, res) {
+		//있나 없나 비교해야함
+		TB_LolCombinationOfChampion.find(
+			{
+				Top : req.body.Top,
+				Mid : req.body.Mid,
+				Jungle : req.body.Jungle,
+				Ad : req.body.Ad,
+				Support : req.body.Support,
+				eTop : req.body.eTop,
+				eMid : req.body.eMid,
+				eJungle : req.body.eJungle,
+				eAd : req.body.eAd,
+				eSupport : req.body.eSupport,
+			},function(error,TB_L){
+				if(err){
+
+				}else{
+					//있나 없나 비교함
+					if(TB_L=[]){
+						//아무것도 못찾은 상태
+						var TB = {};
+						if(req.body.win=1){
+							//누가 이긴지 비교
+							TB = {
+								Top : req.body.Top,
+								Mid : req.body.Mid,
+								Jungle : req.body.Jungle,
+								Ad : req.body.Ad,
+								Support : req.body.Support,
+								eTop : req.body.eTop,
+								eMid : req.body.eMid,
+								eJungle : req.body.eJungle,
+								eAd : req.body.eAd,
+								eSupport : req.body.eSupport,
+								win : 1,
+								lose : 0
+							};
+						}else{
+							TB = {
+								Top : req.body.Top,
+								Mid : req.body.Mid,
+								Jungle : req.body.Jungle,
+								Ad : req.body.Ad,
+								Support : req.body.Support,
+								eTop : req.body.eTop,
+								eMid : req.body.eMid,
+								eJungle : req.body.eJungle,
+								eAd : req.body.eAd,
+								eSupport : req.body.eSupport,
+								win : 0,
+								lose : 1
+							};
+						}
+						//인서트 함수
+						TB_LolCombinationOfChampionTodo.create(TB, function(err, todo) {
+							if (err)
+								res.send(err);
+
+							//Todo.find(function(err, todos) {
+							//	if (err)
+							//		res.send(err)
+							//	res.json(todos);
+							//});
+						});
+					}else{
+						TB = {
+								Top : req.body.Top,
+								Mid : req.body.Mid,
+								Jungle : req.body.Jungle,
+								Ad : req.body.Ad,
+								Support : req.body.Support,
+								eTop : req.body.eTop,
+								eMid : req.body.eMid,
+								eJungle : req.body.eJungle,
+								eAd : req.body.eAd,
+								eSupport : req.body.eSupport
+							};
+						if(req.body.win=1){
+							TB_LolCombinationOfChampionTodo.update(TB,{ $set: { win: TB_L[0].win+1 }});
+							
+						}else{
+							TB_LolCombinationOfChampionTodo.update(TB,{ $set: { lose: TB_L[0].lost+1 }});
+						}
+						//찾았으니까 덧셈을 한다.
+					}
+				}
+			}
+		)
+		//있으면 덧셈 
+		//없으면 추가
+		Todo.create({
+			title : req.body.title,
+			completed : false
+		}, function(err, todo) {
+			if (err)
+				res.send(err);
+
+			Todo.find(function(err, todos) {
+				if (err)
+					res.send(err)
+				res.json(todos);
+			});
+		});
+
+	});
+
 
 	app.post('/api/todos', function(req, res) {
 

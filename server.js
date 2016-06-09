@@ -127,7 +127,7 @@
 											}
 											console.log(output);
 
-							res.json(todo);
+							res.json(req);
 							//Todo.find(function(err, todos) {
 							//	if (err)
 							//		res.send(err)
@@ -165,12 +165,14 @@
 			completed : false
 		}, function(err, todo) {
 			if (err)
-				res.send(err);
+				//res.send(err);
 
 			Todo.find(function(err, todos) {
-				if (err)
-					res.send(err)
-				res.json(todos);
+				if (err){
+					
+				}
+					//res.send(err)
+				//res.json(todos);
 			});
 		});
 

@@ -82,11 +82,11 @@
 				JUNGLE : req.body.myteam.JUNGLE,
 				DUO_CARRY : req.body.myteam.DUO_CARRY,
 				DUO_SUPPORT : req.body.myteam.DUO_SUPPORT,
-				eTOP : req.body.enemy.eTOP,
-				eMIDDLE : req.body.enemy.eMIDDLE,
-				eJUNGLE : req.body.enemy.eJUNGLE,
-				eDUO_CARRY : req.body.enemy.eDUO_CARRY,
-				eDUO_SUPPORT : req.body.enemy.eDUO_SUPPORT,
+				eTOP : req.body.enemy.TOP,
+				eMIDDLE : req.body.enemy.MIDDLE,
+				eJUNGLE : req.body.enemy.JUNGLE,
+				eDUO_CARRY : req.body.enemy.DUO_CARRY,
+				eDUO_SUPPORT : req.body.enemy.DUO_SUPPORT,
 			},function(error,TB_L){
 				if(error){
 
@@ -103,6 +103,12 @@
 											 output += property + ': ' + req.body.myteam[property]+'; \n';
 											}
 									console.log(output+"\ns");
+									var output="";
+									console.log("req.body.enemy : \n")
+									for (var property in req.body.enemy) {
+											 output += property + ': ' + req.body.enemy[property]+'; \n';
+											}
+									console.log(output+"\ns");
 						if(req.body.myteam.win){
 							//누가 이긴지 비교
 							TB = {
@@ -112,11 +118,11 @@
 								JUNGLE : req.body.myteam.JUNGLE,
 								DUO_CARRY : req.body.myteam.DUO_CARRY,
 								DUO_SUPPORT : req.body.myteam.DUO_SUPPORT,
-								eTOP : req.body.enemy.eTOP,
-								eMIDDLE : req.body.enemy.eMIDDLE,
-								eJUNGLE : req.body.enemy.eJUNGLE,
-								eDUO_CARRY : req.body.enemy.eDUO_CARRY,
-								eDUO_SUPPORT : req.body.enemy.eDUO_SUPPORT,
+								eTOP : req.body.enemy.TOP,
+								eMIDDLE : req.body.enemy.MIDDLE,
+								eJUNGLE : req.body.enemy.JUNGLE,
+								eDUO_CARRY : req.body.enemy.DUO_CARRY,
+								eDUO_SUPPORT : req.body.enemy.DUO_SUPPORT,
 								win : 1,
 								lose : 0
 							};
@@ -127,11 +133,11 @@
 								JUNGLE : req.body.myteam.JUNGLE,
 								DUO_CARRY : req.body.myteam.DUO_CARRY,
 								DUO_SUPPORT : req.body.myteam.DUO_SUPPORT,
-								eTOP : req.body.enemy.eTOP,
-								eMIDDLE : req.body.enemy.eMIDDLE,
-								eJUNGLE : req.body.enemy.eJUNGLE,
-								eDUO_CARRY : req.body.enemy.eDUO_CARRY,
-								eDUO_SUPPORT : req.body.enemy.eDUO_SUPPORT,
+								eTOP : req.body.enemy.TOP,
+								eMIDDLE : req.body.enemy.MIDDLE,
+								eJUNGLE : req.body.enemy.JUNGLE,
+								eDUO_CARRY : req.body.enemy.DUO_CARRY,
+								eDUO_SUPPORT : req.body.enemy.DUO_SUPPORT,
 								win : 0,
 								lose : 1
 							};
@@ -167,11 +173,11 @@
 								JUNGLE : req.body.myteam.JUNGLE,
 								DUO_CARRY : req.body.myteam.DUO_CARRY,
 								DUO_SUPPORT : req.body.myteam.DUO_SUPPORT,
-								eTOP : req.body.enemy.eTOP,
-								eMIDDLE : req.body.enemy.eMIDDLE,
-								eJUNGLE : req.body.enemy.eJUNGLE,
-								eDUO_CARRY : req.body.enemy.eDUO_CARRY,
-								eDUO_SUPPORT : req.body.enemy.eDUO_SUPPORT,
+								eTOP : req.body.enemy.TOP,
+								eMIDDLE : req.body.enemy.MIDDLE,
+								eJUNGLE : req.body.enemy.JUNGLE,
+								eDUO_CARRY : req.body.enemy.DUO_CARRY,
+								eDUO_SUPPORT : req.body.enemy.DUO_SUPPORT,
 							};
 						if(req.body.win=1){
 							TB_LolCombinationOfChampion.update(TB,{ $set: { win: TB_L[0].win+1 }});

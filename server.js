@@ -75,7 +75,7 @@
 				eAd : req.body.eAd,
 				eSupport : req.body.eSupport,
 			},function(error,TB_L){
-				if(err){
+				if(error){
 
 				}else{
 					//있나 없나 비교함

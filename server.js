@@ -97,6 +97,14 @@
 						console.log("this not exist\n");
 						var TB = {};
 						console.log(req.body.myteam.Top);
+						var output="";
+									console.log("req.body.myteam : \n")
+									for (var property in req.body.myteam) {
+											console.log("2");
+											  output += property + ': ' + req.body.myteam[property]+'; \n';
+											}
+									console.log("1\n")		
+									console.log(output+"\ns");
 						if(req.body.myteam.win){
 							//누가 이긴지 비교
 							TB = {

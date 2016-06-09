@@ -94,8 +94,9 @@
 					//있나 없나 비교함
 					if(TB_L=[]){
 						//아무것도 못찾은 상태
+						console.log("this not exist\n");
 						var TB = {};
-						if(req.body.win==1){
+						if(req.body.myteam.win){
 							//누가 이긴지 비교
 							TB = {
 								Top : req.body.myteam.Top,
@@ -143,7 +144,7 @@
 									console.log("1\n")		
 									console.log(output+"\ns");
 
-							res.json(req.body);
+							res.json(todo);
 							//Todo.find(function(err, todos) {
 							//	if (err)
 							//		res.send(err)
@@ -151,17 +152,18 @@
 							//});
 						});
 					}else{
+						console.log("update\n");
 						TB = {
-								Top : req.body.Top,
-								Mid : req.body.Mid,
-								Jungle : req.body.Jungle,
-								Ad : req.body.Ad,
-								Support : req.body.Support,
-								eTop : req.body.eTop,
-								eMid : req.body.eMid,
-								eJungle : req.body.eJungle,
-								eAd : req.body.eAd,
-								eSupport : req.body.eSupport
+								Top : req.body.myteam.Top,
+								Mid : req.body.myteam.Mid,
+								Jungle : req.body.myteam.Jungle,
+								Ad : req.body.myteam.Ad,
+								Support : req.body.myteam.Support,
+								eTop : req.body.enemy.eTop,
+								eMid : req.body.enemy.eMid,
+								eJungle : req.body.enemy.eJungle,
+								eAd : req.body.enemy.eAd,
+								eSupport : req.body.enemy.eSupport,
 							};
 						if(req.body.win=1){
 							TB_LolCombinationOfChampion.update(TB,{ $set: { win: TB_L[0].win+1 }});

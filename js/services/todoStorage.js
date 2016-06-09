@@ -49,3 +49,28 @@ angular.module('todomvc', [])
 			}
 		};
 	}]);
+
+angular.module('TB_LolCombinationOfChampionmvc', [])
+	.service('TB_LolCombinationOfChampionStorage', ['$http', function ($http) {
+		'use strict';
+
+		return {
+			get: function () {
+				return $http.get('/api/TB_LolCombinationOfChampion');
+			},
+
+			delete: function (todo) {
+				return $http.delete('/api/TB_LolCombinationOfChampion/' + todo._id);
+			},
+
+			post: function (todo) {
+				return $http.post('/api/TB_LolCombinationOfChampion', todo);
+			},
+
+			put: function(todoId, newTodo) {
+				return $http.put('/api/TB_LolCombinationOfChampion/' +  todoId, newTodo);
+			}
+		};
+	}]);
+
+

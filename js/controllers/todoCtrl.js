@@ -116,3 +116,93 @@ angular.module('todomvc')
 
 		};
 	}]);
+
+angular.module('TB_LolCombinationOfChampionmvc')
+	.controller('TB_LolCombinationOfChampionCtrl', ['$scope', '$filter', 'TB_LolCombinationOfChampionStorage', function ($scope, $filter, TB_LolCombinationOfChampionStorage) {
+		$scope.TB_LolCombinationOfChampions = {};
+		TB_LolCombinationOfChampionStorage.get().success(function(data) {
+			$scope.TB_LolCombinationOfChampions = data;
+		});
+
+		$scope.newTB_LolCombinationOfChampion = '';
+		$scope.editedTB_LolCombinationOfChampion = null;
+
+		$scope.$watch('TB_LolCombinationOfChampions', function (newValue, oldValue) {
+			$scope.remainingCount = $filter('filter')($scope.TB_LolCombinationOfChampions, { completed: false }).length;
+			$scope.completedCount = $scope.TB_LolCombinationOfChampions.length - $scope.remainingCount;
+			$scope.allChecked = !$scope.remainingCount;
+		}, true);
+
+		$scope.addTB_LolCombinationOfChampion = function () {
+			if (!$scope.newTB_LolCombinationOfChampion.trim().length) {
+				return;
+			}
+			var newTB_LolCombinationOfChampion = {
+				title: $scope.newTB_LolCombinationOfChampion.trim(),
+				completed: false
+			};
+			TB_LolCombinationOfChampionStorage.post(newTB_LolCombinationOfChampion).success(function(data) {
+				$scope.newTB_LolCombinationOfChampion = '';
+				$scope.TB_LolCombinationOfChampions = data;
+			});
+		};
+
+		$scope.editTB_LolCombinationOfChampion = function (TB_LolCombinationOfChampion) {
+			$scope.editedTB_LolCombinationOfChampion = TB_LolCombinationOfChampion;
+			// Clone the original TB_LolCombinationOfChampion to restore it on demand.
+			$scope.originalTB_LolCombinationOfChampion = angular.extend({}, TB_LolCombinationOfChampion);
+
+		};
+
+		$scope.toggleTB_LolCombinationOfChampion = function(TB_LolCombinationOfChampion) {
+			TB_LolCombinationOfChampion.completed = !TB_LolCombinationOfChampion.completed;
+			TB_LolCombinationOfChampionStorage.put(TB_LolCombinationOfChampion._id, TB_LolCombinationOfChampion);
+		};
+
+		$scope.doneEditing = function (TB_LolCombinationOfChampion) {
+			$scope.editedTB_LolCombinationOfChampion = null;
+			TB_LolCombinationOfChampion.title = TB_LolCombinationOfChampion.title.trim();
+			if (!TB_LolCombinationOfChampion.title) {
+				$scope.removeTB_LolCombinationOfChampion(TB_LolCombinationOfChampion);
+			} else {
+				var newTB_LolCombinationOfChampion = {
+					title: TB_LolCombinationOfChampion.title,
+					completed: TB_LolCombinationOfChampion.completed
+				};
+				TB_LolCombinationOfChampionStorage.put(TB_LolCombinationOfChampion._id, newTB_LolCombinationOfChampion);
+			}
+		};
+
+		$scope.revertEditing = function (TB_LolCombinationOfChampion) {
+			TB_LolCombinationOfChampions[TB_LolCombinationOfChampions.indexOf(TB_LolCombinationOfChampion)] = $scope.originalTB_LolCombinationOfChampion;
+			$scope.doneEditing($scope.originalTB_LolCombinationOfChampion);
+		};
+
+		$scope.removeTB_LolCombinationOfChampion = function (TB_LolCombinationOfChampion) {
+			TB_LolCombinationOfChampionStorage.delete(TB_LolCombinationOfChampion).success(function(data) {
+				$scope.TB_LolCombinationOfChampions = data; // assign our new list of TB_LolCombinationOfChampions
+			});
+		};
+
+		$scope.clearCompletedTB_LolCombinationOfChampions = function () {
+			$scope.TB_LolCombinationOfChampions.forEach(function(TB_LolCombinationOfChampion) {
+				if (TB_LolCombinationOfChampion.completed) {
+					$scope.removeTB_LolCombinationOfChampion(TB_LolCombinationOfChampion);
+				}
+			});
+		};
+
+		$scope.markAll = function (completed) {
+			$scope.TB_LolCombinationOfChampions.forEach(function (TB_LolCombinationOfChampion) {
+				TB_LolCombinationOfChampion.completed = !completed;
+				TB_LolCombinationOfChampionStorage.put(TB_LolCombinationOfChampion._id, 
+					{title: TB_LolCombinationOfChampion.title, completed: TB_LolCombinationOfChampion.completed});
+			});
+			TB_LolCombinationOfChampionStorage.get().success(function(data) {
+				$scope.TB_LolCombinationOfChampions = data;
+			});
+
+		};
+	}]);
+
+

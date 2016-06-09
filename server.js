@@ -127,7 +127,7 @@
 											}
 											console.log(output);
 
-							res.json(req);
+							res.json(req.body);
 							//Todo.find(function(err, todos) {
 							//	if (err)
 							//		res.send(err)
@@ -169,7 +169,7 @@
 
 			Todo.find(function(err, todos) {
 				if (err){
-					
+
 				}
 					//res.send(err)
 				//res.json(todos);

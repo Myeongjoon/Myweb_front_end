@@ -190,10 +190,10 @@ function championCombinationTest(summoner_ID){
 										alert("My Team is "+ team+ " and My line is "+ myline+"\nMy Champion is "+championId+"\nI lose..");			
 									}
 									if(team==100){
-										myteam[myline] = championId;
+										myteam["myline"] = championId;
 										myteam["win"]=winner;
 									}else{
-										enemy[myline] = championId;
+										enemy["myline"] = championId;
 										enemy["win"]=winner;
 									}
 									//이걸 리스트형태로 다시 만들고

@@ -96,6 +96,7 @@
 						//아무것도 못찾은 상태
 						console.log("this not exist\n");
 						var TB = {};
+						console.log(req.body.myteam.Top);
 						if(req.body.myteam.win){
 							//누가 이긴지 비교
 							TB = {

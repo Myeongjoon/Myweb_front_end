@@ -12,6 +12,10 @@
 	var path = require('path');
 	var is = require('type-is')
 	app.use(bodyParser.json());
+		app.use(bodyParser.urlencoded({
+		extended: true
+	}));
+	app.use(bodyParser.json());
 
 	mongoose.connect('mongodb://' + argv.be_ip + ':80/my_database');
     app.use('/js', express.static(__dirname + '/js'));
@@ -91,7 +95,7 @@
 					if(TB_L=[]){
 						//아무것도 못찾은 상태
 						var TB = {};
-						if(req.body.win=1){
+						if(req.body.win==1){
 							//누가 이긴지 비교
 							TB = {
 								Top : req.body.Top,

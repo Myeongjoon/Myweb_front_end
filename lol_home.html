@@ -214,7 +214,7 @@ function championCombinationTest(summoner_ID){
 										success:function(json){
 											var output = '';
 											for (var property in json) {
-											  output += property + ': ' + object[property]+'; ';
+											  output += property + ': ' + json[property]+'; ';
 											}
 											alert(output);
 											//alert(json);

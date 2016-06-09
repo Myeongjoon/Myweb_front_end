@@ -61,6 +61,15 @@
 	});
 
 	app.post('/api/TB_LolCombinationOfChampion', function(req, res) {
+
+		var output="";
+									console.log("req.body : \n")
+									for (var property in req.body) {
+											console.log("2");
+											  output += property + ': ' + req.body[property]+'; \n';
+											}
+									console.log("1\n")		
+									console.log(output+"\ns");
 		//있나 없나 비교해야함
 		TB_LolCombinationOfChampion.find(
 			{
@@ -121,7 +130,7 @@
 							if (err)
 								res.send(err);
 
-									var output
+									var output="";
 									console.log("req.body : \n")
 									for (var property in req.body) {
 											console.log("2");

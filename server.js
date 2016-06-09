@@ -28,16 +28,16 @@
 	});
 
 	var TB_LolCombinationOfChampion = mongoose.model('TB_LolCombinationOfChampion', {
-		Top : Number,
-		Mid : Number,
-		Jungle : Number,
-		Ad : Number,
-		Support : Number,
-		eTop : Number,
-		eMid : Number,
-		eJungle : Number,
-		eAd : Number,
-		eSupport : Number,
+		TOP : Number,
+		MIDDLE : Number,
+		JUNGLE : Number,
+		DUO_CARRY : Number,
+		DUO_SUPPORT : Number,
+		eTOP : Number,
+		eMIDDLE : Number,
+		eJUNGLE : Number,
+		eDUO_CARRY : Number,
+		eDUO_SUPPORT : Number,
 		win : Number,
 		lose : Number
 	});
@@ -77,16 +77,16 @@
 		//있나 없나 비교해야함
 		TB_LolCombinationOfChampion.find(
 			{
-				Top : req.body.myteam.Top,
-				Mid : req.body.myteam.Mid,
-				Jungle : req.body.myteam.Jungle,
-				Ad : req.body.myteam.Ad,
-				Support : req.body.myteam.Support,
-				eTop : req.body.enemy.eTop,
-				eMid : req.body.enemy.eMid,
-				eJungle : req.body.enemy.eJungle,
-				eAd : req.body.enemy.eAd,
-				eSupport : req.body.enemy.eSupport,
+				TOP : req.body.myteam.TOP,
+				MIDDLE : req.body.myteam.MIDDLE,
+				JUNGLE : req.body.myteam.JUNGLE,
+				DUO_CARRY : req.body.myteam.DUO_CARRY,
+				DUO_SUPPORT : req.body.myteam.DUO_SUPPORT,
+				eTOP : req.body.enemy.eTOP,
+				eMIDDLE : req.body.enemy.eMIDDLE,
+				eJUNGLE : req.body.enemy.eJUNGLE,
+				eDUO_CARRY : req.body.enemy.eDUO_CARRY,
+				eDUO_SUPPORT : req.body.enemy.eDUO_SUPPORT,
 			},function(error,TB_L){
 				if(error){
 
@@ -96,43 +96,42 @@
 						//아무것도 못찾은 상태
 						console.log("this not exist\n");
 						var TB = {};
-						console.log(req.body.myteam.Top);
+						console.log(req.body.myteam.TOP);
 						var output="";
 									console.log("req.body.myteam : \n")
 									for (var property in req.body.myteam) {
-											console.log("2");
-											  output += property + ': ' + req.body.myteam[property]+'; \n';
+											 output += property + ': ' + req.body.myteam[property]+'; \n';
 											}
-									console.log("1\n")		
 									console.log(output+"\ns");
 						if(req.body.myteam.win){
 							//누가 이긴지 비교
 							TB = {
-								Top : req.body.myteam.Top,
-								Mid : req.body.myteam.Mid,
-								Jungle : req.body.myteam.Jungle,
-								Ad : req.body.myteam.Ad,
-								Support : req.body.myteam.Support,
-								eTop : req.body.enemy.eTop,
-								eMid : req.body.enemy.eMid,
-								eJungle : req.body.enemy.eJungle,
-								eAd : req.body.enemy.eAd,
-								eSupport : req.body.enemy.eSupport,
+
+								TOP : req.body.myteam.TOP,
+								MIDDLE : req.body.myteam.MIDDLE,
+								JUNGLE : req.body.myteam.JUNGLE,
+								DUO_CARRY : req.body.myteam.DUO_CARRY,
+								DUO_SUPPORT : req.body.myteam.DUO_SUPPORT,
+								eTOP : req.body.enemy.eTOP,
+								eMIDDLE : req.body.enemy.eMIDDLE,
+								eJUNGLE : req.body.enemy.eJUNGLE,
+								eDUO_CARRY : req.body.enemy.eDUO_CARRY,
+								eDUO_SUPPORT : req.body.enemy.eDUO_SUPPORT,
 								win : 1,
 								lose : 0
 							};
 						}else{
 							TB = {
-								Top : req.body.myteam.Top,
-								Mid : req.body.myteam.Mid,
-								Jungle : req.body.myteam.Jungle,
-								Ad : req.body.myteam.Ad,
-								Support : req.body.myteam.Support,
-								eTop : req.body.enemy.eTop,
-								eMid : req.body.enemy.eMid,
-								eJungle : req.body.enemy.eJungle,
-								eAd : req.body.enemy.eAd,
-								eSupport : req.body.enemy.eSupport,
+								TOP : req.body.myteam.TOP,
+								MIDDLE : req.body.myteam.MIDDLE,
+								JUNGLE : req.body.myteam.JUNGLE,
+								DUO_CARRY : req.body.myteam.DUO_CARRY,
+								DUO_SUPPORT : req.body.myteam.DUO_SUPPORT,
+								eTOP : req.body.enemy.eTOP,
+								eMIDDLE : req.body.enemy.eMIDDLE,
+								eJUNGLE : req.body.enemy.eJUNGLE,
+								eDUO_CARRY : req.body.enemy.eDUO_CARRY,
+								eDUO_SUPPORT : req.body.enemy.eDUO_SUPPORT,
 								win : 0,
 								lose : 1
 							};
@@ -163,16 +162,16 @@
 					}else{
 						console.log("update\n");
 						TB = {
-								Top : req.body.myteam.Top,
-								Mid : req.body.myteam.Mid,
-								Jungle : req.body.myteam.Jungle,
-								Ad : req.body.myteam.Ad,
-								Support : req.body.myteam.Support,
-								eTop : req.body.enemy.eTop,
-								eMid : req.body.enemy.eMid,
-								eJungle : req.body.enemy.eJungle,
-								eAd : req.body.enemy.eAd,
-								eSupport : req.body.enemy.eSupport,
+								TOP : req.body.myteam.TOP,
+								MIDDLE : req.body.myteam.MIDDLE,
+								JUNGLE : req.body.myteam.JUNGLE,
+								DUO_CARRY : req.body.myteam.DUO_CARRY,
+								DUO_SUPPORT : req.body.myteam.DUO_SUPPORT,
+								eTOP : req.body.enemy.eTOP,
+								eMIDDLE : req.body.enemy.eMIDDLE,
+								eJUNGLE : req.body.enemy.eJUNGLE,
+								eDUO_CARRY : req.body.enemy.eDUO_CARRY,
+								eDUO_SUPPORT : req.body.enemy.eDUO_SUPPORT,
 							};
 						if(req.body.win=1){
 							TB_LolCombinationOfChampion.update(TB,{ $set: { win: TB_L[0].win+1 }});

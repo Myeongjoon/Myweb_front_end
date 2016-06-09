@@ -203,18 +203,18 @@ function championCombinationTest(summoner_ID){
 									//있는 디비면 이기고 진것을 체크한다.
 
 								}
-								var postjson=[];
-								postjson["myteam"] = myteam;
-								postjson["enemy"] = enemy;
-
+								var obj=new Object();
+								obj.myteam = myteam;
+								obj.enemy = enemy;
+								var json_data = JSON.stringify(obj);
 								$.ajax({
 										url : 'http://104.199.143.230:8080/api/TB_LolCombinationOfChampion',
 										type: 'POST',
 										dataType: 'json',
 
 										contentType: "application/json",
-										data: postjson,
-										contentLength: postjson.length,
+										data: json_data,
+										//contentLength: postjson.length,
 										success:function(json){
 											var output = '';
 											for (var property in json) {

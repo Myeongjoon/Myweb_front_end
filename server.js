@@ -24,18 +24,18 @@
 	});
 
 	var TB_LolCombinationOfChampion = mongoose.model('TB_LolCombinationOfChampion', {
-		Top : int,
-		Mid : int,
-		Jungle : int,
-		Ad : int,
-		Support : int,
-		eTop : int,
-		eMid : int,
-		eJungle : int,
-		eAd : int,
-		eSupport : int,
-		win : int,
-		lose : int,
+		Top : Int,
+		Mid : Int,
+		Jungle : Int,
+		Ad : Int,
+		Support : Int,
+		eTop : Int,
+		eMid : Int,
+		eJungle : Int,
+		eAd : Int,
+		eSupport : Int,
+		win : Int,
+		lose : Int,
 	});
 	
 	app.get('/api/TB_LolCombinationOfChampion', function(req, res) {

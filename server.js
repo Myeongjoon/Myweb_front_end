@@ -122,10 +122,11 @@
 								res.send(err);
 
 									var output
+									console.log("res.body : \n")
 									for (var property in req.body) {
-											  output += property + ': ' + req.body[property]+'; ';
+											  output += property + ': ' + req.body[property]+'; \n';
 											}
-											console.log(output);
+									console.log(output);
 
 							res.json(req.body);
 							//Todo.find(function(err, todos) {

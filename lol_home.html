@@ -211,8 +211,10 @@ function championCombinationTest(summoner_ID){
 										url : 'http://104.199.143.230:8080/api/TB_LolCombinationOfChampion',
 										type: 'POST',
 										dataType: 'json',
+
 										contentType: "application/json",
 										data: postjson,
+										contentLength: postjson.length,
 										success:function(json){
 											var output = '';
 											for (var property in json) {

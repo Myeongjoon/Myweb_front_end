@@ -77,16 +77,16 @@
 		//있나 없나 비교해야함
 		TB_LolCombinationOfChampion.find(
 			{
-				Top : req.body.Top,
-				Mid : req.body.Mid,
-				Jungle : req.body.Jungle,
-				Ad : req.body.Ad,
-				Support : req.body.Support,
-				eTop : req.body.eTop,
-				eMid : req.body.eMid,
-				eJungle : req.body.eJungle,
-				eAd : req.body.eAd,
-				eSupport : req.body.eSupport,
+				Top : req.body.myteam.Top,
+				Mid : req.body.myteam.Mid,
+				Jungle : req.body.myteam.Jungle,
+				Ad : req.body.myteam.Ad,
+				Support : req.body.myteam.Support,
+				eTop : req.body.enemy.eTop,
+				eMid : req.body.enemy.eMid,
+				eJungle : req.body.enemy.eJungle,
+				eAd : req.body.enemy.eAd,
+				eSupport : req.body.enemy.eSupport,
 			},function(error,TB_L){
 				if(error){
 
@@ -98,31 +98,31 @@
 						if(req.body.win==1){
 							//누가 이긴지 비교
 							TB = {
-								Top : req.body.Top,
-								Mid : req.body.Mid,
-								Jungle : req.body.Jungle,
-								Ad : req.body.Ad,
-								Support : req.body.Support,
-								eTop : req.body.eTop,
-								eMid : req.body.eMid,
-								eJungle : req.body.eJungle,
-								eAd : req.body.eAd,
-								eSupport : req.body.eSupport,
+								Top : req.body.myteam.Top,
+								Mid : req.body.myteam.Mid,
+								Jungle : req.body.myteam.Jungle,
+								Ad : req.body.myteam.Ad,
+								Support : req.body.myteam.Support,
+								eTop : req.body.enemy.eTop,
+								eMid : req.body.enemy.eMid,
+								eJungle : req.body.enemy.eJungle,
+								eAd : req.body.enemy.eAd,
+								eSupport : req.body.enemy.eSupport,
 								win : 1,
 								lose : 0
 							};
 						}else{
 							TB = {
-								Top : req.body.Top,
-								Mid : req.body.Mid,
-								Jungle : req.body.Jungle,
-								Ad : req.body.Ad,
-								Support : req.body.Support,
-								eTop : req.body.eTop,
-								eMid : req.body.eMid,
-								eJungle : req.body.eJungle,
-								eAd : req.body.eAd,
-								eSupport : req.body.eSupport,
+								Top : req.body.myteam.Top,
+								Mid : req.body.myteam.Mid,
+								Jungle : req.body.myteam.Jungle,
+								Ad : req.body.myteam.Ad,
+								Support : req.body.myteam.Support,
+								eTop : req.body.enemy.eTop,
+								eMid : req.body.enemy.eMid,
+								eJungle : req.body.enemy.eJungle,
+								eAd : req.body.enemy.eAd,
+								eSupport : req.body.enemy.eSupport,
 								win : 0,
 								lose : 1
 							};

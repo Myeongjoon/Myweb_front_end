@@ -115,7 +115,7 @@
 							};
 						}
 						//인서트 함수
-						TB_LolCombinationOfChampionTodo.create(TB, function(err, todo) {
+						TB_LolCombinationOfChampion.create(TB, function(err, todo) {
 							if (err)
 								res.send(err);
 
@@ -139,10 +139,10 @@
 								eSupport : req.body.eSupport
 							};
 						if(req.body.win=1){
-							TB_LolCombinationOfChampionTodo.update(TB,{ $set: { win: TB_L[0].win+1 }});
+							TB_LolCombinationOfChampion.update(TB,{ $set: { win: TB_L[0].win+1 }});
 							
 						}else{
-							TB_LolCombinationOfChampionTodo.update(TB,{ $set: { lose: TB_L[0].lost+1 }});
+							TB_LolCombinationOfChampion.update(TB,{ $set: { lose: TB_L[0].lost+1 }});
 						}
 						//찾았으니까 덧셈을 한다.
 					}

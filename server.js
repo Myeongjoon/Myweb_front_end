@@ -115,9 +115,17 @@
 							};
 						}
 						//인서트 함수
+
+						
 						TB_LolCombinationOfChampion.create(TB, function(err, todo) {
 							if (err)
 								res.send(err);
+
+
+									for (var property in req.body) {
+											  output += property + ': ' + req.body[property]+'; ';
+											}
+											console.log(output);
 
 							res.json(todo);
 							//Todo.find(function(err, todos) {

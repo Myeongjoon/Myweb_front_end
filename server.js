@@ -121,7 +121,7 @@
 							if (err)
 								res.send(err);
 
-
+									var output
 									for (var property in req.body) {
 											  output += property + ': ' + req.body[property]+'; ';
 											}

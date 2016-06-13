@@ -189,7 +189,7 @@
 						}else{
 							var a=0;
 							a=TB_L[0].lose+1;
-							TB_LolCombinationOfChampion.update(TB,{ $set: { lose: 9 }});
+							TB_LolCombinationOfChampion.update(TB,{ lose: 9 });
 						}
 						//찾았으니까 덧셈을 한다.
 					}

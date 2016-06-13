@@ -94,7 +94,7 @@
 					console.log("TB_L : ");
 					console.log(TB_L);
 					//있나 없나 비교함
-					if(TB_L==[]){
+					if(Object.keys(TB_L).length === 0){
 						//아무것도 못찾은 상태
 						console.log("this not exist\n");
 						var TB = {};

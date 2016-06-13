@@ -186,6 +186,7 @@
 							TB_LolCombinationOfChampion.update(TB,{ $set: { win: TB_L[0].win+1 }});
 							
 						}else{
+							console.log("TB_L[0].lose+1 : "+TB_L[0].lose+1);
 							TB_LolCombinationOfChampion.update(TB,{ $set: { lose: TB_L[0].lose+1 }});
 						}
 						//찾았으니까 덧셈을 한다.

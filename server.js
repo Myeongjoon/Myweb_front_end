@@ -150,7 +150,7 @@
 								res.send(err);
 
 									var output="";
-									console.log("req.body : \n")
+									//console.log("req.body : \n")
 									for (var property in req.body) {
 											//console.log("2");
 											  output += property + ': ' + req.body[property]+'; \n';
@@ -179,7 +179,8 @@
 								eDUO_CARRY : req.body.enemy.DUO_CARRY,
 								eDUO_SUPPORT : req.body.enemy.DUO_SUPPORT,
 							};
-						if(req.body.win=1){
+						if(req.body.win==1){
+							console.log(TB_L);
 							TB_LolCombinationOfChampion.update(TB,{ $set: { win: TB_L[0].win+1 }});
 							
 						}else{

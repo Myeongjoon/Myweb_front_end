@@ -170,18 +170,7 @@
 					}else{
 						console.log("update\n");
 						console.log(TB);
-						TB = {
-								TOP : req.body.myteam.TOP,
-								MIDDLE : req.body.myteam.MIDDLE,
-								JUNGLE : req.body.myteam.JUNGLE,
-								DUO_CARRY : req.body.myteam.DUO_CARRY,
-								DUO_SUPPORT : req.body.myteam.DUO_SUPPORT,
-								eTOP : req.body.enemy.TOP,
-								eMIDDLE : req.body.enemy.MIDDLE,
-								eJUNGLE : req.body.enemy.JUNGLE,
-								eDUO_CARRY : req.body.enemy.DUO_CARRY,
-								eDUO_SUPPORT : req.body.enemy.DUO_SUPPORT,
-							};
+						TB = {"TOP":17,"MIDDLE":45,"JUNGLE":113,"DUO_CARRY":67,"DUO_SUPPORT":43,"eTOP":122,"eMIDDLE":268,"eJUNGLE":203,"eDUO_CARRY":222,"eDUO_SUPPORT":16,"win":1,"lose":0,"_id":"575e682c44d6ba7208b9d7c3","__v":0}
 						console.log(TB);	
 						if(req.body.win==1){
 							var a=0;

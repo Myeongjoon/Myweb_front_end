@@ -67,13 +67,13 @@
 	app.post('/api/TB_LolCombinationOfChampion', function(req, res) {
 
 		var output="";
-									console.log("req.body : \n")
+									//console.log("req.body : \n")
 									for (var property in req.body) {
-											console.log("2");
+											//console.log("2");
 											  output += property + ': ' + req.body[property]+'; \n';
 											}
-									console.log("1\n")		
-									console.log(output+"\ns");
+									//console.log("1\n")		
+									//console.log(output+"\ns");
 		//있나 없나 비교해야함
 		TB_LolCombinationOfChampion.find(
 			{
@@ -96,19 +96,19 @@
 						//아무것도 못찾은 상태
 						console.log("this not exist\n");
 						var TB = {};
-						console.log(req.body.myteam.TOP);
+						//console.log(req.body.myteam.TOP);
 						var output="";
-									console.log("req.body.myteam : \n")
+									//console.log("req.body.myteam : \n")
 									for (var property in req.body.myteam) {
 											 output += property + ': ' + req.body.myteam[property]+'; \n';
 											}
-									console.log(output+"\ns");
+									//console.log(output+"\ns");
 									var output="";
-									console.log("req.body.enemy : \n")
+									//console.log("req.body.enemy : \n")
 									for (var property in req.body.enemy) {
 											 output += property + ': ' + req.body.enemy[property]+'; \n';
 											}
-									console.log(output+"\ns");
+									//console.log(output+"\ns");
 						if(req.body.myteam.win){
 							//누가 이긴지 비교
 							TB = {
@@ -152,11 +152,11 @@
 									var output="";
 									console.log("req.body : \n")
 									for (var property in req.body) {
-											console.log("2");
+											//console.log("2");
 											  output += property + ': ' + req.body[property]+'; \n';
 											}
-									console.log("1\n")		
-									console.log(output+"\ns");
+									//console.log("1\n")		
+									//console.log(output+"\ns");
 
 							res.json(todo);
 							//Todo.find(function(err, todos) {

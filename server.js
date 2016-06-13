@@ -169,6 +169,7 @@
 						});
 					}else{
 						console.log("update\n");
+						console.log(TB);
 						TB = {
 								TOP : req.body.myteam.TOP,
 								MIDDLE : req.body.myteam.MIDDLE,
@@ -181,6 +182,7 @@
 								eDUO_CARRY : req.body.enemy.DUO_CARRY,
 								eDUO_SUPPORT : req.body.enemy.DUO_SUPPORT,
 							};
+						console.log(TB);	
 						if(req.body.win==1){
 							var a=0;
 							a=TB_L[0].win+1;

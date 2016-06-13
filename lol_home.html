@@ -185,9 +185,9 @@ function championCombinationTest(summoner_ID){
 
 									//팀은 100 or 200
 									if(winner){
-										alert("My Team is "+ team+ " and My line is "+ myline+"\nMy Champion is "+championId+"\nI win!!");
+										//alert("My Team is "+ team+ " and My line is "+ myline+"\nMy Champion is "+championId+"\nI win!!");
 									}else{
-										alert("My Team is "+ team+ " and My line is "+ myline+"\nMy Champion is "+championId+"\nI lose..");			
+										//alert("My Team is "+ team+ " and My line is "+ myline+"\nMy Champion is "+championId+"\nI lose..");			
 									}
 									if(team==100){
 										myteam[myline] = championId;
@@ -220,13 +220,38 @@ function championCombinationTest(summoner_ID){
 											for (var property in json) {
 											  output += property + ': ' + json[property]+'; ';
 											}
-											alert(output);
-											//alert(json);
 										},
 										error: function (XMLHttpRequest, textStatus, errorThrown) {
 											alert("error evoke");
 			            				}
 									});
+
+
+
+
+								//한번 바꿔서 다시 ㄱㄱㄴ
+								var obj=new Object();
+								obj.myteam = enemy;
+								obj.enemy = myteam;
+								var json_data = JSON.stringify(obj);
+								$.ajax({
+										url : 'http://104.199.143.230:8080/api/TB_LolCombinationOfChampion',
+										type: 'POST',
+										dataType: 'json',
+
+										contentType: "application/json",
+										data: json_data,
+										//contentLength: postjson.length,
+										success:function(json){
+											var output = '';
+											for (var property in json) {
+											  output += property + ': ' + json[property]+'; ';
+											}
+										},
+										error: function (XMLHttpRequest, textStatus, errorThrown) {
+											alert("error evoke");
+			            				}
+									});	
 								
 			            },
 			            error: function (XMLHttpRequest, textStatus, errorThrown) {

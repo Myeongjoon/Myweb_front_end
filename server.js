@@ -184,12 +184,13 @@
 						if(req.body.win==1){
 							var a=0;
 							a=TB_L[0].win+1;
-							TB_LolCombinationOfChampion.update(TB_L[0],{ $set: { win: a }},{multi: true});
+							console.log(TB);
+							TB_LolCombinationOfChampion.update(TB,{ $set: { win: 234 }},{multi: true});
 							
 						}else{
 							var a=0;
 							a=TB_L[0].lose+1;
-							TB_LolCombinationOfChampion.update(TB_L[0],{ $set: { lose: a }},{multi: true});
+							TB_LolCombinationOfChampion.update(TB,{ $set: { lose: 234 }},{multi: true});
 						}
 						//찾았으니까 덧셈을 한다.
 					}

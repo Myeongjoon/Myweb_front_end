@@ -177,7 +177,7 @@
 							a=TB_L[0].win+1;
 							console.log(TB);
 							TB_LolCombinationOfChampion.update({},{ $set: { $set: { win: 23445123123 }}},{multi: true},function (err, raw) {
-							if (err) return handleError(err);
+							if (err) console.log(err);
 							console.log('The raw response from Mongo was ', raw);
 							});
 							
@@ -186,7 +186,7 @@
 							a=TB_L[0].lose+1;
 							console.log(TB);
 							TB_LolCombinationOfChampion.update({},{ $set: { $set: { win: 23445123123 }}},{multi: true},function (err, raw) {
-							if (err) return handleError(err);
+							if (err) console.log(err);
 							console.log('The raw response from Mongo was ', raw);
 							});
 							//db.getCollection("tb_lolcombinationofchampions").update({},{ $set: { win: 23445 }},{multi: true});

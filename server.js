@@ -92,7 +92,7 @@
 
 				}else{
 					//있나 없나 비교함
-					if(TB_L=[]){
+					if(TB_L==[]){
 						//아무것도 못찾은 상태
 						console.log("this not exist\n");
 						var TB = {};

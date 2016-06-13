@@ -190,6 +190,7 @@
 						}else{
 							var a=0;
 							a=TB_L[0].lose+1;
+							console.log(TB);
 							TB_LolCombinationOfChampion.update(TB,{ $set: { lose: 234 }},{multi: true});
 						}
 						//찾았으니까 덧셈을 한다.

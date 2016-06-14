@@ -107,7 +107,7 @@ function summonerLookUp() {
     var SUMMONER_NAME = "";
     SUMMONER_NAME = $("#userName").val();
 
-    var API_KEY = "ccf9ae4f-00f3-4e03-9625-5b8231defb8e";
+    var API_KEY = "8e03c7b7-d706-4fc9-98c6-668aa9975717";
 
     if (SUMMONER_NAME !== "") {
 
@@ -146,10 +146,10 @@ function Name() {
 }
 
 function championCombinationTest(summoner_ID){
-	var API_KEY = "ccf9ae4f-00f3-4e03-9625-5b8231defb8e";
+	var API_KEY = "8e03c7b7-d706-4fc9-98c6-668aa9975717";
 	if(summoner_ID != ""){
 		$.ajax({
-            url: 'https://kr.api.pvp.net/api/lol/kr/v2.2/matchlist/by-summoner/' + summoner_ID + '?api_key=ccf9ae4f-00f3-4e03-9625-5b8231defb8e',
+            url: 'https://kr.api.pvp.net/api/lol/kr/v2.2/matchlist/by-summoner/' + summoner_ID + '?api_key=8e03c7b7-d706-4fc9-98c6-668aa9975717',
             type: 'GET',
             dataType: 'json',
             data: {
@@ -160,7 +160,7 @@ function championCombinationTest(summoner_ID){
 					matchID = (json["matches"])[0].matchId;
 					//아이디 받았으니 이걸 바탕으로 대전 정보를 가져온다.
 					$.ajax({
-			            url: 'https://kr.api.pvp.net/api/lol/kr/v2.2/match/' + matchID + '?api_key=ccf9ae4f-00f3-4e03-9625-5b8231defb8e',
+			            url: 'https://kr.api.pvp.net/api/lol/kr/v2.2/match/' + matchID + '?api_key=8e03c7b7-d706-4fc9-98c6-668aa9975717',
 			            type: 'GET',
 			            dataType: 'json',
 			            data: {
@@ -269,12 +269,12 @@ function championCombinationTest(summoner_ID){
 
 function getMyleagueEntry(summonerID) {
 
-    var API_KEY = "ccf9ae4f-00f3-4e03-9625-5b8231defb8e";
+    var API_KEY = "8e03c7b7-d706-4fc9-98c6-668aa9975717";
 
     if (summonerID !== "") {
 
         $.ajax({
-            url: 'https://kr.api.pvp.net/api/lol/kr/v2.5/league/by-summoner/' + summonerID + '/entry?api_key=ccf9ae4f-00f3-4e03-9625-5b8231defb8e',
+            url: 'https://kr.api.pvp.net/api/lol/kr/v2.5/league/by-summoner/' + summonerID + '/entry?api_key=8e03c7b7-d706-4fc9-98c6-668aa9975717',
             type: 'GET',
             dataType: 'json',
             data: {
@@ -350,7 +350,7 @@ function stats_ranked(summonerID) {
     if (summonerID !== "") {
 
         $.ajax({
-            url: 'https://kr.api.pvp.net/api/lol/kr/v1.3/stats/by-summoner/' + summonerID + '/ranked?season=SEASON2016&api_key=ccf9ae4f-00f3-4e03-9625-5b8231defb8e',
+            url: 'https://kr.api.pvp.net/api/lol/kr/v1.3/stats/by-summoner/' + summonerID + '/ranked?season=SEASON2016&api_key=8e03c7b7-d706-4fc9-98c6-668aa9975717',
             type: 'GET',
             dataType: 'json',
             data: {
@@ -396,7 +396,7 @@ function getChampion(champions){
 						lost = current_champion.stats.totalSessionsLost;
 						$('.tab2_div').remove();
 						$.ajax({
-							url: 'https://global.api.pvp.net/api/lol/static-data/kr/v1.2/champion/' + id + '?api_key=ccf9ae4f-00f3-4e03-9625-5b8231defb8e',
+							url: 'https://global.api.pvp.net/api/lol/static-data/kr/v1.2/champion/' + id + '?api_key=8e03c7b7-d706-4fc9-98c6-668aa9975717',
 							type: 'GET',
 							dataType: 'json',
 							data: {
@@ -434,7 +434,7 @@ function getChampion(champions){
 
 function getChampion_name(id){
 	 $.ajax({
-            url: 'https://global.api.pvp.net/api/lol/static-data/kr/v1.2/champion/' + id + '?api_key=ccf9ae4f-00f3-4e03-9625-5b8231defb8e',
+            url: 'https://global.api.pvp.net/api/lol/static-data/kr/v1.2/champion/' + id + '?api_key=8e03c7b7-d706-4fc9-98c6-668aa9975717',
             type: 'GET',
             dataType: 'json',
             data: {

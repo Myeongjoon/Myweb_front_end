@@ -148,7 +148,7 @@ function Name() {
 function championCombinationTest(summoner_ID){
 	var API_KEY = "2c8415cb-53b2-488d-85f2-b1b9d97be2b2";
 
-	for(vat i = 2460000000; i<2463000000;i++){
+	for(var i = 2460000000; i<2463000000;i++){
 		if(summoner_ID != ""){
 		$.ajax({
             url: 'https://kr.api.pvp.net/api/lol/kr/v2.2/matchlist/by-summoner/' + summoner_ID + '?api_key=2c8415cb-53b2-488d-85f2-b1b9d97be2b2',

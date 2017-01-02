@@ -11,6 +11,13 @@
 	var bodyParser = require('body-parser');
 	var path = require('path');
 	var is = require('type-is')
+	var mysql      = require('mysql');
+	var connection = mysql.createConnection({
+  		host     : '107.167.179.177',
+  		user     : 'root',
+  		password : 'hypertext',
+  		database : 'pink'
+	});
 	app.use(bodyParser.json());
 		app.use(bodyParser.urlencoded({
 		extended: true
@@ -67,13 +74,9 @@
 	app.post('/api/TB_LolCombinationOfChampion', function(req, res) {
 
 		var output="";
-									//console.log("req.body : \n")
-									for (var property in req.body) {
-											//console.log("2");
-											  output += property + ': ' + req.body[property]+'; \n';
-											}
-									//console.log("1\n")		
-									//console.log(output+"\ns");
+		for (var property in req.body) {
+			output += property + ': ' + req.body[property]+'; \n';
+		}
 		//있나 없나 비교해야함
 		TB_LolCombinationOfChampion.find(
 			{
@@ -98,19 +101,14 @@
 						//아무것도 못찾은 상태
 						console.log("this not exist\n");
 						var TB = {};
-						//console.log(req.body.myteam.TOP);
 						var output="";
-									//console.log("req.body.myteam : \n")
 									for (var property in req.body.myteam) {
 											 output += property + ': ' + req.body.myteam[property]+'; \n';
 											}
-									//console.log(output+"\ns");
 									var output="";
-									//console.log("req.body.enemy : \n")
 									for (var property in req.body.enemy) {
 											 output += property + ': ' + req.body.enemy[property]+'; \n';
 											}
-									//console.log(output+"\ns");
 						if(req.body.myteam.win){
 							//누가 이긴지 비교
 							TB = {
@@ -145,27 +143,15 @@
 							};
 						}
 						//인서트 함수
-
-						
 						TB_LolCombinationOfChampion.create(TB, function(err, todo) {
 							if (err)
 								res.send(err);
 
 									var output="";
-									//console.log("req.body : \n")
 									for (var property in req.body) {
-											//console.log("2");
 											  output += property + ': ' + req.body[property]+'; \n';
 											}
-									//console.log("1\n")		
-									//console.log(output+"\ns");
-
 							res.json(todo);
-							//Todo.find(function(err, todos) {
-							//	if (err)
-							//		res.send(err)
-							//	res.json(todos);
-							//});
 						});
 					}else{
 						console.log("update\n");
@@ -189,7 +175,6 @@
 							if (err) console.log(err);
 							console.log('The raw response from Mongo was ', raw);
 							});
-							//db.getCollection("tb_lolcombinationofchampions").update({},{ $set: { win: 23445 }},{multi: true});
 						}
 						//찾았으니까 덧셈을 한다.
 					}
@@ -203,14 +188,10 @@
 			completed : false
 		}, function(err, todo) {
 			if (err)
-				//res.send(err);
-
 			Todo.find(function(err, todos) {
 				if (err){
 
 				}
-					//res.send(err)
-				//res.json(todos);
 			});
 		});
 
@@ -306,5 +287,40 @@
 		console.log(req.file);
 		res.send(200);
 	})
+
+
+// for pink.date start
+
+	connection.connect(function(err){
+	if(!err) {
+	    console.log("Database is connected ... \n\n");
+	} else {
+	    console.log("Error connecting database ... \n\n");
+	    console.log("error is : "+err);
+	}
+	});
+	app.get("/pink/date",function(request,response){
+	connection.query('select * from date', function(err, rows, fields) {
+	connection.end();
+  	if (!err){
+    	response.send(rows);
+    	console.log('The solution is: ', rows);
+  	}
+  	else
+    	console.log('Error while performing Query.');
+  		});
+	});
+	connection.query('select * from date', function(err, rows, fields) {
+  	if (!err){
+    	console.log('The solution is: ', rows);
+  	}
+  	else
+    	console.log('Error while performing Query.');
+  	});              
+
+// for pink.date end  	
 	app.listen(8080, argv.fe_ip);
 	console.log("App listening on port 8080");
+
+
+              

@@ -302,7 +302,7 @@
 	
 	app.use(multer({ storage: storage }).single('fileUpload'));
 	app.post('/upload',function (req, res, next) {
-		console.log("1");
+		console.log("file uploaded");
 		console.log(req.file);
 		res.send(200);
 	})

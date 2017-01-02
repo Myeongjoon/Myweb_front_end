@@ -5,8 +5,7 @@
 {?A a ?B. ?B a ?C} => {?A a ?C}.
 {?A rdfs:subClassOf ?B. ?S a ?A} => {?S rdfs:subClassOf ?B}.
 {?A rdfs:subClassOf ?B. ?A a ?S} => {?S rdfs:subClassOf ?B}.
-:hello rdfs:subClassOf :1.
-:hello rdfs:subClassOf :0.
 :hello a :h.
-:h rdfs:subClassOf :2.
+:hello a :h.
+:h rdfs:subClassOf :19.
 

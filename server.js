@@ -270,25 +270,6 @@
 		console.log("/query.n3 accessed");
 	});
 	
-		
-	var storage = multer.diskStorage({
-	destination: function (req, file, cb) {
-		cb(null, '/home/kimmj8409/Myweb_front_end/')
-	},
-	filename: function (req, file, cb) {
-		cb(null, file.originalname)
-	}
-	})
-	var upload = multer({ storage: storage })
-	
-	app.use(multer({ storage: storage }).single('fileUpload'));
-	app.post('/upload',function (req, res, next) {
-		console.log("file uploaded");
-		console.log(req.file);
-		res.send(200);
-	})
-
-
 // for pink.date start
 
 	connection.connect(function(err){
@@ -319,6 +300,27 @@
   	});              
 
 // for pink.date end  	
+	
+		
+	var storage = multer.diskStorage({
+	destination: function (req, file, cb) {
+		cb(null, '/home/kimmj8409/Myweb_front_end/')
+	},
+	filename: function (req, file, cb) {
+		cb(null, file.originalname)
+	}
+	})
+	var upload = multer({ storage: storage })
+	
+	app.use(multer({ storage: storage }).single('fileUpload'));
+	app.post('/upload',function (req, res, next) {
+		console.log("file uploaded");
+		console.log(req.file);
+		res.send(200);
+	})
+
+
+
 	app.listen(8080, argv.fe_ip);
 	console.log("App listening on port 8080");
 

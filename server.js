@@ -250,6 +250,10 @@
 	app.get('/favicon.ico', function(req, res) {
 		res.sendfile('node_modules/eyeserver/node_modules/express/node_modules/connect/lib/public/favicon.ico');
 	});
+
+	app.get('/learn.json', function(req, res) {
+		res.sendfile('learn.json');
+	});
 	
 	app.get('/lol_home', function(req, res) {
 		res.sendfile('lol_home.html');

@@ -322,25 +322,9 @@
 
   		app.post("/edunet/XML/:classID/",function(request,response){
 
-		classID = request.params.todo_id
+		classID = request.params.classID
 
 		response.send(classID);
-  	});    
-
-
-  	 app.post("/edunet/XML/",function(request,response){
-
-		selectedClassValue = request.params.selectedClassValue
-		console.log("test")
-		for(a in request){
-			console.log(a)
-		}
-		for(value in request.params){
-			console.log(value)
-		}
-
-
-		response.send(selectedClassValue);
   	});    
 
 

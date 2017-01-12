@@ -311,7 +311,7 @@
 
 //edunet start
 
-	app.POST("/edunet/XML/:classID/:index",function(request,response){
+	app.post("/edunet/XML/:classID/:index",function(request,response){
 
 		index = request.params.todo_id
 

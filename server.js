@@ -331,7 +331,10 @@
   	 app.post("/edunet/XML/",function(request,response){
 
 		selectedClassValue = request.params.selectedClassValue
-
+		console.log("test")
+		for(a in request){
+			console.log(a)
+		}
 		for(value in request.params){
 			console.log(value)
 		}

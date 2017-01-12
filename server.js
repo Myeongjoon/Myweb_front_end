@@ -328,6 +328,14 @@
   	});    
 
 
+  	 app.post("/edunet/XML/",function(request,response){
+
+		classID = request.params.todo_id
+
+		response.send(classID);
+  	});    
+
+
 //edunet end
 	
 		

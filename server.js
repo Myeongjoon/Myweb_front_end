@@ -298,34 +298,33 @@
   		else
     		console.log('Error while performing Query.');
   			});
-		});
-		connection.query('select * from date', function(err, rows, fields) {
-  		if (!err){
-    		console.log('The solution is: ', rows);
-  		}
-  		else
-    		console.log('Error while performing Query.');
-  	});              
+		});   
 
 // for pink.date end  	
 
 //edunet start
 
-	app.post("/edunet/XML/:classID/:index",function(request,response){
+	var connection_edu = mysql.createConnection({
+  		host     : '107.167.179.177',
+  		user     : 'root',
+  		password : 'hypertext',
+  		database : 'edu'
+	});
 
-		index = request.params.todo_id
+  	app.post("/edunet/XML/:classID/:index",function(request,response){
+  		classID = request.params.classID
 
-		classID = request.params.todo_id
-
-		response.send(index+classID);
-  	});    
-
-  		app.post("/edunet/XML/:classID/",function(request,response){
-
-		classID = request.params.classID
-
-		response.send(classID);
-  	});    
+		index = request.params.index
+		connection_edu.query('select * from contents where ClassID='+classID, function(err, rows, fields) {
+		connection_edu.end();
+  		if (!err){
+    		response.send(rows);
+    		console.log('The solution is: ', rows);
+  		}
+  		else
+    		console.log('Error while performing Query.');
+  			});
+		});
 
 
 //edunet end

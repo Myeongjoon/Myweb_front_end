@@ -330,9 +330,9 @@
 
   	 app.post("/edunet/XML/",function(request,response){
 
-		classID = request.params.todo_id
+		selectedClassValue = request.params.selectedClassValue
 
-		response.send(classID);
+		response.send(selectedClassValue);
   	});    
 
 

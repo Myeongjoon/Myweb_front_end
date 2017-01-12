@@ -4182,7 +4182,7 @@ var $AnimateProvider = ['$provide', function($provide) {
      * to enable full out animation support. Otherwise, $animate will only perform simple DOM
      * manipulation operations.
      *
-     * To learn more about enabling animation support, click here to visit the {@link ngAnimate
+     * To study more about enabling animation support, click here to visit the {@link ngAnimate
      * ngAnimate module page} as well as the {@link ngAnimate.$animate ngAnimate $animate service
      * page}.
      */
@@ -13482,7 +13482,7 @@ function $SceDelegateProvider() {
  *
  * Note:  When enabled (the default), IE8 in quirks mode is not supported.  In this mode, IE8 allows
  * one to execute arbitrary javascript by the use of the expression() syntax.  Refer
- * <http://blogs.msdn.com/b/ie/archive/2008/10/16/ending-expressions.aspx> to learn more about them.
+ * <http://blogs.msdn.com/b/ie/archive/2008/10/16/ending-expressions.aspx> to study more about them.
  * You can ensure your document is in standards mode and not quirks mode by adding `<!doctype html>`
  * to the top of your HTML document.
  *

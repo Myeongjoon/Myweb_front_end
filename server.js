@@ -289,25 +289,39 @@
 	}
 	});
 	app.get("/pink/date",function(request,response){
-	connection.query('select * from date', function(err, rows, fields) {
-	connection.end();
-  	if (!err){
-    	response.send(rows);
-    	console.log('The solution is: ', rows);
-  	}
-  	else
-    	console.log('Error while performing Query.');
-  		});
-	});
-	connection.query('select * from date', function(err, rows, fields) {
-  	if (!err){
-    	console.log('The solution is: ', rows);
-  	}
-  	else
-    	console.log('Error while performing Query.');
+		connection.query('select * from date', function(err, rows, fields) {
+		connection.end();
+  		if (!err){
+    		response.send(rows);
+    		console.log('The solution is: ', rows);
+  		}
+  		else
+    		console.log('Error while performing Query.');
+  			});
+		});
+		connection.query('select * from date', function(err, rows, fields) {
+  		if (!err){
+    		console.log('The solution is: ', rows);
+  		}
+  		else
+    		console.log('Error while performing Query.');
   	});              
 
 // for pink.date end  	
+
+//edunet start
+
+	app.POST("/edunet/XML/:classID/:index",function(request,response){
+
+		index = request.params.todo_id
+
+		classID = request.params.todo_id
+
+		response.send(index+classID);
+  	});    
+
+
+//edunet end
 	
 		
 	var storage = multer.diskStorage({

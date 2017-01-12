@@ -323,6 +323,7 @@
   		}
   		else
     		console.log('Error while performing Query.');
+    		response.send(200)
   			});
 		});
 

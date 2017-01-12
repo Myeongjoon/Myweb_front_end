@@ -320,7 +320,7 @@
 		response.send(index+classID);
   	});    
 
-  		app.POST("/edunet/XML/:classID/",function(request,response){
+  		app.post("/edunet/XML/:classID/",function(request,response){
 
 		classID = request.params.todo_id
 

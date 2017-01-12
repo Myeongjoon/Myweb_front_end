@@ -332,6 +332,11 @@
 
 		selectedClassValue = request.params.selectedClassValue
 
+		for(value in request.params){
+			console.log(value)
+		}
+
+
 		response.send(selectedClassValue);
   	});    
 

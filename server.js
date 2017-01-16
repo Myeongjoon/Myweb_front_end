@@ -315,7 +315,7 @@
   		classID = request.params.classID
 
 		index = request.params.index
-		connection_edu.query('select * from contents where ClassID=\''+classID'\'', function(err, rows, fields) {
+		connection_edu.query('select * from contents where ClassID=\''+classID+'\'', function(err, rows, fields) {
 			connection_edu.end();
   		if (!err){
     		response.send(rows);

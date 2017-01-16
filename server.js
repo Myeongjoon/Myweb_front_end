@@ -353,5 +353,15 @@
 	app.listen(8080, argv.fe_ip);
 	console.log("App listening on port 8080");
 
+var io = require('socket.io').listen(8888); 
+io.sockets.on('connection', function (socket) { 
+	socket.emit('news', { hello: 'world' }); 
+	socket.on('my other event', function (data) { 
+		console.log(data); }); 
+});
+
+
+
+
 
               

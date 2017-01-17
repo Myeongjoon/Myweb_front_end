@@ -24,12 +24,6 @@
 	}));
 	app.use(bodyParser.json());
 
-MongoClient.connect("mongodb://localhost:27017/exampleDb", function(err, db){
-    if( !err ){
-         console.log("We are connected");
-    } else console.log(err);
-});
-
 	mongoose.connect('mongodb://' + argv.be_ip + ':80/my_database',
 		function(err, db){
     		if( !err ){

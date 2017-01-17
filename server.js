@@ -24,7 +24,21 @@
 	}));
 	app.use(bodyParser.json());
 
-	mongoose.connect('mongodb://' + argv.be_ip + ':80/my_database');
+MongoClient.connect("mongodb://localhost:27017/exampleDb", function(err, db){
+    if( !err ){
+         console.log("We are connected");
+    } else console.log(err);
+});
+
+	mongoose.connect('mongodb://' + argv.be_ip + ':80/my_database',
+		function(err, db){
+    		if( !err ){
+         		console.log("mongodb is connected");
+    		} else {
+    			console.log(err);
+    			console.log("did not connected");
+    		}
+		});
     app.use('/js', express.static(__dirname + '/js'));
    	app.use('/bower_components', express.static(__dirname + '/bower_components'));
 	app.use(morgan('dev')); 									

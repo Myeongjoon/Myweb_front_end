@@ -266,6 +266,47 @@
 	app.get('/lol_home', function(req, res) {
 		res.sendfile('lol_home.html');
 	});
+
+
+// careerPredictor -->
+
+	var connection_careerPredictor = mysql.createConnection({
+  		host     : '107.167.179.177',
+  		user     : 'root',
+  		password : 'hypertext',
+  		database : 'careerPredictor'
+	});
+
+	app.get('/careerPredictor', function(req, res) {
+		res.sendfile('src/careerPredictor/main.html');
+	});
+
+	app.post('/careerPredictor/userInfo',function (req, res) {
+		ID = req.params.ID
+		connection_careerPredictor.query('select * from user where ClassID=\''+ID+'\'', function(err, rows, fields) {
+			connection_careerPredictor.end();
+  		if (!err){
+  			//find user
+    		res.sendfile('src/careerPredictor/userInfo.html');
+  		}
+  		else
+  			//not found
+  			{
+				res.redirect('/careerPredictor/userCreate');
+  			}
+    	});
+	});
+	
+	app.get('/careerPredictor/userCreate', function(req, res) {
+		res.sendfile('src/careerPredictor/userCreate.html');
+	});
+
+
+  	app.post("/edunet/XML/:classID/:index",function(request,response){
+  		
+		});
+
+// /careerPredictor	
 	
 	app.get('/four_in_a_row', function(req, res) {
 		res.sendfile('four_in_a_row.html');

@@ -1,0 +1,186 @@
+<!doctype html>
+<html ng-app="todomvc" lang="en" >
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content ="width=device-witdth,initial-scale=1"/>
+		<title>Myeongjoon's Web</title>
+		
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({
+			google_ad_client: "ca-pub-9809379847084556",
+			enable_page_level_ads: true
+		});
+		</script>
+		<link rel="stylesheet" href="../../bower_components/todomvc-common/base.css">
+		<link rel="stylesheet" href="../../bower_components/todomvc-common/style.css">
+		<link rel="stylesheet" href="../../bower_components/todomvc-common/lol_home.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<style>[ng-cloak] { display: none; }
+			.MenuList>.Item {
+    		display: inline-block;
+    		margin: 0 -1px 0 0;
+    		padding: 0;
+			}
+			
+			.MenuList>.Item>a {
+			display: block;
+			min-width: 70px;
+			height: 39px;
+			border: 1px solid #c6cbcb;
+			padding-left: 6px;
+			padding-right: 6px;
+			background-color: #f2f2f2;
+			color: #555e5e;
+			font-size: 13px;
+			line-height: 40px;
+			text-decoration: none;
+			text-align: center;
+		}
+		
+		.SummonerContent {
+			display: inline-block;
+			width: 300px;
+			font-size: 12px;
+			vertical-align: top;
+		}
+		
+		.SummonerRatingMedium {
+			display: table;
+			width: 100%;
+			color: #879292;
+		}
+		
+		
+		
+		.Medal>.Image {
+			width: 120px;
+			height: 120px;
+			margin: -5px 0 -10px 0;
+		}
+		
+		.SummonerRatingMedium>.Medal {
+			display: table-cell;
+			vertical-align: middle;
+			width: 135px;
+			height: 116px;
+			text-align: center;
+		}
+		
+		.SummonerRatingMedium>.TierRankInfo {
+			display: table-cell;
+			vertical-align: middle;
+			font-size: 12px;
+			line-height: 1.5;
+			text-align: left;
+			width: 500px;
+		}
+		
+		.tab2_div>.Medal  {
+			display: table-cell;
+			vertical-align: middle;
+			width: 135px;
+			height: 116px;
+			text-align: center;
+		}
+		.tab2_div>.TierRankInfo {
+			display: table-cell;
+			vertical-align: middle;
+			font-size: 12px;
+			line-height: 1.5;
+			text-align: left;
+			width: 500px;
+		}
+		</style>
+		<script src="bower_components/todomvc-common/base.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-route/angular-route.js"></script>
+		<script src="js/services/todoStorage.js"></script>
+		<script src="js/controllers/todoCtrl.js"></script>
+		<script src="js/directives/todoFocus.js"></script>
+		<script src="js/directives/todoEscape.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+	</head>
+	<body ng-controller="todoCtrl" id="todomvc-index.html">
+		<section id="todoapp">
+			<header id="header">
+				<h1 style="line-height: 1em;top: -200px;">Career <br>Predictor</h1>
+				<form id="todo-form">
+					<input id="userName" placeholder="아이디를 입력하시오." ng-model="newTodo" autofocus>
+					<script type="text/javascript">
+					// Using jQuery.
+					$(function() {
+						$('form').each(function() {
+							$(this).find('input').keypress(function(e) {
+								// Enter pressed?
+								if(e.which == 10 || e.which == 13) {
+									summonerLookUp();
+
+								}
+							});
+
+							$(this).find('input[type=submit]').hide();
+							});
+						});
+					</script>
+				</form>
+			</header>
+			
+			<dl class="MenuList tabHeaders"style="margin-left: 15px;">
+				<dd class="Item tabHeader active" data-tab-show-class="summonerLayout-summary">
+					<a id="initial_tab" href=""rel="tab1">종합</a>
+				</dd>
+				<dd class="Item tabHeader" data-tab-show-class="summonerLayout-champions">
+					<a href=""rel="tab2">챔피언</a>
+				</dd>
+									<dd class="Item tabHeader" data-tab-show-class="summonerLayout-league">
+						<a href=""rel="tab3">리그</a>
+					</dd>
+								<dd class="Item tabHeader" data-tab-show-class="summonerLayout-matches">
+					<a href=""rel="tab4">최근게임</a>
+				</dd>
+				<dd class="Item tabHeader" data-tab-show-class="summonerLayout-rune">
+					<a href=""rel="tab5">룬</a>
+				</dd>
+				<dd class="Item tabHeader" data-tab-show-class="summonerLayout-mastery">
+					<a href=""rel="tab6">특성</a>
+				</dd>
+				<dd class="Item tabHeader" data-tab-show-class="summonerLayout-combination">
+					<a href=""rel="tab7">조합</a>
+				</dd>
+			</dl>
+			<div id="tab1" class="SummonerRatingMedium SummonerContent tab_content">
+				<div class="TierRankInfo">
+					<ul id="lol_information">
+							<li id="summoner_level">레벨
+							</li>
+							<li id="summoner_tier">티어
+							</li>
+							<li id="summoner_leaguePoints">점수
+							</li>
+					</ul>
+				</div>
+				<div class="Medal">
+					<img id = "tierimage" src="media/challenger_1.png" class="Image">
+				</div>
+			</div>
+			</div>
+		</section>
+		<footer id="info">
+			<ul class="social">
+				<li>
+					<a href="http://blog.naver.com/itkmj">Naver blog</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/profile.php?id=100004756213783">Facebook</a>
+				</li>	
+				<li>
+					<a href="https://plus.google.com/u/0/107614993603448426456">Google+</a>
+				</li>
+				<li>
+					<a href="https://github.com/Myeongjoon">Github</a>
+				</li>
+			</ul>
+	</footer>
+	</body>
+</html>

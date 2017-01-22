@@ -1,0 +1,5 @@
+create database careerPredictor;
+
+create table user(
+       ID varchar(20) primary key,
+	name text;

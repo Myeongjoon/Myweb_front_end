@@ -1,17 +1,48 @@
-[Error: /home/kimmj8409/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Release/bson.node: invalid ELF header]
+Error: Module did not self-register.
+    at Error (native)
+    at Object.Module._extensions..node (module.js:597:18)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+    at Module.require (module.js:497:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/mongoose/node_modules/mongodb/node_modules/bson/ext/index.js:15:10)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
 js-bson: Failed to load c++ bson extension, using pure JS version
+App listening on port 8080
+Database is connected ... 
 
-/home/kimmj8409/Myweb_front_end/server.js:314
-	app.POST("/edunet/XML/:classID/:index",function(request,response){
-	    ^
-TypeError: Object function (req, res, next) {
-    app.handle(req, res, next);
-  } has no method 'POST'
-    at Object.<anonymous> (/home/kimmj8409/Myweb_front_end/server.js:314:6)
-    at Module._compile (module.js:456:26)
-    at Object.Module._extensions..js (module.js:474:10)
-    at Module.load (module.js:356:32)
-    at Function.Module._load (module.js:312:12)
-    at Function.Module.runMain (module.js:497:10)
-    at startup (node.js:119:16)
-    at node.js:906:3
+
+Sun, 22 Jan 2017 06:47:45 GMT express deprecated res.sendfile: Use res.sendFile instead at server.js:255:7
+[0mGET / [32m200 [0m13.278 ms - 3073[0m
+Sun, 22 Jan 2017 06:47:45 GMT express deprecated res.sendfile: Use res.sendFile instead at server.js:263:7
+[0mGET /learn.json [32m200 [0m3.885 ms - 71351[0m
+Sun, 22 Jan 2017 06:47:45 GMT express deprecated res.sendfile: Use res.sendFile instead at server.js:259:7
+[0mGET /favicon.ico [32m200 [0m1.168 ms - 1406[0m
+[0mPOST /api/todos [32m- [0m- ms - -[0m
+[0mPOST /api/todos [32m- [0m- ms - -[0m
+[0mPOST /api/todos [32m- [0m- ms - -[0m
+[0mGET /api/todos [32m- [0m- ms - -[0m
+[0mPOST /api/todos [32m- [0m- ms - -[0m
+[0mPOST /api/todos [32m- [0m- ms - -[0m
+[0mGET /api/todos [32m- [0m- ms - -[0m
+Sun, 22 Jan 2017 06:48:05 GMT express deprecated res.sendfile: Use res.sendFile instead at server.js:267:7
+[0mGET /lol_home [32m200 [0m4.732 ms - 19392[0m
+[0mGET /api/todos [32m- [0m- ms - -[0m
+[0mGET /lol_homelearn.json [31m500 [0m3.262 ms - 1298[0m
+Error: Missing Content-Type
+    at new Busboy (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/node_modules/busboy/lib/main.js:23:11)
+    at multerMiddleware (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/lib/make-middleware.js:32:16)
+    at Layer.handle [as handle_request] (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/layer.js:76:5)
+    at trim_prefix (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:263:13)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:230:9
+    at Function.proto.process_params (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:305:12)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:221:12
+    at Function.match_layer (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:288:3)
+    at next (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:182:10)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:184:16
+Sun, 22 Jan 2017 06:48:06 GMT express deprecated res.sendfile: Use res.sendFile instead at server.js:275:7
+[0mGET /media/challenger_1.png [32m200 [0m4.373 ms - 56911[0m
+[0mGET /media/Unranked.png [32m200 [0m4.193 ms - 36036[0m
+[0mGET /api/todos [32m- [0m- ms - -[0m

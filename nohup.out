@@ -14,12 +14,26 @@ App listening on port 8080
 Database is connected ... 
 
 
-Sun, 22 Jan 2017 07:32:01 GMT express deprecated res.sendfile: Use res.sendFile instead at server.js:281:7
-[0mGET /careerPredictor [36m304 [0m7.301 ms - -[0m
+Sun, 22 Jan 2017 07:49:54 GMT express deprecated res.sendfile: Use res.sendFile instead at server.js:281:7
+[0mGET /careerPredictor [36m304 [0m6.823 ms - -[0m
+Sun, 22 Jan 2017 07:49:54 GMT express deprecated res.sendfile: Use res.sendFile instead at server.js:316:7
+[0mGET /media/challenger_1.png [36m304 [0m7.994 ms - -[0m
+[0mGET /careerPredictorlearn.json [31m500 [0m3.089 ms - 1298[0m
+Error: Missing Content-Type
+    at new Busboy (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/node_modules/busboy/lib/main.js:23:11)
+    at multerMiddleware (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/lib/make-middleware.js:32:16)
+    at Layer.handle [as handle_request] (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/layer.js:76:5)
+    at trim_prefix (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:263:13)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:230:9
+    at Function.proto.process_params (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:305:12)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:221:12
+    at Function.match_layer (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:288:3)
+    at next (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:182:10)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:184:16
+[0mGET /careerPredictor [36m304 [0m0.648 ms - -[0m
 [0mGET /api/todos [32m- [0m- ms - -[0m
-Sun, 22 Jan 2017 07:32:01 GMT express deprecated res.sendfile: Use res.sendFile instead at server.js:316:7
-[0mGET /media/challenger_1.png [36m304 [0m1.940 ms - -[0m
-[0mGET /careerPredictorlearn.json [31m500 [0m3.354 ms - 1298[0m
+[0mGET /media/challenger_1.png [36m304 [0m1.049 ms - -[0m
+[0mGET /careerPredictorlearn.json [31m500 [0m1.658 ms - 1298[0m
 Error: Missing Content-Type
     at new Busboy (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/node_modules/busboy/lib/main.js:23:11)
     at multerMiddleware (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/lib/make-middleware.js:32:16)
@@ -31,12 +45,60 @@ Error: Missing Content-Type
     at Function.match_layer (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:288:3)
     at next (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:182:10)
     at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:184:16
-[0mPOST /careerPredictor/userInfo [36m302 [0m247.703 ms - 98[0m
-Sun, 22 Jan 2017 07:32:02 GMT express deprecated res.sendfile: Use res.sendFile instead at server.js:301:7
-[0mGET /careerPredictor/userCreate [32m200 [0m3.687 ms - 5258[0m
+[0mPOST /careerPredictor/userInfo [36m302 [0m214.995 ms - 98[0m
+Sun, 22 Jan 2017 07:49:58 GMT express deprecated res.sendfile: Use res.sendFile instead at server.js:301:7
+[0mGET /careerPredictor/userCreate [36m304 [0m0.856 ms - -[0m
 [0mGET /api/todos [32m- [0m- ms - -[0m
-[0mGET /careerPredictor/bower_components/todomvc-common/base.js [31m500 [0m1.203 ms - 1298[0m
-[0mGET /careerPredictor/bower_components/angular/angular.js [31m500 [0m0.914 ms - 1298[0m
+[0mGET /careerPredictor/bower_components/todomvc-common/base.js [31m500 [0m0.710 ms - 1298[0m
+Error: Missing Content-Type
+    at new Busboy (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/node_modules/busboy/lib/main.js:23:11)
+    at multerMiddleware (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/lib/make-middleware.js:32:16)
+    at Layer.handle [as handle_request] (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/layer.js:76:5)
+    at trim_prefix (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:263:13)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:230:9
+    at Function.proto.process_params (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:305:12)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:221:12
+    at Function.match_layer (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:288:3)
+    at next (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:182:10)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:184:16
+[0mGET /careerPredictor/bower_components/angular/angular.js [31m500 [0m0.369 ms - 1298[0m
+Error: Missing Content-Type
+    at new Busboy (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/node_modules/busboy/lib/main.js:23:11)
+    at multerMiddleware (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/lib/make-middleware.js:32:16)
+    at Layer.handle [as handle_request] (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/layer.js:76:5)
+    at trim_prefix (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:263:13)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:230:9
+    at Function.proto.process_params (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:305:12)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:221:12
+    at Function.match_layer (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:288:3)
+    at next (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:182:10)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:184:16
+[0mGET /careerPredictor/bower_components/angular-route/angular-route.js [31m500 [0m0.398 ms - 1298[0m
+Error: Missing Content-Type
+    at new Busboy (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/node_modules/busboy/lib/main.js:23:11)
+    at multerMiddleware (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/lib/make-middleware.js:32:16)
+    at Layer.handle [as handle_request] (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/layer.js:76:5)
+    at trim_prefix (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:263:13)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:230:9
+    at Function.proto.process_params (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:305:12)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:221:12
+    at Function.match_layer (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:288:3)
+    at next (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:182:10)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:184:16
+[0mGET /careerPredictor/js/services/todoStorage.js [31m500 [0m0.595 ms - 1298[0m
+Error: Missing Content-Type
+    at new Busboy (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/node_modules/busboy/lib/main.js:23:11)
+    at multerMiddleware (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/lib/make-middleware.js:32:16)
+    at Layer.handle [as handle_request] (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/layer.js:76:5)
+    at trim_prefix (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:263:13)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:230:9
+    at Function.proto.process_params (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:305:12)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:221:12
+    at Function.match_layer (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:288:3)
+    at next (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:182:10)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:184:16
+[0mGET /careerPredictor/js/controllers/todoCtrl.js [31m500 [0m0.584 ms - 1298[0m
+[0mGET /careerPredictor/js/directives/todoFocus.js [31m500 [0m0.718 ms - 1298[0m
 Error: Missing Content-Type
     at new Busboy (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/node_modules/busboy/lib/main.js:23:11)
     at multerMiddleware (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/lib/make-middleware.js:32:16)
@@ -59,7 +121,7 @@ Error: Missing Content-Type
     at Function.match_layer (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:288:3)
     at next (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:182:10)
     at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:184:16
-[0mGET /careerPredictor/bower_components/angular-route/angular-route.js [31m500 [0m0.654 ms - 1298[0m
+[0mGET /careerPredictor/js/directives/todoEscape.js [31m500 [0m1.040 ms - 1298[0m
 Error: Missing Content-Type
     at new Busboy (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/node_modules/busboy/lib/main.js:23:11)
     at multerMiddleware (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/lib/make-middleware.js:32:16)
@@ -71,7 +133,7 @@ Error: Missing Content-Type
     at Function.match_layer (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:288:3)
     at next (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:182:10)
     at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:184:16
-[0mGET /careerPredictor/js/services/todoStorage.js [31m500 [0m1.406 ms - 1298[0m
+[0mGET /careerPredictor/bower_components/todomvc-common/base.js [31m500 [0m0.696 ms - 1298[0m
 Error: Missing Content-Type
     at new Busboy (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/node_modules/busboy/lib/main.js:23:11)
     at multerMiddleware (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/lib/make-middleware.js:32:16)
@@ -83,8 +145,7 @@ Error: Missing Content-Type
     at Function.match_layer (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:288:3)
     at next (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:182:10)
     at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:184:16
-[0mGET /careerPredictor/js/controllers/todoCtrl.js [31m500 [0m0.518 ms - 1298[0m
-[0mGET /careerPredictor/js/directives/todoFocus.js [31m500 [0m0.757 ms - 1298[0m
+[0mGET /careerPredictor/bower_components/angular/angular.js [31m500 [0m1.160 ms - 1298[0m
 Error: Missing Content-Type
     at new Busboy (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/node_modules/busboy/lib/main.js:23:11)
     at multerMiddleware (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/lib/make-middleware.js:32:16)
@@ -96,6 +157,7 @@ Error: Missing Content-Type
     at Function.match_layer (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:288:3)
     at next (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:182:10)
     at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:184:16
+[0mGET /careerPredictor/bower_components/angular-route/angular-route.js [31m500 [0m0.432 ms - 1298[0m
 Error: Missing Content-Type
     at new Busboy (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/node_modules/busboy/lib/main.js:23:11)
     at multerMiddleware (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/lib/make-middleware.js:32:16)
@@ -107,7 +169,7 @@ Error: Missing Content-Type
     at Function.match_layer (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:288:3)
     at next (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:182:10)
     at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:184:16
-[0mGET /careerPredictor/js/directives/todoEscape.js [31m500 [0m1.223 ms - 1298[0m
+[0mGET /careerPredictor/js/services/todoStorage.js [31m500 [0m0.376 ms - 1298[0m
 Error: Missing Content-Type
     at new Busboy (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/node_modules/busboy/lib/main.js:23:11)
     at multerMiddleware (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/lib/make-middleware.js:32:16)
@@ -119,7 +181,7 @@ Error: Missing Content-Type
     at Function.match_layer (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:288:3)
     at next (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:182:10)
     at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:184:16
-[0mGET /careerPredictor/media/challenger_1.png [31m500 [0m0.860 ms - 1298[0m
+[0mGET /careerPredictor/js/controllers/todoCtrl.js [31m500 [0m0.980 ms - 1298[0m
 Error: Missing Content-Type
     at new Busboy (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/node_modules/busboy/lib/main.js:23:11)
     at multerMiddleware (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/lib/make-middleware.js:32:16)
@@ -131,3 +193,41 @@ Error: Missing Content-Type
     at Function.match_layer (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:288:3)
     at next (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:182:10)
     at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:184:16
+[0mGET /careerPredictor/js/directives/todoFocus.js [31m500 [0m0.443 ms - 1298[0m
+Error: Missing Content-Type
+    at new Busboy (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/node_modules/busboy/lib/main.js:23:11)
+    at multerMiddleware (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/lib/make-middleware.js:32:16)
+    at Layer.handle [as handle_request] (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/layer.js:76:5)
+    at trim_prefix (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:263:13)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:230:9
+    at Function.proto.process_params (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:305:12)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:221:12
+    at Function.match_layer (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:288:3)
+    at next (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:182:10)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:184:16
+[0mGET /careerPredictor/js/directives/todoEscape.js [31m500 [0m0.408 ms - 1298[0m
+Error: Missing Content-Type
+    at new Busboy (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/node_modules/busboy/lib/main.js:23:11)
+    at multerMiddleware (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/multer/lib/make-middleware.js:32:16)
+    at Layer.handle [as handle_request] (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/layer.js:76:5)
+    at trim_prefix (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:263:13)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:230:9
+    at Function.proto.process_params (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:305:12)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:221:12
+    at Function.match_layer (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:288:3)
+    at next (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:182:10)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/express/lib/router/index.js:184:16
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Cannot enqueue Quit after invoking quit.
+    at Protocol._validateEnqueue (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/mysql/lib/protocol/Protocol.js:202:16)
+    at Protocol._enqueue (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/mysql/lib/protocol/Protocol.js:135:13)
+    at Protocol.quit (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/mysql/lib/protocol/Protocol.js:88:23)
+    at Connection.end (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/mysql/lib/Connection.js:255:18)
+    at Query._callback (/Users/kimmyongjoon/Desktop/Myweb_front_end/server.js:287:31)
+    at Query.Sequence.end (/Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/mysql/lib/protocol/sequences/Sequence.js:86:24)
+    at /Users/kimmyongjoon/Desktop/Myweb_front_end/node_modules/mysql/lib/protocol/Protocol.js:226:14
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+    at process._tickCallback (internal/process/next_tick.js:98:9)

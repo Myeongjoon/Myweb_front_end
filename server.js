@@ -1,9 +1,7 @@
 	var express = require('express');
 	var path = require('path');
-    var logger = require('morgan');
 	var app      = express(); 							
-	var mongoose = require('mongoose'); 			
-	var morgan = require('morgan'); 		
+	var mongoose = require('mongoose'); 	
 	var methodOverride = require('method-override');
 	var multer  = require('multer');
 	var fs = require('fs');
@@ -27,8 +25,7 @@
     		}
 		});
     app.use('/js', express.static(__dirname + '/js'));
-   	app.use('/bower_components', express.static(__dirname + '/bower_components'));
-	app.use(morgan('dev')); 									
+   	app.use('/bower_components', express.static(__dirname + '/bower_components'));									
 	app.use(methodOverride());
 	var Todo = mongoose.model('Todo', {
 		title : String,

@@ -5,7 +5,6 @@
 	var mongoose = require('mongoose'); 			
 	var morgan = require('morgan'); 		
 	var methodOverride = require('method-override');
-	var argv = require('optimist').argv;
 	var multer  = require('multer');
 	var fs = require('fs');
 	var bodyParser = require('body-parser');
@@ -18,7 +17,7 @@
 	}));
 	app.use(bodyParser.json());
 
-	mongoose.connect('mongodb://' + argv.be_ip + ':80/my_database',
+	mongoose.connect('mongodb://104.154.236.87:80/my_database',
 		function(err, db){
     		if( !err ){
          		console.log("mongodb is connected");
@@ -324,15 +323,8 @@
 
 
 
-	app.listen(8080, argv.fe_ip);
+	app.listen(8080, 8080);
 	console.log("App listening on port 8080");
-
-var io = require('socket.io').listen(8888); 
-io.sockets.on('connection', function (socket) { 
-	socket.emit('news', { hello: 'world' }); 
-	socket.on('my other event', function (data) { 
-		console.log(data); }); 
-});
 
 
 

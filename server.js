@@ -12,12 +12,6 @@
 	var path = require('path');
 	var is = require('type-is')
 	var mysql      = require('mysql');
-	var connection = mysql.createConnection({
-  		host     : '107.167.179.177',
-  		user     : 'root',
-  		password : 'hypertext',
-  		database : 'pink'
-	});
 	app.use(bodyParser.json());
 		app.use(bodyParser.urlencoded({
 		extended: true
@@ -269,33 +263,6 @@
 
 
 // careerPredictor -->
-
-	var connection_careerPredictor = mysql.createConnection({
-  		host     : '107.167.179.177',
-  		user     : 'root',
-  		password : 'hypertext',
-  		database : 'careerPredictor'
-	});
-
-	app.get('/careerPredictor', function(req, res) {
-		res.sendfile('src/careerPredictor/main.html');
-	});
-
-	app.post('/careerPredictor/userInfo',function (req, res) {
-		ID = req.params.ID
-		connection_careerPredictor.query('select * from user where ClassID=\''+ID+'\'', function(err, rows, fields) {
-			connection_careerPredictor.end();
-  		if (!err){
-  			//find user
-    		res.sendfile('src/careerPredictor/userInfo.html');
-  		}
-  		else
-  			//not found
-  			{
-				res.redirect('/careerPredictor/userCreate');
-  			}
-    	});
-	});
 	
 	app.get('/careerPredictor/userCreate', function(req, res) {
 		res.sendfile('src/careerPredictor/userCreate.html');
@@ -329,52 +296,10 @@
 	
 // for pink.date start
 
-	connection.connect(function(err){
-	if(!err) {
-	    console.log("Database is connected ... \n\n");
-	} else {
-	    console.log("Error connecting database ... \n\n");
-	    console.log("error is : "+err);
-	}
-	});
-	app.get("/pink/date",function(request,response){
-		connection.query('select * from date', function(err, rows, fields) {
-		connection.end();
-  		if (!err){
-    		response.send(rows);
-    		console.log('The solution is: ', rows);
-  		}
-  		else
-    		console.log('Error while performing Query.');
-  			});
-		});   
 
 // for pink.date end  	
 
 //edunet start
-
-	var connection_edu = mysql.createConnection({
-  		host     : '107.167.179.177',
-  		user     : 'root',
-  		password : 'hypertext',
-  		database : 'edu'
-	});
-
-  	app.post("/edunet/XML/:classID/:index",function(request,response){
-  		classID = request.params.classID
-
-		index = request.params.index
-		connection_edu.query('select * from contents where ClassID=\''+classID+'\'', function(err, rows, fields) {
-			connection_edu.end();
-  		if (!err){
-    		response.send(rows);
-    		console.log('The solution is: ', rows);
-  		}
-  		else
-    		console.log('Error while performing Query.');
-    		response.send(200)
-  			});
-		});
 
 
 //edunet end

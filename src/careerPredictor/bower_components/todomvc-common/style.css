@@ -1,0 +1,14 @@
+/*
+	made by myeongjoon
+	2016_04_24
+*/
+
+footer .social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer .social li{
+	display : inline;
+}

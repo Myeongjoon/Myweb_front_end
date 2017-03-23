@@ -5,5 +5,5 @@
 {?A a ?B. ?B a ?C} => {?A a ?C}.
 {?A rdfs:subClassOf ?B. ?S a ?A} => {?S rdfs:subClassOf ?B}.
 {?A rdfs:subClassOf ?B. ?A a ?S} => {?S rdfs:subClassOf ?B}.
-:coffee rdfs:subClassOf :3.
+:c rdfs:subClassOf :5.
 

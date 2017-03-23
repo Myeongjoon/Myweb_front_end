@@ -122,7 +122,7 @@
 	
 	app.use(multer({ storage: storage }).single('fileUpload'));
 
-	app.post('/upload',function (req, res, next) {
+	app.post('/upload',function (req, res) {
 		console.log("file uploaded");
 		console.log(req.file);
 		res.send(200);

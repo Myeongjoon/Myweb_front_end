@@ -34,6 +34,24 @@
 		});
 	});
 
+	var storage = multer.diskStorage({
+	destination: function (req, file, cb) {
+		cb(null, '/home/kimmj8409/Myweb_front_end/')
+	},
+	filename: function (req, file, cb) {
+		cb(null, file.originalname)
+	}
+	})
+	var upload = multer({ storage: storage });
+	
+	app.use(multer({ storage: storage }).single('fileUpload'));
+
+	app.post('/upload',function (req, res, next) {
+		console.log("file uploaded");
+		console.log(req.file);
+		res.send(200);
+	});
+
 	app.post('/api/todos', function(req, res) {
 
 		Todo.create({
@@ -80,52 +98,33 @@
 	});
 
 	app.get('/', function(req, res) {
-		res.sendfile('index.html');
+		res.sendFile('index.html');
 	});
 
 	app.get('/favicon.ico', function(req, res) {
-		res.sendfile('node_modules/eyeserver/node_modules/express/node_modules/connect/lib/public/favicon.ico');
+		res.sendFile('node_modules/eyeserver/node_modules/express/node_modules/connect/lib/public/favicon.ico');
 	});
 
 	app.get('/learn.json', function(req, res) {
-		res.sendfile('learn.json');
+		res.sendFile('learn.json');
 	});
 	
 	app.get('/four_in_a_row', function(req, res) {
-		res.sendfile('four_in_a_row.html');
+		res.sendFile('four_in_a_row.html');
 	});
 	
 	app.get('/media/:id', function(req, res) {
-		res.sendfile('media/'+req.params.id);
+		res.sendFile('media/'+req.params.id);
 	});
 	
 	app.get('/data.n3', function(req, res) {
-		res.sendfile('data.n3');
+		res.sendFile('data.n3');
 		console.log("/data.n3 accessed");
 	});
 
 	app.get('/query.n3', function(req, res) {
+		res.sendFile('query.n3');
 		console.log("/query.n3 accessed");
-		res.sendfile('query.n3');
-		console.log("/query.n3 accessed");
-	});
-	
-	var storage = multer.diskStorage({
-	destination: function (req, file, cb) {
-		cb(null, '/home/kimmj8409/Myweb_front_end/')
-	},
-	filename: function (req, file, cb) {
-		cb(null, file.originalname)
-	}
-	})
-	var upload = multer({ storage: storage });
-	
-	app.use(multer({ storage: storage }).single('fileUpload'));
-
-	app.post('/upload',function (req, res, next) {
-		console.log("file uploaded");
-		console.log(req.file);
-		res.send(200);
 	});
 
 	app.listen(8080, 8080);
